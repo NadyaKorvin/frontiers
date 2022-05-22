@@ -1,0 +1,41 @@
+.animation__text_block {
+  margin-left: 20px;
+  width: 770px;
+}
+
+.animation__text_first_part,
+.animation__text_second_part {
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 79px;
+}
+
+.animation__text_second_part {
+  color: #fff;
+}
+
+.animation__black_lines {
+  margin-left: -10px;
+  margin-top: -236px;
+}
+
+.animation__1th_black_line {
+  margin-bottom: 5px;
+  height: 75px;
+  width: 444px;
+  background-color: #000;
+}
+
+.animation__2th_black_line {
+  margin-bottom: 5px;
+
+  height: 75px;
+  width: 475px;
+  background-color: #000;
+}
+.animation__3th_black_line {
+  height: 75px;
+  width: 502px;
+  background-color: #000;
+}
