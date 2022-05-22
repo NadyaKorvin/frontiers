@@ -1,19 +1,21 @@
 import { useState } from "react"
 import "./App.css"
 import { SecondScreenAnimation } from "./components/secondScreen/SecondScreenAnimation"
+import { SecondScreenBlock } from "./components/secondScreen/SecondScreenBlock"
 
 function App() {
   const [mousePosition, setMousePosition] = useState("")
 
   const listenUpperMousePosition = (event) => {
-    console.log(event)
-    console.log(event.target)
-    setMousePosition(event.target)
+    setMousePosition(event.target.className)
   }
 
   return (
     <div className="App">
-      <SecondScreenAnimation listenMousePosition={listenUpperMousePosition} />
+      <section className="second__screen">
+        <SecondScreenBlock />
+        <SecondScreenAnimation listenMousePosition={listenUpperMousePosition} mousePosition={mousePosition} />
+      </section>
     </div>
   )
 }

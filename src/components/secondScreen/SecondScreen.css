@@ -1,5 +1,10 @@
+.second__screen {
+  display: flex;
+}
+
 .animation__text_block {
-  margin-left: 20px;
+  margin-top: 174px;
+  margin-left: 87px;
   width: 770px;
 }
 
@@ -9,6 +14,7 @@
   font-size: 65px;
   font-weight: 700;
   line-height: 79px;
+  transition: 0.5s ease-out;
 }
 
 .animation__text_second_part {
@@ -25,17 +31,19 @@
   height: 75px;
   width: 444px;
   background-color: #000;
+  transition: 0.5s ease-out;
 }
 
 .animation__2th_black_line {
   margin-bottom: 5px;
-
   height: 75px;
   width: 475px;
   background-color: #000;
+  transition: 0.5s ease-out;
 }
 .animation__3th_black_line {
   height: 75px;
   width: 502px;
   background-color: #000;
+  transition: 0.5s ease-out;
 }
