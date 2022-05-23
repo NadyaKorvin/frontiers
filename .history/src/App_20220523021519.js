@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { SecondScreenAnimation } from "./components/secondScreen/SecondScreenAnimation";
-import FirstScreenAnimation from "./components/firstScreen/FirstScreenAnimation";
+import FirstScreenAnimation from "./components/firstScreen/FirstScreen";
 
 function App() {
   const [mousePosition, setMousePosition] = useState("");

@@ -1,0 +1,20 @@
+import React from "react";
+import style from "./FirstScreen.module.css";
+
+export default function FirstScreenAnimation() {
+  return (
+    <>
+      <section className={style.first__screen}>
+        <div className={style.menu}>
+          <div className={style.logotype}>FRONTIERS</div>
+          <nav className={style.}>
+            <ul>Агенство</ul>
+            <ul>Кейсы</ul>
+            <ul>Услуги</ul>
+            <ul>Контакты</ul>
+          </nav>
+        </div>
+      </section>
+    </>
+  );
+}
