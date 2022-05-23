@@ -6,9 +6,8 @@ export function ThirdScreen({}) {
 
   const reversPerson = (event) => {
     setCurrentPerson(event.target.className)
-    let tmp = event.target.className
     let index = dataPersones.findIndex((elem) => elem.className === currentPerson)
-
+    console.log(index)
     let bigPerson = dataPersones.splice(index)
     dataPersones.unshift(...bigPerson)
   }
