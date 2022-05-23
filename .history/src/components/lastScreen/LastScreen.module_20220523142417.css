@@ -1,0 +1,59 @@
+.last__screen {
+  width: 1920px;
+  height: 1080px;
+  border-top: 1px solid black;
+}
+
+.wrapper {
+  position: relative;
+  top: 109px;
+  left: 170px;
+  display: flex;
+  justify-content: space-between;
+  width: 1590px;
+  height: 553px;
+  border: 1px solid red;
+}
+
+.left__content {
+  position: relative;
+  width: 775px;
+  height: 553px;
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 79px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.right__content {
+  position: relative;
+  width: 529px;
+  height: 553px;
+}
+
+.text__form {
+  width: 529px;
+  height: 46px;
+  left: 1231px;
+  top: 4438px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.footer {
+    position: fixed;
+    margin: 0 160px;
+    width: 1600px;
+    height: 218px;
+    border-top: 1px solid #000000;
+    bottom: 0px;
+}

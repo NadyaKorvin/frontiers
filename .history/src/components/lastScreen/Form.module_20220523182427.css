@@ -1,0 +1,41 @@
+.form {
+  margin-top: 60px;
+  width: 529px;
+  height: 355px;
+  border-top: 1px solid #d1d1d1;
+  background-color: antiquewhite;
+}
+
+.input,
+.textarea {
+  width: 529px;
+  height: 80px;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.textarea {
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+  /* resize: none; */
+}
+
+.borders {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.policy_text {
+    padding-: ;
+    width: 182px;
+    height: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: #787878;
+}

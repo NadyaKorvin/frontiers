@@ -1,0 +1,80 @@
+.form {
+  margin-top: 60px;
+  width: 529px;
+  height: 355px;
+  border-top: 1px solid #d1d1d1;
+  background-color: antiquewhite;
+}
+
+.input,
+.textarea {
+  width: 529px;
+  height: 80px;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.textarea {
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+  /* resize: none; */
+}
+
+.borders {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.consent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px 0 0;
+}
+
+.policy_text {
+    margin-top: 20px;
+  margin-left: 40px;
+  width: 250px;
+  height: 40px;
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: #787878;
+  background-color: aqua;
+}
+
+.checkfake {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #1f1f1f;
+    -webkit-transform: translateY(80%);
+    -ms-transform: translateY(80%);
+    transform: translateY(80%);
+  }
+
+  .checkfake::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url("/public/img/form/checkmark.svg");
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+    -ms-transform: translateX(-20%);
+    transform: translateX(-20%);
+    -webkit-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
