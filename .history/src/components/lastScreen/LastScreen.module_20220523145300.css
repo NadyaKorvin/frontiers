@@ -1,0 +1,94 @@
+.last__screen {
+  width: 1920px;
+  height: 1080px;
+}
+
+.wrapper {
+  position: relative;
+  top: 109px;
+  left: 170px;
+  display: flex;
+  justify-content: space-between;
+  width: 1590px;
+  height: 553px;
+}
+
+.left__content {
+  position: relative;
+  width: 775px;
+  height: 553px;
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 79px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.right__content {
+  position: relative;
+  width: 529px;
+  height: 553px;
+}
+
+.text__form {
+  width: 529px;
+  height: 46px;
+  left: 1231px;
+  top: 4438px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.footer {
+  position: relative;
+  margin: 308px 160px 0;
+  width: 1600px;
+  height: 218px;
+  border-top: 1px solid #000000;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(86, 201, 201);
+}
+
+.contact {
+  width: 357px;
+  height: 218px;
+  background-color: blanchedalmond;
+}
+
+.contact > p:nth-child(1) {
+    padding: 33px 0 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contact > p:nth-child(2) 
+.contact > p:nth-child(2)
+.contact > p:nth-child(2) {
+
+}
+
+.design {
+  width: 260px;
+  height: 218px;
+  background-color: azure;
+}
+
+.frontiers {
+  width: 249px;
+  height: 218px;
+  background-color: rgb(178, 163, 199);
+}
