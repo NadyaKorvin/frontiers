@@ -15,15 +15,21 @@ function App() {
 
   return (
     <div className="App">
-      <FirstScreenAnimation />
-      <section className="second__screen_main">
-        <SecondScreenAnimation listenMousePosition={listenUpperMousePosition} mousePosition={mousePosition} />
-        <SecondScreenBlock />
-      </section>
-      <section className="third__screen">
-        <ThirdScreen />
-      </section>
-      <LastScreenAnimation />
+      <div className="container js-container" data-page="1">
+        <div className="js-page div1">
+          <FirstScreenAnimation />
+        </div>
+        <div className="second__screen js-page div2">
+          <SecondScreenAnimation listenMousePosition={listenUpperMousePosition} mousePosition={mousePosition} />
+          <SecondScreenBlock />
+        </div>
+        <div className="third__screen js-page div3">
+          <ThirdScreen />
+        </div>
+        <div className="js-page div4">
+          <LastScreenAnimation />
+        </div>
+      </div>
     </div>
   )
 }

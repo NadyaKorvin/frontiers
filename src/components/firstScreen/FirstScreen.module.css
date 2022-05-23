@@ -4,6 +4,7 @@
 }
 
 .header {
+  margin: 0 auto;
   width: 1600px;
   height: 82px;
   margin: 0 160px;
@@ -111,9 +112,9 @@ p:nth-child(5) {
 }
 
 .content__pointer {
-    position: absolute;
-    top: 876px;
-    left: 187px;
+  position: absolute;
+  top: 876px;
+  left: 187px;
 }
 
 img {
