@@ -2,7 +2,7 @@ import React from "react";
 import style from "./FirstScreen.module.css";
 import image from "../../images/image.webp";
 
-export default function FirstScreenAnimation() {
+export default function FirstScreen() {
   const pointer = (
     <svg
       width="8"

@@ -1,7 +1,14 @@
 import React from "react";
+<<<<<<< HEAD
 import image from "./image.webp";
 
 export default function firstScreen() {
+=======
+import style from "./FirstScreen.module.css";
+import image from "../../images/image.webp";
+
+export default function FirstScreen() {
+>>>>>>> main
   const pointer = (
     <svg
       width="8"
