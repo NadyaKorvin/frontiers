@@ -1,0 +1,114 @@
+.lastscreen {
+  width: 1920px;
+  height: 1080px;
+  background-color: aquamarine;
+}
+
+.lastscreen__wrapper {
+  margin: 0 auto;
+  width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  background-color: azure;
+}
+
+.lastscreen__left_content {
+  margin-top: 109px;
+  width: 775px;
+  height: 553px;
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 79px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.lastscreen__right_content {
+  margin-top: 109px;
+  width: 529px;
+  height: 553px;
+}
+
+.lastscreen__text_form {
+  width: 529px;
+  height: 46px;
+  left: 1231px;
+  top: 4438px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.lastscreen__footer {
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 1600px;
+  border-top: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastscreen__footer_wrapper_info {
+  display: flex;
+  
+}
+
+.lastscreen__contact {
+  width: 357px;
+}
+
+.lastscreen__contact > p:nth-child(1) {
+  padding: 33px 0 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contact > p:nth-child(2),
+.contact > p:nth-child(3),
+.contact > p:nth-child(4) {
+  padding-bottom: 15px;
+}
+
+.design {
+  padding-top: 150px;
+  width: 260px;
+  display: flex;
+  margin-left: -80px;
+  justify-content: space-between;
+}
+
+.frontiers {
+  width: 250px;
+  text-align: end;
+}
+
+.lastscreen__frontiers > p:nth-child(1) {
+    padding: 30px 0 57px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+.lastscreen__frontiers > p:nth-child(2),
+.lastscreen__frontiers > p:nth-child(3) {
+    padding-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}

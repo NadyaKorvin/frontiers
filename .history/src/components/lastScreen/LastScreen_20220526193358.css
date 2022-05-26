@@ -1,0 +1,95 @@
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.lastscreen {
+  width: 1920px;
+  height: 1080px;
+  background-color: aquamarine;
+}
+
+.lastscreen__wrapper {
+  margin: 0 auto;
+  width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  background-color: azure;
+}
+
+.lastscreen__left_content {
+  margin-top: 109px;
+  width: 775px;
+  height: 553px;
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 79px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.lastscreen__right_content {
+  margin-top: 109px;
+  width: 529px;
+  height: 553px;
+}
+
+.lastscreen__text_form {
+  width: 529px;
+  height: 46px;
+  left: 1231px;
+  top: 4438px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.lastscreen__footer {
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 1600px;
+  border-top: 1px solid #000000;
+  background-color: beige;
+}
+
+.lastscreen__footer_wrapper_info {
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastscreen__footer_text {
+  margin-bottom: 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.lastscreen__contact_group_contact,
+.lastscreen__contact_group_frontiers {
+  margin-bottom: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.lastscreen__contact_group_frontiers {
+  margin-bottom: 57px;
+  letter-spacing: 0.05em;
+}
+
+.lastscreen__frontiers_group {
+  text-align: end;
+}

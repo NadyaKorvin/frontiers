@@ -1,0 +1,9 @@
+@import url("./reset.css");
+@import url("./components/secondScreen/SecondScreen.css");
+@import url("./font/font.css");
+@import url("./components/firstScreen/FirstScreen.css");
+@import url("./components/lastScreen/LastScreen.module.css")
+
+body {
+  font-family: "Inter";
+}
