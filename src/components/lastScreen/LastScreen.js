@@ -3,7 +3,7 @@ import style from "./LastScreen.module.css";
 import Form from "../form/Form"
 import Kojo from "../../images/Kojo"
 
-export default function LastScreenAnimation() {
+export default function LastScreen() {
   return (
     <>
       <section className={style.last__screen}>
