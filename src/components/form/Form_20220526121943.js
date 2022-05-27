@@ -3,32 +3,32 @@ import { useForm } from "react-hook-form";
 import Button from "../button/Button";
 
 export default function Form() {
-  const [checked, setChecked] = useState(false)
-  const [isPersonal, setIsPersonal] = useState(false)
+  const [checked, setChecked] = useState(false);
+  const [isPersonal, setIsPersonal] = useState(false);
 
   const {
     register,
     formState: { errors, isValid },
     handleSubmit,
-    reset
+    reset,
   } = useForm({
-    mode: "onBlur"
-  })
+    mode: "onBlur",
+  });
 
   const onSubmit = (data) => {
-    alert(JSON.stringify(data))
-  }
+    alert(JSON.stringify(data));
+  };
 
   // функция для открытия модального окна соглашения о персональных данных
   const openPersonal = () => {
-    setIsPersonal(true)
-  }
+    setIsPersonal(true);
+  };
 
   return (
     <form
       name="form"
       id="form"
-      className="form"
+      className={style.form}
       onSubmit={handleSubmit(onSubmit)}
     >
       <input
@@ -37,67 +37,67 @@ export default function Form() {
           required: "Это поле обязательно",
           minLength: {
             value: 2,
-            message: "Минимум 2 символа"
+            message: "Минимум 2 символа",
           },
           maxLength: {
             value: 50,
-            message: "Максимум 50 символов"
-          }
+            message: "Максимум 50 символов",
+          },
         })}
         id="name"
-        className="form__input"
+        className={style.input}
         placeholder="Имя"
       />
       <div>
         {errors?.name && (
-          <p className="form__focus">{errors?.name?.message || "Error!"}</p>
+          <p className={style.focus}>{errors?.name?.message || "Error!"}</p>
         )}
       </div>
-      <div className="form__borders" />
+      <div className={style.borders} />
       <input
         name="phone"
         {...register("phone", {
           required: "Это поле обязательно",
           pattern: {
             value: /^\+?7(\d{10})$/,
-            message: "Введите в формате +7 000 000 00 00"
-          }
+            message: "Введите в формате +7 000 000 00 00",
+          },
         })}
         id="phone"
-        className="form__input"
+        className={style.input}
         type="tel"
         placeholder="Ваш Телефон  +7 000 000 00 00"
       />
       <div>
         {errors?.phone && (
-          <p className="form__focus">{errors?.phone?.message || "Error!"}</p>
+          <p className={style.focus}>{errors?.phone?.message || "Error!"}</p>
         )}
       </div>
-      <div className="form__borders" />
+      <div className={style.borders} />
       <textarea
         name="message"
         {...register("message", {
           required: "Это поле обязательно",
           minLength: {
             value: 10,
-            message: "Минимум 10 символов"
+            message: "Минимум 10 символов",
           },
           maxLength: {
             value: 500,
-            message: "Максимум 500 символов"
-          }
+            message: "Максимум 500 символов",
+          },
         })}
         id="message"
-        className="form__textarea"
+        className={style.textarea}
         placeholder="Сообщение"
       />
       <div>
         {errors?.message && (
-          <p className="form__focus">{errors?.message?.message || "Error!"}</p>
+          <p className={style.focus}>{errors?.message?.message || "Error!"}</p>
         )}
       </div>
-      <div className="form__borders" />
-      <label className="form__consent">
+      <div className={style.borders} />
+      <label className={style.consent}>
         <input
           name="consent"
           type="checkbox"
@@ -105,28 +105,28 @@ export default function Form() {
           onChange={() => setChecked(!checked)}
           value={checked}
           {...register("consent", {
-            required: "Подтвердите свое согласие для отправки формы"
+            required: "Подтвердите свое согласие для отправки формы",
           })}
           id="consent"
-          className="form__checkbox"
+          className={style.checkbox}
         />
         <span
-          className="form__checkfake"
+          className={style.checkfake}
           onClick={() => setChecked(!checked)}
         ></span>
-        <div className="form__policy_text">
+        <div className={style.policy_text}>
           <p>Я соглашаюсь на обработку&nbsp;</p>
           <span
             onClick={openPersonal}
             style={{
               textDecoration: "underline",
-              cursor: "pointer"
+              cursor: "pointer",
             }}
           >
             персональных данных
           </span>
         </div>
-        <div className="form__btn">
+        <div className={style.form__btn}>
             <Button
               title="Отправить"
               type="submit"
@@ -134,9 +134,9 @@ export default function Form() {
             />
           </div>
       </label>
-      <div className="form__focus_consent">
+      <div className={style.focus_consent}>
         {errors?.consent && <p>{errors?.consent?.message || "Error!"}</p>}
       </div>
     </form>
-  )
+  );
 }

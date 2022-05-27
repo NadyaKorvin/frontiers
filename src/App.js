@@ -5,8 +5,8 @@ import "./App.css"
 import { SecondScreenAnimation } from "./components/secondScreen/SecondScreenAnimation"
 import { SecondScreenBlock } from "./components/secondScreen/SecondScreenBlock"
 import { ThirdScreen } from "./components/therstScreen/ThirdScreenBlock"
-import FirstScreenAnimation from "./components/firstScreen/FirstScreenAnimation"
-import LastScreenAnimation from "./components/lastScreen/LastScreenAnimation"
+import FirstScreen from "./components/firstScreen/FirstScreen"
+import LastScreen from "./components/lastScreen/LastScreen"
 
 function App() {
   const [mousePosition, setMousePosition] = useState("")
@@ -62,7 +62,7 @@ function App() {
       data-page={activePage}
     >
       <div className="js-page">
-        <FirstScreenAnimation />
+        <FirstScreen />
       </div>
       <div className="second__screen  js-page">
         <SecondScreenAnimation listenMousePosition={listenUpperMousePosition} mousePosition={mousePosition} />
@@ -73,7 +73,7 @@ function App() {
       </div>
       <div className=" js-page"></div>
       <div className=" js-page">
-        <LastScreenAnimation />
+        <LastScreen />
       </div>
     </div>
   )
