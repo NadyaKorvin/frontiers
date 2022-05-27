@@ -7,7 +7,6 @@ export function SecondScreenAnimation({ listenMousePosition, mousePosition }) {
     }
   }
   goUpBlackLines(mousePosition)
-  console.log(goUp)
   return (
     <div className="animation__text_block">
       {goUp != "up" ? (

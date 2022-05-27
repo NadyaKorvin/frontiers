@@ -1,7 +1,0 @@
-@import url("./reset.css");
-@import url("./components/secondScreen/SecondScreen.css");
-@import url("./font/font.css");
-
-body {
-  font-family: "Inter";
-}
