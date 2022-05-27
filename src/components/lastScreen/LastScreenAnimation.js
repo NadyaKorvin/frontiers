@@ -1,5 +1,4 @@
-import React from "react";
-import style from "./LastScreen.module.css";
+import React from "react"
 import Form from "../form/Form"
 import Kojo from "../../images/Kojo"
 
@@ -9,10 +8,7 @@ export default function LastScreenAnimation() {
       <section className={style.last__screen}>
         <div className={style.wrapper}>
           <div className={style.left__content}>
-            <p>
-              ОТПРАВЬТЕ НАМ ЗАЯВКУ НА КОНСУЛЬТАЦИЮ И МЫ ПОДБЕРЕМ ДЛЯ ВАС
-              НАИБОЛЕЕ ПОДХОДЯЩУЮ СТРАТЕГИЮ
-            </p>
+            <p>ОТПРАВЬТЕ НАМ ЗАЯВКУ НА КОНСУЛЬТАЦИЮ И МЫ ПОДБЕРЕМ ДЛЯ ВАС НАИБОЛЕЕ ПОДХОДЯЩУЮ СТРАТЕГИЮ</p>
           </div>
           <div className={style.right__content}>
             <div className={style.text__form}>
@@ -26,7 +22,9 @@ export default function LastScreenAnimation() {
             <p>КОНТАКТЫ</p>
             <p>Санкт-Петербург, Невский пр-кт, 71 (5 этаж)</p>
             <p>+7 000 987 6543</p>
-            <p><a href="mailto:info@frontiers.ru" >info@frontiers.ru</a></p>
+            <p>
+              <a href="mailto:info@frontiers.ru">info@frontiers.ru</a>
+            </p>
           </div>
           <div className={style.design}>
             <p>Дизайн и разработка</p>
@@ -40,5 +38,5 @@ export default function LastScreenAnimation() {
         </footer>
       </section>
     </>
-  );
+  )
 }

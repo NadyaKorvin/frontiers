@@ -1,5 +1,4 @@
 import React from "react";
-import style from "./FirstScreen.module.css";
 import image from "../../images/image.webp";
 
 export default function FirstScreenAnimation() {
