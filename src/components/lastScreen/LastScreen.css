@@ -1,84 +1,68 @@
-a {
-  text-decoration: none;
-  color: #000000;
+.last__screen {
+  margin: 0 auto;
+  padding-top: 10.092vh;
+  height: 100vh;
+  width: 148.15vh;
 }
 
 .lastscreen__wrapper {
-  margin: 0 auto;
-  width: 1600px;
   display: flex;
   justify-content: space-between;
 }
 
 .lastscreen__left_content {
-  margin-top: 109px;
-  width: 775px;
-  height: 553px;
-  box-sizing: border-box;
-  font-family: "Inter";
-  font-style: normal;
+  width: 71.759vh;
   font-weight: 700;
-  font-size: 65px;
-  line-height: 79px;
+  font-size: 6.018vh;
+  line-height: 7.315vh;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .lastscreen__right_content {
-  margin-top: 109px;
-  width: 529px;
-  height: 553px;
+  width: 48.981vh;
+  height: 51.204vh;
 }
 
 .lastscreen__text_form {
-  width: 529px;
-  height: 46px;
-  left: 1231px;
-  top: 4438px;
-  font-family: "Inter";
-  font-style: normal;
+  width: 48.981vh;
+  height: 4.259vh;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.66vh;
   line-height: 130%;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .lastscreen__footer {
   margin: 0 auto;
-  margin-top: 200px;
-  width: 1600px;
+  margin-top: 18.518vh;
+
   border-top: 1px solid #000000;
 }
 
 .lastscreen__footer_wrapper_info {
-  margin-top: 33px;
+  margin-top: 3.055vh;
   display: flex;
   justify-content: space-between;
 }
 
 .lastscreen__footer_text {
-  margin-bottom: 15px;
-  font-family: "Inter";
-  font-style: normal;
+  margin-bottom: 1.39vh;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
+  font-size: 1.48vh;
+  line-height: 1.76vh;
 }
+
 .lastscreen__contact_group_contact,
 .lastscreen__contact_group_frontiers {
-  margin-bottom: 20px;
-  font-family: "Inter";
-  font-style: normal;
+  margin-bottom: 1.85vh;
+
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  color: #000000;
+  font-size: 2.31vh;
+  line-height: 2.77vh;
 }
 
 .lastscreen__contact_group_frontiers {
-  margin-bottom: 57px;
+  margin-bottom: 5.278vh;
   letter-spacing: 0.05em;
 }
 
@@ -88,10 +72,10 @@ a {
 
 .lastscreen__design_dev {
   position: relative;
-  top: -38px;
+  top: -4vh;
   margin: 0 auto;
-  width: 260px;
-  height: 19px;
+  width: 26vh;
+  height: 1.76vh;
   display: flex;
   justify-content: space-between;
 }

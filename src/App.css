@@ -1,24 +1,22 @@
 @import url("./reset.css");
+@import url("./font/font.css");
+@import url("./components/firstScreen/FirstScreen.css");
+@import url("./components/button/Button.css");
 @import url("./components/secondScreen/SecondScreen.css");
-@import url("./font/font.css");
-@import url("./components/firstScreen/FirstScreen.css");
+@import url("./components/numbers/Numbers.css");
+@import url("./components/aboutAs/AboutAs.css");
 @import url("./components/lastScreen/LastScreen.css");
-@import url("./components/button/Button.css");
-@import url("./components/form/Form.css");
-@import url("./components/therstScreen/ThirdScreen.css");
-@import url("./font/font.css");
-@import url("./components/firstScreen/FirstScreen.css");
-@import url("./components/lastScreen/LastScreen.css");
-@import url("./components/button/Button.css");
 @import url("./components/form/Form.css");
 
 body {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
+  color: #000000;
 }
 
 html,
 body {
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -32,23 +30,42 @@ body,
   will-change: transform;
   transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+.js-page {
+  height: 100vh;
+}
+
 .div1,
 .div2,
 .div3,
-.div4 {
-  width: 100%;
+.div4,
+.div5 {
   height: 100vh;
   opacity: 0;
   will-change: transform, opacity;
 
   transition: transform 0.9s ease-in-out, opacity 0.7s ease-in-out;
-  transform: scale(1, 0.75);
+  transform: scale(1.2, 1.2);
 }
 
 [data-page="1"] .div1,
 [data-page="2"] .div2,
 [data-page="3"] .div3,
-[data-page="4"] .div4 {
+[data-page="4"] .div4,
+[data-page="5"] .div5 {
   opacity: 1;
   transform: scale(1, 1);
+}
+
+::placeholder {
+  color: #bebebe;
+  font-size: 1.66vh;
+  font-weight: 400;
+  line-height: 2.129vh;
+  padding-left: 3vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
