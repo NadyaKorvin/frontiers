@@ -1,0 +1,51 @@
+.square1,
+.square2,
+.square3,
+.square4,
+.square5 {
+  z-index: 99;
+  left: 4%;
+  position: fixed;
+  width: 0.74vh;
+  height: 0.74vh;
+  border: 0.09vh solid #000;
+  overflow-x: hidden;
+  transition: 0.6s ease-out;
+}
+
+.square1 {
+  top: 37.5vh;
+}
+.square2 {
+  top: 41.2vh;
+}
+.square3 {
+  top: 44.9vh;
+}
+.square4 {
+  top: 48.6vh;
+}
+.square5 {
+  top: 52.3vh;
+}
+
+.activ_page_square {
+  /* height: 0.74vh; */
+  background: #000;
+  /* animation: activ_page_square 1s ease-out; */
+  /* height: 5.18vh; */
+  transform: rotate(360deg);
+}
+
+/* @keyframes activ_page_square {
+  0% {
+    transform: translateY(-3.7vh);
+    height: 0.74vh;
+  }
+  50% {
+    height: 3.7vh;
+  }
+  100% {
+    height: 0.74vh;
+  }
+} */

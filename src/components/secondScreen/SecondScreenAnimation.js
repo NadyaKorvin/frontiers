@@ -9,7 +9,7 @@ export function SecondScreenAnimation({ listenMousePosition, mousePosition }) {
   goUpBlackLines(mousePosition)
   return (
     <div className="animation__text_block">
-      {goUp != "up" ? (
+      {goUp !== "up" ? (
         <div>
           <div className="animation__text" onMouseOver={listenMousePosition}>
             <p className="animation__text_first_part">Инвесторам сложно найти хорошие проекты,</p>

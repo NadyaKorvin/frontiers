@@ -40,9 +40,13 @@
   line-height: 1.76vh;
 }
 
-.firstscreen__nav_team > a {
+.nav_links {
   display: block;
   cursor: pointer;
+}
+
+.nav_links:hover {
+  color: #ffc906;
 }
 
 .firstscreen__button {

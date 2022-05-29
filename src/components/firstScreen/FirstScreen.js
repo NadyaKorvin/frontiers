@@ -1,8 +1,6 @@
 import React from "react"
 
-import image from "./image.webp"
-
-export default function firstScreen() {
+export default function firstScreen({ goToLink }) {
   return (
     <>
       <section className="firstscreen">
@@ -11,12 +9,20 @@ export default function firstScreen() {
           <div className="firstscreen__menu">
             <div className="firstscreen__nav">
               <nav className="firstscreen__nav_team">
-                <a>О нас</a>
-                <a>Команда</a>
-                <a>Цифры</a>
+                <a className="nav_links" onClick={() => goToLink(2)}>
+                  О нас
+                </a>
+                <a className="nav_links" onClick={() => goToLink(4)}>
+                  Команда
+                </a>
+                <a className="nav_links" onClick={() => goToLink(3)}>
+                  Цифры
+                </a>
               </nav>
             </div>
-            <button className="firstscreen__button">Получить консультацию</button>
+            <button className="firstscreen__button" onClick={() => goToLink(5)}>
+              Получить консультацию
+            </button>
           </div>
         </header>
         <div className="firstscreen__content">

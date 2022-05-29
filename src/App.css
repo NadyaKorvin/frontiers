@@ -7,6 +7,7 @@
 @import url("./components/aboutAs/AboutAs.css");
 @import url("./components/lastScreen/LastScreen.css");
 @import url("./components/form/Form.css");
+@import url("./components/scrollBar/ScrollBar.css");
 
 body {
   font-family: "Inter", sans-serif;
@@ -24,6 +25,7 @@ body,
 .container,
 #root {
   height: 100%;
+  width: 100%;
 }
 
 .container {

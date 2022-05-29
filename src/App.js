@@ -7,6 +7,7 @@ import { SecondScreenAnimation } from "./components/secondScreen/SecondScreenAni
 import { Nambers } from "./components/numbers/Numbers"
 import { AboutAs } from "./components/aboutAs/AboutAs"
 import LastScreen from "./components/lastScreen/LastScreen"
+import { ScrollBar } from "./components/scrollBar/ScrollBar"
 
 function App() {
   const [mousePosition, setMousePosition] = useState("")
@@ -27,7 +28,6 @@ function App() {
     function onWheel(event) {
       let page = activePage
       const direction = getDirection(event.deltaY)
-      console.log("direction", direction)
 
       if (!direction || animatingPage) return
       if (direction === "up" && page === 1) return
@@ -35,7 +35,6 @@ function App() {
 
       if (direction === "up") page--
       if (direction === "down") page++
-      console.log("page", page)
       setActivePage(page)
       setAnimatingPage(true)
     }
@@ -49,35 +48,41 @@ function App() {
 
   const afterTransition = (event) => {
     setTimeout(() => {
-      console.info(`🔥 animating`, false)
       setAnimatingPage(false)
-    }, 500)
+    }, 1000)
+  }
+
+  const goToLink = (goToPage) => {
+    setActivePage(goToPage)
   }
 
   return (
-    <div
-      className=" container js-container"
-      onTransitionEnd={afterTransition}
-      style={{ transform: `translateY(${(activePage - 1) * -100}%)` }}
-      data-page={activePage}
-    >
-      <div className="js-page div1">
-        <FirstScreen />
+    <>
+      <ScrollBar activePage={activePage} />
+      <div
+        className="container js-container"
+        onTransitionEnd={afterTransition}
+        style={{ transform: `translateY(${(activePage - 1) * -100}%)` }}
+        data-page={activePage}
+      >
+        <div className="js-page div1">
+          <FirstScreen goToLink={goToLink} />
+        </div>
+        <div className="second__screen  div2 js-page">
+          <SecondScreenAnimation listenMousePosition={listenUpperMousePosition} mousePosition={mousePosition} />
+          <SecondScreenBlock />
+        </div>
+        <div className="numbers js-page div3">
+          <Nambers />
+        </div>
+        <div className="about_us__screen div4 js-page">
+          <AboutAs removePerson={removePerson} refreshData={refreshData} />
+        </div>
+        <div className="last__screen js-page div5">
+          <LastScreen />
+        </div>
       </div>
-      <div className="second__screen  div2 js-page">
-        <SecondScreenAnimation listenMousePosition={listenUpperMousePosition} mousePosition={mousePosition} />
-        <SecondScreenBlock />
-      </div>
-      <div className="numbers js-page div3">
-        <Nambers />
-      </div>
-      <div className="about_us__screen div4 js-page">
-        <AboutAs removePerson={removePerson} refreshData={refreshData} />
-      </div>
-      <div className="last__screen js-page div5">
-        <LastScreen />
-      </div>
-    </div>
+    </>
   )
 }
 export default App

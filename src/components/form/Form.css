@@ -38,13 +38,11 @@
   display: flex;
   margin: 2.77vh 0 0;
   justify-content: space-between;
-  align-items: baseline;
 }
 
 .form__policy {
   display: flex;
-  gap: 1.57vh;
-  align-items: center;
+  margin: -1vh;
 }
 
 .form__checkbox {
@@ -53,6 +51,7 @@
 }
 
 .form__policy_text {
+  margin-left: 1.39vh;
   display: inline-block;
   font-weight: 400;
   font-size: 1.203vh;
@@ -68,6 +67,7 @@
 }
 
 .form__checkfake::before {
+  position: absolute;
   content: "";
   display: block;
   width: 1.269vh;
@@ -93,6 +93,13 @@
   text-transform: uppercase;
   color: #ff0000;
   font-size: 1.204vh;
+}
+
+.form__consent {
+  margin: 2.77vh 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form__btn {
