@@ -1,51 +1,50 @@
 .form {
-  margin-top: 60px;
-  width: 529px;
-  height: 355px;
-  border-top: 1px solid #d1d1d1;
+  margin-top: 5.55vh;
+  width: 48.981vh;
+  height: 32.87vh;
+  border-top: 0.09vh solid #d1d1d1;
+}
+
+.form__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form_labels {
+  display: inline-block;
+  font-size: 1.66vh;
+  font-weight: 400;
+  line-height: 130%;
+  text-transform: uppercase;
 }
 
 .form__input,
 .form__textarea {
-  width: 529px;
-  height: 80px;
-  border: 0;
+  display: inline-block;
+  width: 35vh;
+  height: 7.407vh;
+  border: none;
   outline: none;
-  font-size: 18px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.form__textarea {
-  height: 80px;
-  line-height: 80px;
-  overflow: hidden;
-  /* resize: none; */
 }
 
 .form__borders {
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 0.09vh solid #d1d1d1;
 }
 
-.form__consent {
+.agree_and_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 30px 0 0;
+  margin: 2.77vh 0 0;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.form__policy_text {
-  margin-top: 15px;
-  margin-left: 15px;
-  width: 250px;
-  height: 40px;
-  box-sizing: border-box;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 150%;
-  color: #787878;
+.form__policy {
+  display: flex;
+  gap: 1.57vh;
+  align-items: center;
 }
 
 .form__checkbox {
@@ -53,21 +52,26 @@
   width: 0;
 }
 
+.form__policy_text {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.203vh;
+  color: #787878;
+}
+
 .form__checkfake {
-  margin: 15px 0;
-  display: block;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #1f1f1f;
+  align-self: flex-start;
+  width: 1.389vh;
+  height: 1.389vh;
+  border: 0.09vh solid #1f1f1f;
   cursor: pointer;
 }
 
 .form__checkfake::before {
   content: "";
-  position: absolute;
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 1.269vh;
+  height: 1.269vh;
   background: url("./checkmark.svg");
   opacity: 0;
 }
@@ -79,20 +83,20 @@
 .form__focus {
   text-transform: uppercase;
   color: #ff0000;
-  margin-bottom: 10px;
-  font-size: 13px;
+  margin-bottom: 0.926vh;
+  font-size: 1.204vh;
 }
 
 .form__focus_consent {
   position: relative;
-  top: 10px;
+  top: 0.926vh;
   text-transform: uppercase;
   color: #ff0000;
-  font-size: 13px;
+  font-size: 1.204vh;
 }
 
 .form__btn {
-    margin-top: 14px;
+  margin-top: 1.296vh;
   position: relative;
   overflow: hidden;
 }

@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react"
-
-import { dataPersones } from "./components/therstScreen/dataPersones"
+import { dataPersones } from "./components/aboutAs/dataPersones"
 import "./App.css"
-import { SecondScreenAnimation } from "./components/secondScreen/SecondScreenAnimation"
-import { SecondScreenBlock } from "./components/secondScreen/SecondScreenBlock"
-import { ThirdScreen } from "./components/therstScreen/ThirdScreenBlock"
 import FirstScreen from "./components/firstScreen/FirstScreen"
+import { SecondScreenBlock } from "./components/secondScreen/SecondScreenBlock"
+import { SecondScreenAnimation } from "./components/secondScreen/SecondScreenAnimation"
+import { Nambers } from "./components/numbers/Numbers"
+import { AboutAs } from "./components/aboutAs/AboutAs"
 import LastScreen from "./components/lastScreen/LastScreen"
 
 function App() {
@@ -61,18 +61,20 @@ function App() {
       style={{ transform: `translateY(${(activePage - 1) * -100}%)` }}
       data-page={activePage}
     >
-      <div className="js-page">
+      <div className="js-page div1">
         <FirstScreen />
       </div>
-      <div className="second__screen  js-page">
+      <div className="second__screen  div2 js-page">
         <SecondScreenAnimation listenMousePosition={listenUpperMousePosition} mousePosition={mousePosition} />
         <SecondScreenBlock />
       </div>
-      <div className="third__screen  js-page">
-        <ThirdScreen removePerson={removePerson} refreshData={refreshData} />
+      <div className="numbers js-page div3">
+        <Nambers />
       </div>
-      <div className=" js-page"></div>
-      <div className=" js-page">
+      <div className="about_us__screen div4 js-page">
+        <AboutAs removePerson={removePerson} refreshData={refreshData} />
+      </div>
+      <div className="last__screen js-page div5">
         <LastScreen />
       </div>
     </div>

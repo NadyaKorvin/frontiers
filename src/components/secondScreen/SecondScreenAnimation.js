@@ -32,9 +32,9 @@ export function SecondScreenAnimation({ listenMousePosition, mousePosition }) {
             </p>
           </div>
           <div className="animation__black_lines">
-            <div className="animation__1th_black_line" style={{ width: "484px", marginTop: "-475px" }}></div>
-            <div className="animation__2th_black_line" style={{ width: "586px" }}></div>
-            <div className="animation__3th_black_line" style={{ width: "722px" }}></div>
+            <div className="animation__1th_black_line" style={{ width: "44.815vh", marginTop: "-43.98vh" }}></div>
+            <div className="animation__2th_black_line" style={{ width: "54.259vh" }}></div>
+            <div className="animation__3th_black_line" style={{ width: "66.85vh" }}></div>
           </div>
         </div>
       )}

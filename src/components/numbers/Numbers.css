@@ -1,0 +1,76 @@
+.numbers {
+  height: 100vh;
+}
+
+.numbers__content_block {
+  margin: 0 auto;
+  width: 148.15vh;
+  height: 62.59vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.numbers__description {
+  padding-top: 19vh;
+  position: relative;
+  font-size: 3.7vh;
+  font-weight: 700;
+  line-height: 4.44vh;
+  text-transform: uppercase;
+  width: 101.2vh;
+}
+
+.numbers__yellow_line {
+  margin-top: 19vh;
+  margin-left: 32vh;
+  position: absolute;
+  background: no-repeat url("./numbers_yelliw_line.svg");
+  background-size: contain;
+  width: 72.13vh;
+  height: 4.16vh;
+  z-index: -99;
+}
+
+.numbers__year {
+  margin-top: 5.55vh;
+  font-size: 1.296vh;
+  font-weight: 400;
+  line-height: 1.57vh;
+  align-self: flex-end;
+}
+
+.numbers__flex_box {
+  margin-top: 0.926vh;
+  width: 110.37vh;
+  border-top: 0.1vh solid #000;
+  align-self: flex-end;
+}
+
+.numbers__flex_box_first_line,
+.numbers__flex_box_second_line {
+  display: flex;
+  justify-content: space-between;
+}
+
+..numbers__flex_box_second_line {
+  margin-top: 3.7vh;
+}
+
+.numbers__flex_box_parts {
+  margin-top: 3.7vh;
+  width: 33.05vh;
+}
+
+.numbers__big_numbers {
+  font-size: 7.4vh;
+  font-weight: 700;
+  line-height: 8.98vh;
+}
+
+.numbers__small_description {
+  margin-top: 0.462vh;
+  font-size: 1.85vh;
+  font-weight: 500;
+  line-height: 2.407px;
+  text-transform: uppercase;
+}
