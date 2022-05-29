@@ -28,6 +28,10 @@
   outline: none;
 }
 
+textarea {
+  resize: none;
+}
+
 .form__borders {
   border-bottom: 0.09vh solid #d1d1d1;
 }

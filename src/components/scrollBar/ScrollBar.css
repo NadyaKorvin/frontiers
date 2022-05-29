@@ -1,3 +1,10 @@
+.scroll__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15.74vh;
+}
+
 .square1,
 .square2,
 .square3,

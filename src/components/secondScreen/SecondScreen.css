@@ -77,7 +77,7 @@
 
 .text_paragraph {
   margin-left: 8.33vh;
-  position: relative;
+
   width: 36.01vh;
   font-size: 1.66vh;
   font-weight: 400;
@@ -88,8 +88,7 @@
 
 .second_screen__yellow_mark {
   margin-top: -17vh;
-  margin-left: -1vh;
-  position: absolute;
+  margin-left: 6vh;
   width: 34.91vh;
   height: 1.66vh;
   background: no-repeat url(./second_screen__yellow_mark.svg);

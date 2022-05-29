@@ -29,20 +29,16 @@ export default function firstScreen({ goToLink }) {
           <div className="firstscreen__content_left_text">
             <p>ИНВЕСТИЦИИ</p>
             <div>
-              <p className="firstscreen__content_left_text_hard">
-                СЛОЖНО
-                <div className="firstscreen__content_vector_complex" />
-              </p>
+              <p className="firstscreen__content_left_text_hard">СЛОЖНО</p>
+              <div className="firstscreen__content_vector_complex"></div>
             </div>
           </div>
           <div className="firstscreen__content_rihgt_text">
             <div className="firstscreen__content_rihgt_text_up">
               <p>Мы помогли заработать более 50 млн рублей частным инвесторам в 2021 году на вложениях в российский бизнес</p>
             </div>
-            <p className="firstscreen__content_rihgt_text_down">
-              НЕ
-              <div className="firstscreen__content_vector_not" />
-            </p>
+            <p className="firstscreen__content_rihgt_text_down">НЕ</p>
+            <div className="firstscreen__content_vector_not" />
           </div>
         </div>
         <div className="firstscreen__content_bottom_content">

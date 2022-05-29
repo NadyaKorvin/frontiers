@@ -9,8 +9,8 @@ export function SecondScreenBlock() {
         Оценили десятки тысяч компаний.
         <br /> <br />
         Поэтому мы знаем, как выглядят надёжные бизнесы и успешные предприниматели.
-        <div className="second_screen__yellow_mark"></div>
       </p>
+      <div className="second_screen__yellow_mark"></div>
     </div>
   )
 }
