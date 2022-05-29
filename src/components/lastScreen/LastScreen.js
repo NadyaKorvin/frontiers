@@ -1,6 +1,6 @@
-import React from "react";
-import Form from "../form/Form";
-import LogoKojo from "./LogoKojo";
+import React from "react"
+import Form from "../form/Form"
+import LogoKojo from "./LogoKojo"
 
 export default function LastScreen() {
   return (
@@ -8,10 +8,7 @@ export default function LastScreen() {
       <section className="lastscreen">
         <div className="lastscreen__wrapper">
           <div className="lastscreen__left_content">
-            <p>
-              ОТПРАВЬТЕ НАМ ЗАЯВКУ НА КОНСУЛЬТАЦИЮ И МЫ ПОДБЕРЕМ ДЛЯ ВАС
-              НАИБОЛЕЕ ПОДХОДЯЩУЮ СТРАТЕГИЮ
-            </p>
+            <p>ОТПРАВЬТЕ НАМ ЗАЯВКУ НА КОНСУЛЬТАЦИЮ И МЫ ПОДБЕРЕМ ДЛЯ ВАС НАИБОЛЕЕ ПОДХОДЯЩУЮ СТРАТЕГИЮ</p>
           </div>
           <div className="lastscreen__right_content">
             <div className="lastscreen__text_form">
@@ -25,9 +22,9 @@ export default function LastScreen() {
             <div className="lastscreen__contact_group">
               <p className="lastscreen__contact_group_contact">КОНТАКТЫ</p>
               <p className="lastscreen__footer_text">Санкт-Петербург, Невский пр-кт, 71 (5 этаж)</p>
-              <p className="lastscreen__footer_text">+7 000 987 6543</p>
+              <p className="lastscreen__footer_text">+7 967 344 9754</p>
               <p className="lastscreen__footer_text">
-                <a href="mailto:info@frontiers.ru">info@frontiers.ru</a>
+                <a href="mailto:info@frontiers.ru">nk@frontiers.ru</a>
               </p>
             </div>
             <div className="lastscreen__frontiers_group">
@@ -43,5 +40,5 @@ export default function LastScreen() {
         </footer>
       </section>
     </>
-  );
+  )
 }
