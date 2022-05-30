@@ -1,17 +1,13 @@
-.numbers {
-  height: 100vh;
-}
-
 .numbers__content_block {
   margin: 0 auto;
+  padding-top: 16.11vh;
+  height: 60.185vh;
   width: 148.15vh;
-  height: 62.59vh;
   display: flex;
   flex-direction: column;
 }
 
 .numbers__description {
-  padding-top: 19vh;
   position: relative;
   font-size: 3.7vh;
   font-weight: 700;
@@ -21,7 +17,6 @@
 }
 
 .numbers__yellow_line {
-  margin-top: 19vh;
   margin-left: 32vh;
   position: absolute;
   background: no-repeat url("./numbers_yelliw_line.svg");
@@ -43,34 +38,23 @@
   margin-top: 0.926vh;
   width: 110.37vh;
   border-top: 0.1vh solid #000;
-  align-self: flex-end;
-}
-
-.numbers__flex_box_first_line,
-.numbers__flex_box_second_line {
   display: flex;
+  flex-direction: row;
+  align-self: flex-end;
   justify-content: space-between;
 }
 
-..numbers__flex_box_second_line {
-  margin-top: 3.7vh;
-}
-
-.numbers__flex_box_parts {
-  margin-top: 3.7vh;
-  width: 33.05vh;
-}
-
 .numbers__big_numbers {
-  font-size: 7.4vh;
+  margin-top: 3.7vh;
+  font-size: 6.018vh;
   font-weight: 700;
   line-height: 8.98vh;
 }
 
 .numbers__small_description {
-  margin-top: 0.462vh;
-  font-size: 1.85vh;
+  margin-top: 0.925vh;
+  font-size: 1.48vh;
   font-weight: 500;
-  line-height: 2.407px;
+  line-height: 130%;
   text-transform: uppercase;
 }

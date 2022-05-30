@@ -1,30 +1,9 @@
 import React from "react"
 
-export default function firstScreen({ goToLink }) {
+export default function firstScreen() {
   return (
     <>
       <section className="firstscreen">
-        <header className="firstscreen__header">
-          <div className="firstscreen__logotype">FRONTIERS</div>
-          <div className="firstscreen__menu">
-            <div className="firstscreen__nav">
-              <nav className="firstscreen__nav_team">
-                <a className="nav_links" onClick={() => goToLink(2)}>
-                  О нас
-                </a>
-                <a className="nav_links" onClick={() => goToLink(4)}>
-                  Команда
-                </a>
-                <a className="nav_links" onClick={() => goToLink(3)}>
-                  Цифры
-                </a>
-              </nav>
-            </div>
-            <button className="firstscreen__button" onClick={() => goToLink(5)}>
-              Получить консультацию
-            </button>
-          </div>
-        </header>
         <div className="firstscreen__content">
           <div className="firstscreen__content_left_text">
             <p>ИНВЕСТИЦИИ</p>

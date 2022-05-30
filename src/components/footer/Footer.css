@@ -1,0 +1,54 @@
+.lastscreen__footer {
+  margin: 0 auto;
+  margin-top: 10.55vh;
+  width: 148.15vh;
+  border-top: 0.09vh solid #000000;
+}
+
+.lastscreen__footer_wrapper_info {
+  margin-top: 3.055vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastscreen__footer_text {
+  margin-bottom: 1.39vh;
+  font-weight: 500;
+  font-size: 1.48vh;
+  line-height: 1.76vh;
+}
+
+.lastscreen__contact_group_contact,
+.lastscreen__contact_group_frontiers {
+  margin-bottom: 1.85vh;
+  font-weight: 700;
+  font-size: 2.31vh;
+  line-height: 2.77vh;
+}
+
+.lastscreen__contact_group_frontiers {
+  margin-bottom: 5.278vh;
+  letter-spacing: 0.05em;
+}
+
+.lastscreen__frontiers_group {
+  text-align: end;
+}
+
+.lastscreen__design_dev {
+  position: relative;
+  top: -4vh;
+  margin: 0 auto;
+  width: 24.074vh;
+  height: 1.76vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.kojo__logo {
+  background: no-repeat url("./kojo_logo.svg");
+  background-size: cover;
+  width: 7.777vh;
+  height: 1.296vh;
+}

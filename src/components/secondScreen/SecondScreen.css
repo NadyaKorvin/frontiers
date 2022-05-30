@@ -1,13 +1,13 @@
-.second__screen {
+.second__screen_main {
+  margin: 0 auto;
+  padding-top: 15.74vh;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  height: 100vh;
+  height: 60.833vh;
   width: 148.15vh;
 }
 
 .animation__text_block {
-  padding-top: 18.518vh;
   display: block;
 }
 
@@ -53,8 +53,6 @@
 }
 
 .right__part {
-  padding-top: 18.518vh;
-
   display: flex;
   margin-left: 17.6px;
   flex-direction: column;
@@ -65,31 +63,42 @@
   display: block;
   width: 37.037vh;
   height: 37.037vh;
-  background: url("../secondScreen/people.png");
+  background: no-repeat url("../secondScreen/people.png");
+  background-size: cover;
 }
 
 .decoration_marks {
-  margin-top: -10.18vh;
+  margin-top: -12vh;
   transform: rotate(-180deg);
   font-size: 18.52vh;
   font-weight: 300;
 }
 
-.text_paragraph {
-  margin-left: 8.33vh;
-
-  width: 36.01vh;
-  font-size: 1.66vh;
-  font-weight: 400;
-  line-height: 2.12vh;
+.text_paragraph_1,
+.text_paragraph_2,
+.text_paragraph_3 {
+  margin-left: 9.722vh;
+  width: 35vh;
+  font-size: 1.48vh;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 130%;
 }
 
+.text_paragraph_1 {
+  position: relative;
+}
+
+.text_paragraph_2,
+.text_paragraph_3 {
+  margin-top: 1.38vh;
+}
+
 .second_screen__yellow_mark {
-  margin-top: -17vh;
-  margin-left: 6vh;
-  width: 34.91vh;
+  margin-top: -3.8vh;
+  position: absolute;
+  margin-left: 8vh;
+  width: 31.48vh;
   height: 1.66vh;
   background: no-repeat url(./second_screen__yellow_mark.svg);
   background-size: contain;

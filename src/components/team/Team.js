@@ -1,4 +1,4 @@
-export function AboutAs({ removePerson, refreshData }) {
+export function Team({ removePerson, refreshData }) {
   return (
     <div className="about_us__block">
       <p className="about_us__block_title">ЭКСПЕРТЫ СВОЕГО ДЕЛА</p>
