@@ -8,6 +8,7 @@
 @import url("./components/lastScreen/LastScreen.css");
 @import url("./components/form/Form.css");
 @import url("./components/scrollBar/ScrollBar.css");
+@import url("./components/form/PersonalData.css");
 
 body {
   font-family: "Inter", sans-serif;

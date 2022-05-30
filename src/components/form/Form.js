@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Button from "../button/Button";
+import Personal from "./PersonalData";
+import ModalSuccess from "./ModalSuccess";
 
 export default function Form() {
-  const [checked, setChecked] = useState(false);
   const [isPersonal, setIsPersonal] = useState(false);
+  const [isActiveModalSuccess, setActiveModalSuccess] = useState(false);
 
   const {
     register,
@@ -12,21 +14,23 @@ export default function Form() {
     handleSubmit,
     reset,
   } = useForm({
-    mode: "onBlur",
   });
 
   const onSubmit = (data) => {
-    alert(JSON.stringify(data));
-    setChecked(false);
+    setActiveModalSuccess(true)
+    console.log(JSON.stringify(data));
     reset();
   };
 
-  // функция для открытия модального окна соглашения о персональных данных
   const openPersonal = () => {
     setIsPersonal(true);
   };
+  const closePersonal = () => {
+    setIsPersonal(false);
+  };
 
   return (
+    <>
     <form
       name="form"
       id="form"
@@ -70,7 +74,7 @@ export default function Form() {
           {...register("phone", {
             required: "Это поле обязательно",
             pattern: {
-              value: /^\+?7(\d{10})$/,
+              value: /^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/,
               message: "Введите в формате +7 000 000 00 00",
             },
           })}
@@ -92,17 +96,6 @@ export default function Form() {
         </label>
         <textarea
           name="message"
-          {...register("message", {
-            required: "Это поле обязательно",
-            minLength: {
-              value: 10,
-              message: "Минимум 10 символов",
-            },
-            maxLength: {
-              value: 500,
-              message: "Максимум 500 символов",
-            },
-          })}
           id="message"
           className="form__textarea"
         />
@@ -119,20 +112,16 @@ export default function Form() {
             <input
               name="consent"
               type="checkbox"
-              checked={checked}
-              onChange={() => setChecked(!checked)}
-              value={checked}
               {...register("consent", {
                 required: "Подтвердите свое согласие для отправки формы",
               })}
               id="consent"
               className="form__checkbox"
             />
-            {/* </label> */}
             <span
               className="form__checkfake"
-              onClick={() => setChecked(!checked)}
             ></span>
+          </label>
             <p className="form__policy_text">
               Я соглашаюсь на обработку&nbsp;<br></br>
               <span
@@ -146,7 +135,6 @@ export default function Form() {
                 персональных данных
               </span>
             </p>
-          </label>
         </div>
         <div className="form__btn">
           <Button title="Отправить" type="submit" disabled={!isValid} />
@@ -157,5 +145,8 @@ export default function Form() {
         {errors?.consent && <p>{errors?.consent?.message || "Error!"}</p>}
       </div>
     </form>
+    {isActiveModalSuccess && <ModalSuccess setActiveModalSuccess={setActiveModalSuccess} />}
+    {isPersonal && <Personal closePersonal={closePersonal} />}
+    </>
   );
 }

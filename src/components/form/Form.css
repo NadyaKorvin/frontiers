@@ -45,8 +45,8 @@ textarea {
 }
 
 .form__policy {
+  margin: 1.8vh 0 0;
   display: flex;
-  margin: -1vh;
 }
 
 .form__checkbox {
@@ -100,7 +100,6 @@ textarea {
 }
 
 .form__consent {
-  margin: 2.77vh 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
