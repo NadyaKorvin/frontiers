@@ -1,14 +1,17 @@
 @import url("./reset.css");
 @import url("./font/font.css");
+@import url("./components/header/Header.css");
+@import url("./components/scrollBar/ScrollBar.css");
 @import url("./components/firstScreen/FirstScreen.css");
 @import url("./components/button/Button.css");
 @import url("./components/secondScreen/SecondScreen.css");
 @import url("./components/numbers/Numbers.css");
-@import url("./components/aboutAs/AboutAs.css");
+@import url("./components/team/Team.css");
 @import url("./components/lastScreen/LastScreen.css");
 @import url("./components/form/Form.css");
 @import url("./components/scrollBar/ScrollBar.css");
 @import url("./components/form/PersonalData.css");
+@import url("./components/footer/Footer.css");
 
 body {
   font-family: "Inter", sans-serif;
@@ -35,7 +38,7 @@ body,
 }
 
 .js-page {
-  height: 100vh;
+  height: 100%;
 }
 
 .div1,
@@ -43,7 +46,7 @@ body,
 .div3,
 .div4,
 .div5 {
-  height: 100vh;
+  height: 100%;
   opacity: 0;
   will-change: transform, opacity;
 

@@ -30,6 +30,12 @@
 
 textarea {
   resize: none;
+  padding-top: 1vh;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  font-size: 1.66vh;
+  font-weight: 400;
+  line-height: 130%;
 }
 
 .form__borders {
@@ -58,7 +64,7 @@ textarea {
   margin-left: 1.39vh;
   display: inline-block;
   font-weight: 400;
-  font-size: 1.203vh;
+  font-size: 1.48vh;
   color: #787878;
 }
 

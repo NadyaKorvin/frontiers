@@ -1,0 +1,82 @@
+.firstscreen__header {
+  position: relative;
+  z-index: 99;
+  background: linear-gradient(#ffffff, #ffffff73);
+}
+
+.header_block {
+  width: 148.15vh;
+  height: 7.6vh;
+  margin: 0 auto;
+  border-bottom: 0.09vh solid #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstscreen__logotype {
+  width: 13.98vh;
+  height: 2.77vh;
+  font-weight: 700;
+  font-size: 2.31vh;
+  line-height: 2.77vh;
+  letter-spacing: 0.05em;
+}
+
+.firstscreen__logotype:hover {
+  animation: firstscreen__logotype 1s ease-in-out;
+}
+
+@keyframes firstscreen__logotype {
+  0% {
+    transform: translateX(0vh);
+  }
+  50% {
+    transform: translateX(4vh);
+  }
+  100% {
+    transform: translateX(0vh);
+  }
+}
+
+.firstscreen__menu {
+  width: 60.46vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstscreen__nav {
+  width: 30.64vh;
+}
+
+.firstscreen__nav_team {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 1.48vh;
+  line-height: 1.76vh;
+}
+
+.nav_links {
+  display: block;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.nav_links:hover {
+  color: #ffc906;
+}
+
+.firstscreen__button {
+  width: 22.5vh;
+  height: 4.166vh;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.48vh;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+  background-color: #000000;
+}

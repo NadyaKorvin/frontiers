@@ -1,70 +1,10 @@
 .firstscreen {
-  height: 100vh;
-}
-
-.firstscreen__header {
-  width: 148.15vh;
-  height: 7.6vh;
-  margin: 0 auto;
-  border-bottom: 1px solid #000000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.firstscreen__logotype {
-  width: 13.98vh;
-  height: 2.77vh;
-  font-weight: 700;
-  font-size: 2.31vh;
-  line-height: 2.77vh;
-  letter-spacing: 0.05em;
-}
-
-.firstscreen__menu {
-  width: 60.46vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.firstscreen__nav {
-  width: 30.64vh;
-}
-
-.firstscreen__nav_team {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 500;
-  font-size: 1.48vh;
-  line-height: 1.76vh;
-}
-
-.nav_links {
-  display: block;
-  cursor: pointer;
-}
-
-.nav_links:hover {
-  color: #ffc906;
-}
-
-.firstscreen__button {
-  width: 22.5vh;
-  height: 4.166vh;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.48vh;
-  text-align: center;
-  border: none;
-  color: #ffffff;
-  background-color: #000000;
+  height: 89.629vh;
 }
 
 .firstscreen__content {
   margin: 0 auto;
-  margin-top: 2.77vh;
+  padding-top: 2.77vh;
   height: 50.18vh;
   width: 148.15vh;
   display: flex;
@@ -105,14 +45,14 @@
 
 .firstscreen__content_rihgt_text_up {
   font-weight: 500;
-  font-size: 1.296vh;
+  font-size: 1.48vh;
   line-height: 130%;
   text-transform: uppercase;
 }
 
 .firstscreen__content_rihgt_text_down {
   position: relative;
-  margin-top: 6.11vh;
+  margin-top: 7.87vh;
   margin-left: -1.39vh;
   width: 19.91vh;
   height: 17.96vh;

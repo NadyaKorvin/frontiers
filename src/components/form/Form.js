@@ -12,7 +12,7 @@ export default function Form() {
     register,
     formState: { errors, isValid },
     handleSubmit,
-    reset,
+    reset
   } = useForm({
   });
 
@@ -47,23 +47,19 @@ export default function Form() {
             required: "Это поле обязательно",
             minLength: {
               value: 2,
-              message: "Минимум 2 символа",
+              message: "Минимум 2 символа"
             },
             maxLength: {
               value: 50,
-              message: "Максимум 50 символов",
-            },
+              message: "Максимум 50 символов"
+            }
           })}
           id="name"
           className="form__input"
         />
       </div>
 
-      <div>
-        {errors?.name && (
-          <p className="form__focus">{errors?.name?.message || "Error!"}</p>
-        )}
-      </div>
+      <div>{errors?.name && <p className="form__focus">{errors?.name?.message || "Error!"}</p>}</div>
       <div className="form__borders"></div>
       <div className="form__line">
         <label htmlFor="phone" className="form_labels">
@@ -84,11 +80,7 @@ export default function Form() {
           placeholder="+7 900 000 00 00"
         />
       </div>
-      <div>
-        {errors?.phone && (
-          <p className="form__focus">{errors?.phone?.message || "Error!"}</p>
-        )}
-      </div>
+      <div>{errors?.phone && <p className="form__focus">{errors?.phone?.message || "Error!"}</p>}</div>
       <div className="form__borders"></div>
       <div className="form__line">
         <label htmlFor="message" className="form_labels">
@@ -105,6 +97,7 @@ export default function Form() {
           <p className="form__focus">{errors?.message?.message || "Error!"}</p>
         )}
       </div>
+      <div>{errors?.message && <p className="form__focus">{errors?.message?.message || "Error!"}</p>}</div>
       <div className="form__borders"></div>
       <div className="agree_and_button">
         <div className="form__policy">
@@ -113,7 +106,7 @@ export default function Form() {
               name="consent"
               type="checkbox"
               {...register("consent", {
-                required: "Подтвердите свое согласие для отправки формы",
+                required: "Подтвердите свое согласие для отправки формы"
               })}
               id="consent"
               className="form__checkbox"
@@ -129,7 +122,7 @@ export default function Form() {
                 style={{
                   textDecoration: "underline",
                   cursor: "pointer",
-                  lineHeight: "200%",
+                  lineHeight: "200%"
                 }}
               >
                 персональных данных
@@ -140,10 +133,7 @@ export default function Form() {
           <Button title="Отправить" type="submit" disabled={!isValid} />
         </div>
       </div>
-
-      <div className="form__focus_consent">
-        {errors?.consent && <p>{errors?.consent?.message || "Error!"}</p>}
-      </div>
+      <div className="form__focus_consent">{errors?.consent && <p>{errors?.consent?.message || "Error!"}</p>}</div>
     </form>
     {isActiveModalSuccess && <ModalSuccess setActiveModalSuccess={setActiveModalSuccess} />}
     {isPersonal && <Personal closePersonal={closePersonal} />}

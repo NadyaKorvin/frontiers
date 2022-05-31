@@ -1,16 +1,13 @@
-.about_us__screen {
-  height: 100vh;
-}
-
 .about_us__block {
   margin: 0 auto;
-  padding-top: 18vh;
+  padding-top: 15.185vh;
+  height: 61.944vh;
   width: 148.15vh;
 }
 
 .about_us__block_title {
   font-size: 8.33vh;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 10.09vh;
 }
 
@@ -23,30 +20,29 @@
 .about_us__block_description {
   position: relative;
   align-self: flex-end;
-  width: 31.57vh;
-  font-size: 1.296vh;
+  width: 33.055vh;
+  font-size: 1.48vh;
   font-weight: 500;
-  line-height: 1.66vh;
   line-height: 130%;
   text-transform: uppercase;
 }
 
 .about_us__first_yellow_line {
-  margin-top: -11.7vh;
-  margin-left: 3vh;
+  margin-top: -15.3vh;
+  margin-left: 3.5vh;
   position: absolute;
-  width: 23.88vh;
+  width: 26.018vh;
   height: 1.48vh;
-  background: no-repeat url("./about_as_first_yellow_line.svg");
+  background: no-repeat url("./team_yellow_line.svg");
   background-size: contain;
   z-index: -99;
 }
 .about_us__second_yellow_line {
   position: absolute;
-  margin-top: -9.7vh;
-  width: 17.315vh;
+  margin-top: -13.1vh;
+  width: 20.185vh;
   height: 1.48vh;
-  background: no-repeat url("./about_as_first_yellow_line.svg");
+  background: no-repeat url("./team_second_yellow_line.svg");
   background-size: contain;
   z-index: -99;
 }
@@ -98,20 +94,22 @@
 }
 
 .persones__title {
-  font-size: 1.85vh;
+  font-size: 1.66vh;
   font-weight: 500;
-  line-height: 2.22vh;
+  line-height: 2.037vh;
 }
 
 .persones__hr {
-  border-top: 0.18vh;
-  border-left: 0;
-  border-color: #fff;
+  margin: 0.6vh 0 0.925vh 0;
+  border-top: 0.23vh solid #fff;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
 }
 .persones__name {
-  font-size: 2.77vh;
+  font-size: 3.704vh;
   font-weight: 700;
-  line-height: 3.33vh;
+  line-height: 4.444vh;
 }
 .persona_01,
 .persona_02,
