@@ -12,6 +12,8 @@
 @import url("./components/scrollBar/ScrollBar.css");
 @import url("./components/form/PersonalData.css");
 @import url("./components/footer/Footer.css");
+@import url("./components/form/ModalSuccess.css");
+@import url("./components/form/Preloader.css");
 
 body {
   font-family: "Inter", sans-serif;
