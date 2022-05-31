@@ -52,10 +52,6 @@ function App() {
     setTimeout(() => (animatingPage.current = false), 500)
   }
 
-  // const goToLink = (goToPage) => {
-  //   setActivePage(goToPage)
-  // }
-
   return (
     <>
       <ScrollBar activePage={activePage} />

@@ -1,8 +1,14 @@
 .firstscreen__header {
+  position: relative;
+  z-index: 99;
+  background: linear-gradient(#ffffff, #ffffff73);
+}
+
+.header_block {
   width: 148.15vh;
   height: 7.6vh;
   margin: 0 auto;
-  border-bottom: 1px solid #000000;
+  border-bottom: 0.09vh solid #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,6 +21,22 @@
   font-size: 2.31vh;
   line-height: 2.77vh;
   letter-spacing: 0.05em;
+}
+
+.firstscreen__logotype:hover {
+  animation: firstscreen__logotype 1s ease-in-out;
+}
+
+@keyframes firstscreen__logotype {
+  0% {
+    transform: translateX(0vh);
+  }
+  50% {
+    transform: translateX(4vh);
+  }
+  100% {
+    transform: translateX(0vh);
+  }
 }
 
 .firstscreen__menu {
@@ -39,6 +61,7 @@
 .nav_links {
   display: block;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 .nav_links:hover {

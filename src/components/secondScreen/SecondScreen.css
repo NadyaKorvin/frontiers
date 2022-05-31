@@ -18,7 +18,7 @@
   font-size: 6.02vh;
   font-weight: 700;
   line-height: 7.31vh;
-  transition: 0.6s ease-out;
+  transition: 1s ease-in-out;
 }
 
 .animation__text_second_part {
@@ -35,7 +35,7 @@
   height: 6.944vh;
   width: 41.11vh;
   background-color: #000;
-  transition: 0.6s ease-out;
+  transition: 0.7s ease-in-out;
 }
 
 .animation__2th_black_line {
@@ -43,13 +43,13 @@
   height: 6.944vh;
   width: 43.98vh;
   background-color: #000;
-  transition: 0.6s ease-out;
+  transition: 0.7s ease-in-out;
 }
 .animation__3th_black_line {
   height: 6.944vh;
   width: 46.48vh;
   background-color: #000;
-  transition: 0.6s ease-out;
+  transition: 0.7s ease-in-out;
 }
 
 .right__part {

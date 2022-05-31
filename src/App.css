@@ -44,7 +44,7 @@ body,
 .div3,
 .div4,
 .div5 {
-  /* height: 100vh; */
+  height: 100%;
   opacity: 0;
   will-change: transform, opacity;
 

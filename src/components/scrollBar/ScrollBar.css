@@ -17,7 +17,7 @@
   height: 0.74vh;
   border: 0.09vh solid #000;
   overflow-x: hidden;
-  transition: 0.6s ease-out;
+  transition: 0.6s ease;
 }
 
 .square1 {
