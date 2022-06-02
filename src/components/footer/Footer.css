@@ -12,6 +12,7 @@
 }
 
 .lastscreen__footer_text {
+  display: block;
   margin-bottom: 1.39vh;
   font-weight: 500;
   font-size: 1.48vh;
@@ -35,9 +36,14 @@
   text-align: end;
 }
 
+.kojo__logo_hidden {
+  visibility: hidden;
+}
+
 .lastscreen__design_dev {
   position: relative;
-  top: -4vh;
+  visibility: visible;
+  top: -6.5vh;
   margin: 0 auto;
   width: 24.074vh;
   height: 1.76vh;
@@ -47,8 +53,6 @@
 }
 
 .kojo__logo {
-  background: no-repeat url("./kojo_logo.svg");
-  background-size: cover;
   width: 7.777vh;
   height: 1.296vh;
 }

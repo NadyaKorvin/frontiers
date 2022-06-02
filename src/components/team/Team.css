@@ -1,23 +1,23 @@
-.about_us__block {
+.team__block {
   margin: 0 auto;
   padding-top: 15.185vh;
   height: 61.944vh;
   width: 148.15vh;
 }
 
-.about_us__block_title {
+.team__block_title {
   font-size: 8.33vh;
   font-weight: 400;
   line-height: 10.09vh;
 }
 
-.about_us__block_main {
+.team__block_main {
   margin-top: 5.55vh;
   display: flex;
   justify-content: space-between;
 }
 
-.about_us__block_description {
+.team__block_description {
   position: relative;
   align-self: flex-end;
   width: 33.055vh;
@@ -27,22 +27,22 @@
   text-transform: uppercase;
 }
 
-.about_us__first_yellow_line {
+.team__first_yellow_line {
   margin-top: -15.3vh;
   margin-left: 3.5vh;
   position: absolute;
   width: 26.018vh;
   height: 1.48vh;
-  background: no-repeat url("./team_yellow_line.svg");
+  background: no-repeat url("./img/first_yellow_line.svg");
   background-size: contain;
   z-index: -99;
 }
-.about_us__second_yellow_line {
+.team__second_yellow_line {
   position: absolute;
   margin-top: -13.1vh;
   width: 20.185vh;
   height: 1.48vh;
-  background: no-repeat url("./team_second_yellow_line.svg");
+  background: no-repeat url("./img/second_yellow_line.svg");
   background-size: contain;
   z-index: -99;
 }

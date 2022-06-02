@@ -1,16 +1,24 @@
-export function Team({ removePerson, refreshData }) {
+import { useState } from "react"
+import { dataPersones } from "./dataPersones"
+
+export function Team() {
+  const [refreshData, setRefreshData] = useState(dataPersones)
+  const removePerson = (elem) => {
+    let filter = refreshData.filter((person) => person.key !== elem.key)
+    setRefreshData([elem, ...filter])
+  }
   return (
-    <div className="about_us__block">
-      <p className="about_us__block_title">ЭКСПЕРТЫ СВОЕГО ДЕЛА</p>
-      <div className="about_us__block_main">
-        <div className="about_us__block_description">
+    <div className="team__block">
+      <p className="team__block_title">ЭКСПЕРТЫ СВОЕГО ДЕЛА</p>
+      <div className="team__block_main">
+        <div className="team__block_description">
           <p>
             Для нас это не просто бизнес,<br></br>но и вклад в развитие здорового предпринимательства в России.<br></br>
             <br></br>Нам в кайф видеть, как предприниматели растут, появляются новые рабочие места, как повышается доверие между предпринимателями и
             инвесторами.
           </p>
-          <div className="about_us__first_yellow_line"></div>
-          <div className="about_us__second_yellow_line"></div>
+          <div className="team__first_yellow_line"></div>
+          <div className="team__second_yellow_line"></div>
         </div>
         <div className="persones">
           <div className="big_persona" style={{ backgroundImage: `url('${refreshData[0].url}')` }}>

@@ -1,0 +1,59 @@
+.modal_success {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(31, 31, 31, 0.5);
+  z-index: 110;
+}
+
+.modal.activemodal {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__container {
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  padding-top: 15vh;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.modal__message {
+  margin: 0 auto;
+  width: 50vw;
+  height: 50vh;
+  background: #fff;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.modal__title {
+  padding-top: 15vh;
+  margin-bottom: 6.25vh;
+  font-size: 3.91vh;
+  line-height: 6vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__text {
+  margin-bottom: 3vh;
+  font-size: 2.31vh;
+  line-height: 4.69vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__clouse {
+  text-align: end;
+  width: 100%;
+  font-size: 3vh;
+  cursor: pointer;
+}

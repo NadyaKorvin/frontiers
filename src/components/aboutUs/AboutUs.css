@@ -1,4 +1,4 @@
-.second__screen_main {
+.about__us_main {
   margin: 0 auto;
   padding-top: 15.74vh;
   display: flex;
@@ -63,7 +63,7 @@
   display: block;
   width: 37.037vh;
   height: 37.037vh;
-  background: no-repeat url("../secondScreen/people.png");
+  background: no-repeat url("./img/people.webp");
   background-size: cover;
 }
 
@@ -100,7 +100,7 @@
   margin-left: 8vh;
   width: 31.48vh;
   height: 1.66vh;
-  background: no-repeat url(./second_screen__yellow_mark.svg);
+  background: no-repeat url("./img/yellow_line.svg");
   background-size: contain;
   z-index: -99;
 }
