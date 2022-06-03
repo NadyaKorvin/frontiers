@@ -26,13 +26,18 @@
   height: 7.407vh;
   border: none;
   outline: none;
+  font-size: 1.66vh;
+  font-weight: 400;
+  line-height: 130%;
+}
+.form__input {
+  text-transform: uppercase;
 }
 
 textarea {
   resize: none;
   padding-top: 1vh;
   overflow: hidden;
-  font-family: "Inter", sans-serif;
   font-size: 1.66vh;
   font-weight: 400;
   line-height: 130%;

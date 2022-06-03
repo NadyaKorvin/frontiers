@@ -1,64 +1,59 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import Button from "../button/Button";
-import Personal from "./PersonalData";
-import ModalSuccess from "./ModalSuccess";
-import ModalError from "./ModalError";
-import Preloader from "./Preloader";
+import React, { useState } from "react"
+import { useForm } from "react-hook-form"
+import Button from "../button/Button.js"
+import Personal from "./PersonalData"
+import ModalSuccess from "./ModalSuccess"
+import ModalError from "./ModalError"
+import Preloader from "./Preloader"
 
 export default function Form() {
-  const [isPersonal, setIsPersonal] = useState(false);
-  const [isActiveModalSuccess, setActiveModalSuccess] = useState(false);
-  const [isActiveModalError, setActiveModalError] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isPersonal, setIsPersonal] = useState(false)
+  const [isActiveModalSuccess, setActiveModalSuccess] = useState(false)
+  const [isActiveModalError, setActiveModalError] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   const {
     register,
     formState: { errors, isValid },
     handleSubmit,
-    reset,
-  } = useForm({});
+    reset
+  } = useForm({})
 
   const onSubmit = (data) => {
-    setIsLoading(true);
+    setIsLoading(true)
     // emailjs
-      // .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
-      // .then((res) => {
-        setActiveModalSuccess(true);
-        setTimeout(setActiveModalSuccess, 5000);
-        setIsLoading(false);
-      // });
-      // .catch((err) => {
-      //   setActiveModalError(true)
-      //   setTimeout(setActiveModalError, 5000);
-      //   setIsLoading(false);
-      // });
-    reset();
-  };
+    // .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
+    // .then((res) => {
+    setActiveModalSuccess(true)
+    setTimeout(setActiveModalSuccess, 5000)
+    setIsLoading(false)
+    // });
+    // .catch((err) => {
+    //   setActiveModalError(true)
+    //   setTimeout(setActiveModalError, 5000);
+    //   setIsLoading(false);
+    // });
+    reset()
+  }
 
   const openPersonal = () => {
-    setIsPersonal(true);
-  };
+    setIsPersonal(true)
+  }
   const closePersonal = () => {
-    setIsPersonal(false);
-  };
+    setIsPersonal(false)
+  }
 
   const openModal = () => {
-    setActiveModalSuccess(true);
-  };
+    setActiveModalSuccess(true)
+  }
   const clouseModal = () => {
-    setActiveModalSuccess(false);
-    setActiveModalError(false);
-  };
+    setActiveModalSuccess(false)
+    setActiveModalError(false)
+  }
 
   return (
     <>
-      <form
-        name="form"
-        id="form"
-        className="form"
-        onSubmit={handleSubmit(onSubmit)}
-      >
+      <form name="form" id="form" className="form" onSubmit={handleSubmit(onSubmit)}>
         <div className="form__line">
           <label htmlFor="name" className="form_labels">
             ИМЯ
@@ -69,23 +64,19 @@ export default function Form() {
               required: "Это поле обязательно",
               minLength: {
                 value: 2,
-                message: "Минимум 2 символа",
+                message: "Минимум 2 символа"
               },
               maxLength: {
                 value: 50,
-                message: "Максимум 50 символов",
-              },
+                message: "Максимум 50 символов"
+              }
             })}
             id="name"
             className="form__input"
           />
         </div>
 
-        <div>
-          {errors?.name && (
-            <p className="form__focus">{errors?.name?.message || "Error!"}</p>
-          )}
-        </div>
+        <div>{errors?.name && <p className="form__focus">{errors?.name?.message || "Error!"}</p>}</div>
         <div className="form__borders"></div>
         <div className="form__line">
           <label htmlFor="phone" className="form_labels">
@@ -97,20 +88,16 @@ export default function Form() {
               required: "Это поле обязательно",
               pattern: {
                 value: /^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/,
-                message: "Введите в формате +7 000 000 00 00",
-              },
+                message: "Введите в формате +79000000000"
+              }
             })}
             id="phone"
             className="form__input"
             type="tel"
-            placeholder="+7 900 000 00 00"
+            placeholder="+79000000000"
           />
         </div>
-        <div>
-          {errors?.phone && (
-            <p className="form__focus">{errors?.phone?.message || "Error!"}</p>
-          )}
-        </div>
+        <div>{errors?.phone && <p className="form__focus">{errors?.phone?.message || "Error!"}</p>}</div>
         <div className="form__borders"></div>
         <div className="form__line">
           <label htmlFor="message" className="form_labels">
@@ -118,20 +105,8 @@ export default function Form() {
           </label>
           <textarea name="message" id="message" className="form__textarea" />
         </div>
-        <div>
-          {errors?.message && (
-            <p className="form__focus">
-              {errors?.message?.message || "Error!"}
-            </p>
-          )}
-        </div>
-        <div>
-          {errors?.message && (
-            <p className="form__focus">
-              {errors?.message?.message || "Error!"}
-            </p>
-          )}
-        </div>
+        <div>{errors?.message && <p className="form__focus">{errors?.message?.message || "Error!"}</p>}</div>
+        <div>{errors?.message && <p className="form__focus">{errors?.message?.message || "Error!"}</p>}</div>
         <div className="form__borders"></div>
         <div className="agree_and_button">
           <div className="form__policy">
@@ -140,7 +115,7 @@ export default function Form() {
                 name="consent"
                 type="checkbox"
                 {...register("consent", {
-                  required: "Подтвердите свое согласие для отправки формы",
+                  required: "Подтвердите свое согласие для отправки формы"
                 })}
                 id="consent"
                 className="form__checkbox"
@@ -165,14 +140,12 @@ export default function Form() {
             <Button title="Отправить" type="submit" disabled={!isValid} />
           </div>
         </div>
-        <div className="form__focus_consent">
-          {errors?.consent && <p>{errors?.consent?.message || "Error!"}</p>}
-        </div>
+        <div className="form__focus_consent">{errors?.consent && <p>{errors?.consent?.message || "Error!"}</p>}</div>
       </form>
       {isActiveModalSuccess && <ModalSuccess clouseModal={clouseModal} />}
       {isActiveModalError && <ModalError clouseModal={clouseModal} />}
       {isPersonal && <Personal closePersonal={closePersonal} />}
       {isLoading && <Preloader />}
     </>
-  );
+  )
 }

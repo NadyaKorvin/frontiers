@@ -1,30 +1,17 @@
 import { useState, useEffect, useRef } from "react"
-import { dataPersones } from "./components/team/dataPersones"
 import "./App.css"
 import { Header } from "./components/header/Header"
+import { ScrollBar } from "./components/scrollBar/ScrollBar"
 import FirstScreen from "./components/firstScreen/FirstScreen"
-import { SecondScreenBlock } from "./components/secondScreen/SecondScreenBlock"
-import { SecondScreenAnimation } from "./components/secondScreen/SecondScreenAnimation"
+import { AboutUs } from "./components/aboutUs/AboutUs"
 import { Nambers } from "./components/numbers/Numbers"
 import { Team } from "./components/team/Team"
 import LastScreen from "./components/lastScreen/LastScreen"
-import { ScrollBar } from "./components/scrollBar/ScrollBar"
 import { Footer } from "./components/footer/Footer"
 
 function App() {
-  const [mousePosition, setMousePosition] = useState("")
-  const [refreshData, setRefreshData] = useState(dataPersones)
   const [activePage, setActivePage] = useState(1)
   const animatingPage = useRef(false)
-
-  const listenUpperMousePosition = (event) => {
-    setMousePosition(event.target.className)
-  }
-
-  const removePerson = (elem) => {
-    let filter = refreshData.filter((person) => person.key !== elem.key)
-    setRefreshData([elem, ...filter])
-  }
 
   useEffect(() => {
     const onWheel = (event) => {
@@ -65,17 +52,14 @@ function App() {
         <div className="js-page div1">
           <FirstScreen />
         </div>
-        <div className="second__screen  div2 js-page">
-          <div className="second__screen_main">
-            <SecondScreenAnimation listenMousePosition={listenUpperMousePosition} mousePosition={mousePosition} />
-            <SecondScreenBlock />
-          </div>
+        <div className="div2 js-page">
+          <AboutUs />
         </div>
         <div className="js-page div3">
           <Nambers />
         </div>
-        <div className="div4 js-page">
-          <Team removePerson={removePerson} refreshData={refreshData} />
+        <div className="js-page div4">
+          <Team />
         </div>
         <div className="js-page div5">
           <LastScreen />

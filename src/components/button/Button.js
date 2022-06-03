@@ -1,11 +1,9 @@
-import React from "react";
+import React from "react"
 
 export default function Button({ title }) {
   return (
     <>
-      <button className="form__button" >
-        {title}
-      </button>
+      <button className="form__button">{title}</button>
     </>
-  );
+  )
 }

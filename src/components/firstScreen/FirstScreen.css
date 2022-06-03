@@ -32,7 +32,7 @@
   position: absolute;
   width: 80.926vh;
   height: 1.85vh;
-  background: no-repeat center url("./complex.svg");
+  background: no-repeat center url("./img/first_yellow_line.svg");
   background-size: contain;
 }
 
@@ -68,7 +68,7 @@
   margin-left: -2.77vh;
   width: 23.7vh;
   height: 1.85vh;
-  background: no-repeat center url(./not.svg);
+  background: no-repeat center url("./img/second_yellow_line.svg");
   background-size: contain;
 }
 
@@ -99,7 +99,7 @@
   margin-top: -3vh;
   margin-left: 0.5vh;
   display: block;
-  background: no-repeat url("./down_line.svg");
+  background: no-repeat center url("./img/scroll_down_line.svg");
   background-size: contain;
   height: 9.259vh;
   width: 1vh;
@@ -107,8 +107,9 @@
 }
 
 .firstscreen__content_bottom_content_right {
-  margin-right: -30vh;
+  margin-right: -35vh;
   width: 150vh;
-  height: 33.8vh;
-  background: url(./first_screen_main_img_1600.png) no-repeat;
+  height: 33.889vh;
+  background: no-repeat center url("./img/main_img_1600.webp");
+  background-size: cover;
 }
