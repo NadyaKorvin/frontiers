@@ -27,22 +27,20 @@ function App() {
   console.log(width)
 
   useEffect(() => {
-    if (width > 1024) {
-      const onWheel = (event) => {
-        if (animatingPage.current) return
-        const direction = getDirection(event.deltaY)
+    const onWheel = (event) => {
+      if (animatingPage.current) return
+      const direction = getDirection(event.deltaY)
 
-        if (!direction) return
-        if (direction === "up" && activePage === 1) return
-        if (direction === "down" && activePage === 5) return
+      if (!direction) return
+      if (direction === "up" && activePage === 1) return
+      if (direction === "down" && activePage === 5) return
 
-        setActivePage((prev) => (direction === "up" ? prev - 1 : prev + 1))
-        animatingPage.current = true
-      }
-
-      document.addEventListener("wheel", onWheel)
-      return () => document.removeEventListener("wheel", onWheel)
+      setActivePage((prev) => (direction === "up" ? prev - 1 : prev + 1))
+      animatingPage.current = true
     }
+
+    document.addEventListener("wheel", onWheel)
+    return () => document.removeEventListener("wheel", onWheel)
   }, [animatingPage, activePage, width])
 
   function getDirection(deltaY) {
@@ -59,24 +57,24 @@ function App() {
       <ScrollBar activePage={activePage} />
       <Header setActivePage={setActivePage} />
       <div
-        className={width > 1024 ? "container js-container" : "tablet"}
+        className="container js-container"
         onTransitionEnd={afterTransition}
         style={{ transform: width > 1024 ? `translateY(${(activePage - 1) * -100}%)` : "none" }}
         data-page={activePage}
       >
-        <div className={width > 1024 ? "js-page div1" : "tablet"}>
+        <div className="js-page div1">
           <FirstScreen />
         </div>
-        <div className={width > 1024 ? "div2 js-page" : "tablet"}>
+        <div className="div2 js-page">
           <AboutUs />
         </div>
-        <div className={width > 1024 ? "js-page div3" : "tablet"}>
+        <div className="js-page div3">
           <Nambers />
         </div>
-        <div className={width > 1024 ? "js-page div4" : "tablet"}>
+        <div className="js-page div4">
           <Team />
         </div>
-        <div className={width > 1024 ? "js-page div5" : "tablet"}>
+        <div className="js-page div5">
           <LastScreen />
           <Footer />
         </div>
