@@ -12,23 +12,38 @@ import { Footer } from "./components/footer/Footer"
 function App() {
   const [activePage, setActivePage] = useState(1)
   const animatingPage = useRef(false)
+  const [width, setWidth] = useState(window.innerWidth)
+
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth)
+  }
 
   useEffect(() => {
-    const onWheel = (event) => {
-      if (animatingPage.current) return
-      const direction = getDirection(event.deltaY)
-
-      if (!direction) return
-      if (direction === "up" && activePage === 1) return
-      if (direction === "down" && activePage === 5) return
-
-      setActivePage((prev) => (direction === "up" ? prev - 1 : prev + 1))
-      animatingPage.current = true
+    window.addEventListener("resize", handleWindowSizeChange)
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange)
     }
+  }, [])
+  console.log(width)
 
-    document.addEventListener("wheel", onWheel)
-    return () => document.removeEventListener("wheel", onWheel)
-  }, [animatingPage, activePage])
+  useEffect(() => {
+    if (width > 1024) {
+      const onWheel = (event) => {
+        if (animatingPage.current) return
+        const direction = getDirection(event.deltaY)
+
+        if (!direction) return
+        if (direction === "up" && activePage === 1) return
+        if (direction === "down" && activePage === 5) return
+
+        setActivePage((prev) => (direction === "up" ? prev - 1 : prev + 1))
+        animatingPage.current = true
+      }
+
+      document.addEventListener("wheel", onWheel)
+      return () => document.removeEventListener("wheel", onWheel)
+    }
+  }, [animatingPage, activePage, width])
 
   function getDirection(deltaY) {
     return deltaY > 0 ? "down" : deltaY < 0 ? "up" : null
@@ -44,24 +59,24 @@ function App() {
       <ScrollBar activePage={activePage} />
       <Header setActivePage={setActivePage} />
       <div
-        className="container js-container"
-        onTransitionEndCapture={afterTransition}
-        style={{ transform: `translateY(${(activePage - 1) * -100}%)` }}
+        className={width > 1024 ? "container js-container" : "tablet"}
+        onTransitionEnd={afterTransition}
+        style={{ transform: width > 1024 ? `translateY(${(activePage - 1) * -100}%)` : "none" }}
         data-page={activePage}
       >
-        <div className="js-page div1">
+        <div className={width > 1024 ? "js-page div1" : "tablet"}>
           <FirstScreen />
         </div>
-        <div className="div2 js-page">
+        <div className={width > 1024 ? "div2 js-page" : "tablet"}>
           <AboutUs />
         </div>
-        <div className="js-page div3">
+        <div className={width > 1024 ? "js-page div3" : "tablet"}>
           <Nambers />
         </div>
-        <div className="js-page div4">
+        <div className={width > 1024 ? "js-page div4" : "tablet"}>
           <Team />
         </div>
-        <div className="js-page div5">
+        <div className={width > 1024 ? "js-page div5" : "tablet"}>
           <LastScreen />
           <Footer />
         </div>
