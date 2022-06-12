@@ -10,12 +10,21 @@ import LastScreen from "./components/lastScreen/LastScreen";
 import { Footer } from "./components/footer/Footer";
 
 function App() {
-  const [activePage, setActivePage] = useState(1);
-  const animatingPage = useRef(false);
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [activePage, setActivePage] = useState(1)
+  const animatingPage = useRef(false)
+  const [width, setWidth] = useState(window.innerWidth)
+
+  const handleWindowSizeChange = () => {
+    setWidth(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange)
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange)
+    }
+  }, [])
+  console.log(width)
 
   useEffect(() => {
     const onWheel = (event) => {
@@ -30,9 +39,9 @@ function App() {
       animatingPage.current = true;
     };
 
-    document.addEventListener("wheel", onWheel);
-    return () => document.removeEventListener("wheel", onWheel);
-  }, [animatingPage, activePage]);
+    document.addEventListener("wheel", onWheel)
+    return () => document.removeEventListener("wheel", onWheel)
+  }, [animatingPage, activePage, width])
 
   function getDirection(deltaY) {
     return deltaY > 0 ? "down" : deltaY < 0 ? "up" : null;
@@ -49,8 +58,8 @@ function App() {
       <Header setActivePage={setActivePage} />
       <div
         className="container js-container"
-        onTransitionEndCapture={afterTransition}
-        style={{ transform: `translateY(${(activePage - 1) * -100}%)` }}
+        onTransitionEnd={afterTransition}
+        style={{ transform: width > 1024 ? `translateY(${(activePage - 1) * -100}%)` : "none" }}
         data-page={activePage}
       >
         <div className="js-page div1">
