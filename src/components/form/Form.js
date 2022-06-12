@@ -5,7 +5,11 @@ import Personal from "./PersonalData"
 import ModalSuccess from "./ModalSuccess"
 import ModalError from "./ModalError"
 import Preloader from "./Preloader"
-import emailjs from "emailjs-com";
+import emailjs from "emailjs-com"
+
+// зарегистрироваться на emailjs.com
+// получить ключи SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY
+// поменять значения ниже
 
 const SERVICE_ID = 'service_woillgx'
 const TEMPLATE_ID = 'template_is6o93c'
@@ -56,7 +60,7 @@ export default function Form() {
 
   return (
     <>
-      <form name="form" id="form" className="form" onSubmit={handleSubmit(onSubmit)}>
+      <form name="form" id="form" className="form" ref={form} onSubmit={handleSubmit(onSubmit)}>
         <div className="form__line">
           <label htmlFor="name" className="form_labels">
             ИМЯ
