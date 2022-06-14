@@ -5,6 +5,8 @@
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100vw;
+  height: 100vh;
   background: rgba(31, 31, 31, 0.5);
   z-index: 110;
 }
@@ -16,6 +18,7 @@
 
 .modal__container {
   display: flex;
+  width: 100vw;
   height: 50vh;
   padding-top: 15vh;
   -webkit-box-sizing: content-box;
@@ -24,10 +27,11 @@
 
 .modal__message {
   margin: 0 auto;
-  width: 80vh;
+  width: 50vw;
   height: 50vh;
   background: #fff;
   border-radius: 5px;
+  overflow-y: scroll;
 }
 
 .modal__title {

@@ -1,13 +1,13 @@
-import { useState, useEffect, useRef } from "react";
-import "./App.css";
-import { Header } from "./components/header/Header";
-import { ScrollBar } from "./components/scrollBar/ScrollBar";
-import FirstScreen from "./components/firstScreen/FirstScreen";
-import { AboutUs } from "./components/aboutUs/AboutUs";
-import { Nambers } from "./components/numbers/Numbers";
-import { Team } from "./components/team/Team";
-import LastScreen from "./components/lastScreen/LastScreen";
-import { Footer } from "./components/footer/Footer";
+import { useState, useEffect, useRef } from "react"
+import "./App.css"
+import { Header } from "./components/header/Header"
+import { ScrollBar } from "./components/scrollBar/ScrollBar"
+import FirstScreen from "./components/firstScreen/FirstScreen"
+import { AboutUs } from "./components/aboutUs/AboutUs"
+import { Nambers } from "./components/numbers/Numbers"
+import { Team } from "./components/team/Team"
+import LastScreen from "./components/lastScreen/LastScreen"
+import { Footer } from "./components/footer/Footer"
 
 function App() {
   const [activePage, setActivePage] = useState(1)
@@ -28,29 +28,29 @@ function App() {
 
   useEffect(() => {
     const onWheel = (event) => {
-      if (animatingPage.current) return;
-      const direction = getDirection(event.deltaY);
+      if (animatingPage.current) return
+      const direction = getDirection(event.deltaY)
 
-      if (!direction) return;
-      if (direction === "up" && activePage === 1) return;
-      if (direction === "down" && activePage === 5) return;
+      if (!direction) return
+      if (direction === "up" && activePage === 1) return
+      if (direction === "down" && activePage === 5) return
 
-      setActivePage((prev) => (direction === "up" ? prev - 1 : prev + 1));
-      animatingPage.current = true;
-    };
+      setActivePage((prev) => (direction === "up" ? prev - 1 : prev + 1))
+      animatingPage.current = true
+    }
 
     document.addEventListener("wheel", onWheel)
     return () => document.removeEventListener("wheel", onWheel)
   }, [animatingPage, activePage, width])
 
   function getDirection(deltaY) {
-    return deltaY > 0 ? "down" : deltaY < 0 ? "up" : null;
+    return deltaY > 0 ? "down" : deltaY < 0 ? "up" : null
   }
 
   const afterTransition = (event) => {
-    if (event.target !== event.currentTarget) return;
-    setTimeout(() => (animatingPage.current = false), 500);
-  };
+    if (event.target !== event.currentTarget) return
+    setTimeout(() => (animatingPage.current = false), 500)
+  }
 
   return (
     <>
@@ -80,6 +80,6 @@ function App() {
         </div>
       </div>
     </>
-  );
+  )
 }
-export default App;
+export default App
