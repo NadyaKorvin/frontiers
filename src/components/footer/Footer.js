@@ -20,14 +20,12 @@ export function Footer() {
           <p className="lastscreen__footer_text">© 2022 Frontiers Group</p>
         </div>
       </div>
-      <div className="kojo__logo_hidden">
-        KOJO.ONE
-        <div className="lastscreen__design_dev">
-          <p className="lastscreen__footer_text">Дизайн и разработка</p>
-          <a href="https://kojo.one" target="_blank" rel="noreferrer">
-            <img className="kojo__logo" src="./img/kojo_logo.svg" alt="KOJO.ONE"></img>
-          </a>
-        </div>
+      <div className="lastscreen__design_dev">
+        <p className="lastscreen__footer_text">Дизайн и разработка</p>
+        <a href="https://kojo.one" target="_blank" rel="noreferrer">
+          <div className="kojo__logo_hidden"> KOJO.ONE</div>
+          <img className="kojo__logo" src="./img/kojo_logo.svg" alt="KOJO.ONE"></img>
+        </a>
       </div>
     </footer>
   )

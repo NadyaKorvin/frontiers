@@ -56,3 +56,9 @@
     height: 0.74vh;
   }
 } */
+
+@media screen and (max-width: 1024px) {
+  .scroll__bar {
+    display: none;
+  }
+}

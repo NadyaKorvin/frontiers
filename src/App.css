@@ -1,6 +1,7 @@
 @import url("./reset.css");
 @import url("./font/font.css");
 @import url("./components/header/Header.css");
+@import url("./components/header/BurgerMenu.css");
 @import url("./components/scrollBar/ScrollBar.css");
 @import url("./components/button/Button.css");
 @import url("./components/firstScreen/FirstScreen.css");
@@ -40,6 +41,11 @@ body {
 a {
   text-decoration: none;
   color: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 @media (min-width: 1025px) {
@@ -86,12 +92,12 @@ a {
   }
 }
 
-@media (min-whidth: 769px) and (max-whidth: 1024px) {
+@media screen and (max-whidth: 1024px) {
   html,
   body {
     scroll-behavior: smooth;
-    overflow: scroll;
   }
+
   html,
   body,
   .container,
@@ -127,5 +133,12 @@ a {
   [data-page="5"] .div5 {
     opacity: 1;
     transform: none;
+  }
+}
+
+@media screen and (max-whidth: 768px) {
+  body {
+    width: 768px;
+    overflow: hidden;
   }
 }

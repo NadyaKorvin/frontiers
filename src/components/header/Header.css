@@ -23,7 +23,7 @@
   letter-spacing: 0.05em;
 }
 
-.firstscreen__logotype:hover {
+/* .firstscreen__logotype:hover {
   animation: firstscreen__logotype 1s ease-in-out;
 }
 
@@ -37,7 +37,7 @@
   100% {
     transform: translateX(0vh);
   }
-}
+} */
 
 .firstscreen__menu {
   width: 60.46vh;
@@ -64,19 +64,61 @@
   transition: 0.2s ease-in-out;
 }
 
-.nav_links:hover {
-  color: #ffc906;
-}
-
 .firstscreen__button {
   width: 22.5vh;
   height: 4.166vh;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 1.48vh;
   text-align: center;
   border: none;
   color: #ffffff;
   background-color: #000000;
+}
+
+@media screen and (max-width: 1024px) {
+  .firstscreen__header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background: linear-gradient(#ffffff, #ffffffda);
+  }
+
+  .header_block {
+    margin: 0 auto;
+    width: 964px;
+    height: 80px;
+    border-bottom: 1px solid #000000;
+  }
+
+  .firstscreen__logotype {
+    width: 151px;
+    height: 30px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .firstscreen__menu {
+    width: 657px;
+  }
+
+  .firstscreen__nav {
+    width: 331px;
+  }
+
+  .firstscreen__nav_team {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
+
+  .firstscreen__button {
+    width: 226px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_block {
+    display: none;
+  }
 }

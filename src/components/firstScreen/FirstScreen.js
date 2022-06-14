@@ -15,13 +15,18 @@ export default function firstScreen() {
           <div className="firstscreen__content_rihgt_text_up">
             <p>Мы помогли заработать более 50 млн рублей частным инвесторам в 2021 году на вложениях в российский бизнес</p>
           </div>
-          <p className="firstscreen__content_rihgt_text_down">НЕ</p>
-          <div className="firstscreen__content_vector_not" />
+          <div>
+            <p className="firstscreen__content_rihgt_text_down">НЕ</p>
+            <div className="firstscreen__content_vector_not" />
+          </div>
         </div>
       </div>
       <div className="firstscreen__content_bottom_content">
         <div className="firstscreen__content_bottom_content_left">
           <p className="firstscreen__content_bottom_content_left_scrolldown">ПРОКРУТИ ВНИЗ</p>
+        </div>
+        <div className="firstscreen__text_description">
+          <p>Мы помогли заработать более 50 млн рублей частным инвесторам в 2021 году на вложениях в российский бизнес</p>
         </div>
         <div className="firstscreen__content_bottom_content_right"></div>
       </div>

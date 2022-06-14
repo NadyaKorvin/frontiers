@@ -58,3 +58,128 @@
   line-height: 130%;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 1024px) {
+  .numbers__content_block {
+    margin: 0 auto;
+    padding-top: 120px;
+    height: 540px;
+    width: 964px;
+  }
+
+  .numbers__description {
+    position: relative;
+    font-size: 35px;
+    line-height: 42px;
+    width: 964px;
+  }
+
+  .numbers__yellow_line {
+    margin-left: 310px;
+    background: no-repeat url("./numbers_yelliw_line.svg");
+    background-size: contain;
+    width: 653px;
+    height: 45px;
+  }
+
+  .numbers__year {
+    margin-top: 33px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .numbers__flex_box {
+    margin-top: 10px;
+    width: 964px;
+    border-top: 1px solid #000;
+  }
+
+  .numbers__big_numbers {
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .numbers__small_description {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .numbers__content_block {
+    margin: 0 auto;
+    padding-top: 101px;
+    height: auto;
+    width: 728px;
+  }
+
+  .numbers__description {
+    font-size: 25px;
+    line-height: 30px;
+    width: 728px;
+  }
+
+  .numbers__yellow_line {
+    margin-left: 150px;
+    background: no-repeat url("./numbers_yelliw_line.svg");
+    background-size: contain;
+    width: 518px;
+    height: 31px;
+  }
+
+  .numbers__flex_box {
+    width: 728px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .numbers__flex_box_1v,
+  .numbers__flex_box_2v,
+  .numbers__flex_box_3v {
+    display: flex;
+    max-width: 728px;
+    min-width: 728px;
+  }
+
+  .numbers__flex_block {
+    width: 354px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .numbers__content_block {
+    margin: 0 auto;
+    padding-top: 70px;
+    width: 335px;
+  }
+
+  .numbers__description {
+    width: 335px;
+  }
+
+  .numbers__yellow_line {
+    margin-top: 35px;
+    margin-left: 0;
+    background: no-repeat url("./numbers_yelliw_line.svg");
+    background-size: contain;
+    width: 335px;
+    height: 33px;
+  }
+
+  .numbers__flex_box {
+    width: 335px;
+  }
+
+  .numbers__flex_box_1v,
+  .numbers__flex_box_2v,
+  .numbers__flex_box_3v {
+    flex-direction: column;
+    max-width: 335px;
+    min-width: 335px;
+  }
+
+  .numbers__flex_block {
+    width: 335px;
+  }
+}

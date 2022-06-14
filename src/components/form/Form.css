@@ -121,3 +121,98 @@ textarea {
   position: relative;
   overflow: hidden;
 }
+
+@media screen and (max-width: 1024px) {
+  .form {
+    margin-top: 30px;
+    width: 964px;
+    height: auto;
+    border-top: 1px solid #d1d1d1;
+  }
+
+  .form_labels {
+    font-size: 14px;
+  }
+
+  .form__input,
+  .form__textarea {
+    width: 700px;
+    height: 80px;
+    font-size: 14px;
+  }
+
+  textarea {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .form__borders {
+    border-bottom: 1px solid #d1d1d1;
+  }
+
+  .agree_and_button {
+    margin: 60px 0 0;
+  }
+
+  .form__policy {
+    margin: 14px 0 0;
+  }
+
+  .form__policy_text {
+    margin-left: 15px;
+    font-size: 13px;
+  }
+
+  .form__checkfake {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #1f1f1f;
+  }
+
+  .form__checkfake::before {
+    width: 10px;
+    height: 10px;
+  }
+
+  .form__focus {
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+
+  .form__focus_consent {
+    top: 8px;
+    font-size: 12px;
+  }
+
+  .form__btn {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    width: 728px;
+  }
+
+  .form__line {
+    max-width: 728px;
+  }
+
+  .form__borders {
+    width: 728px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form {
+    width: 335px;
+  }
+
+  .form__line {
+    max-width: 335px;
+  }
+
+  .form__borders {
+    width: 335px;
+  }
+}

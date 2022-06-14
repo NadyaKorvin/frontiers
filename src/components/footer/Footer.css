@@ -38,11 +38,14 @@
 
 .kojo__logo_hidden {
   visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99;
 }
 
 .lastscreen__design_dev {
   position: relative;
-  visibility: visible;
   top: -6.5vh;
   margin: 0 auto;
   width: 24.074vh;
@@ -52,7 +55,117 @@
   align-items: baseline;
 }
 
+.lastscreen__design_dev > p {
+  margin: 0;
+}
+
 .kojo__logo {
   width: 7.777vh;
   height: 1.296vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .lastscreen__footer {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 964px;
+    border-top: 1px solid #000000;
+  }
+
+  .lastscreen__footer_wrapper_info {
+    margin-top: 33px;
+  }
+
+  .lastscreen__footer_text {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .lastscreen__contact_group_contact,
+  .lastscreen__contact_group_frontiers {
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .lastscreen__contact_group_frontiers {
+    margin-bottom: 52px;
+  }
+
+  .lastscreen__design_dev {
+    top: -50px;
+    margin: 0 auto;
+    width: 240px;
+    height: 17px;
+  }
+
+  .kojo__logo {
+    width: 85px;
+    height: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lastscreen__footer_wrapper_info {
+    margin-bottom: 77px;
+  }
+
+  .lastscreen__footer {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 728px;
+    border-top: 1px solid #000000;
+  }
+
+  .lastscreen__contact_group_frontiers {
+    margin-bottom: 50px;
+  }
+
+  .lastscreen__design_dev {
+    top: -70px;
+    margin: 0 0;
+    width: 240px;
+    height: 17px;
+  }
+
+  .kojo__logo {
+    width: 85px;
+    height: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .lastscreen__footer_wrapper_info {
+    margin-bottom: 0px;
+    flex-direction: column;
+  }
+
+  .lastscreen__footer {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 335px;
+  }
+
+  .lastscreen__frontiers_group {
+    text-align: left;
+  }
+
+  .lastscreen__contact_group_frontiers {
+    margin: 25px 0 20px 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .lastscreen__design_dev {
+    top: 20px;
+    margin: 0 0;
+    width: 241px;
+    height: 17px;
+  }
+
+  .kojo__logo {
+    width: 84px;
+    height: 14px;
+  }
 }

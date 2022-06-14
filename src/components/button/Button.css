@@ -7,10 +7,17 @@
   border: none;
   text-align: center;
   cursor: pointer;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 1.48vh;
   line-height: 1.76vh;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .form__button {
+    width: 243px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

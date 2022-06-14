@@ -1,3 +1,5 @@
+import { BurgerMenu } from "./BurgerMenu"
+
 export function Header({ setActivePage }) {
   return (
     <header className="firstscreen__header">
@@ -24,6 +26,7 @@ export function Header({ setActivePage }) {
           </button>
         </div>
       </div>
+      <BurgerMenu />
     </header>
   )
 }

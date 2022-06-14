@@ -8,12 +8,12 @@ export function Team() {
     setRefreshData([elem, ...filter])
   }
   return (
-    <div className="team__block">
+    <div className="team__block" id="link__team">
       <p className="team__block_title">ЭКСПЕРТЫ СВОЕГО ДЕЛА</p>
       <div className="team__block_main">
         <div className="team__block_description">
           <p>
-            Для нас это не просто бизнес,<br></br>но и вклад в развитие здорового предпринимательства в России.<br></br>
+            Для нас это не просто бизнес,<br className="br__tablet"></br>но и вклад в развитие здорового предпринимательства в России.<br></br>
             <br></br>Нам в кайф видеть, как предприниматели растут, появляются новые рабочие места, как повышается доверие между предпринимателями и
             инвесторами.
           </p>
