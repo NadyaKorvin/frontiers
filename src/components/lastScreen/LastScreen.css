@@ -12,10 +12,36 @@
 
 .lastscreen__left_content {
   width: 71.759vh;
+}
+
+.lastscreen__title {
   font-weight: 700;
   font-size: 6.018vh;
   line-height: 7.315vh;
   text-transform: uppercase;
+}
+
+.lastscreen__decoration_marks {
+  margin: -3vh 0 0 28.055vh;
+  width: 5.55vh;
+  transform: rotate(-180deg);
+  font-size: 18.52vh;
+  font-weight: 300;
+}
+
+.lastscreen__description {
+  margin: 1.39px 0 0 36.388vh;
+  width: 32.5vh;
+  font-size: 1.66vh;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.lastscreen__yelow_line {
+  background: no-repeat url("./img/yellow_line.svg");
+  background-position: center;
+  background-size: contain;
+  z-index: -99;
 }
 
 .lastscreen__right_content {

@@ -8,6 +8,7 @@ import { Nambers } from "./components/numbers/Numbers"
 import { Team } from "./components/team/Team"
 import LastScreen from "./components/lastScreen/LastScreen"
 import { Footer } from "./components/footer/Footer"
+import React from "react"
 
 function App() {
   const [activePage, setActivePage] = useState(1)
@@ -65,7 +66,7 @@ function App() {
         <div className="js-page div1">
           <FirstScreen />
         </div>
-        <div className="div2 js-page">
+        <div className="js-page div2">
           <AboutUs />
         </div>
         <div className="js-page div3">

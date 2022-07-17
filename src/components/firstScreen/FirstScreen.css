@@ -27,19 +27,9 @@
   position: relative;
 }
 
-.firstscreen__content_vector_complex {
-  margin-top: -1.85vh;
-  margin-left: 29.63vh;
-  position: absolute;
-  width: 80.926vh;
-  height: 1.85vh;
-  background: no-repeat center url("./img/first_yellow_line.svg");
-  background-size: contain;
-}
-
 .firstscreen__content_rihgt_text {
   margin-top: 2.77vh;
-  width: 25.83vh;
+  width: 28.8vh;
   height: 30.64vh;
 }
 
@@ -63,16 +53,6 @@
 
 .firstscreen__text_description {
   display: none;
-}
-
-.firstscreen__content_vector_not {
-  position: absolute;
-  margin-top: -1.85vh;
-  margin-left: -2.2vh;
-  width: 23.7vh;
-  height: 1.85vh;
-  background: no-repeat center url("./img/second_yellow_line.svg");
-  background-size: contain;
 }
 
 .firstscreen__content_bottom_content {

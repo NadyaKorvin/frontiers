@@ -1,24 +1,27 @@
+import React from "react"
 import { useState } from "react"
 import { dataPersones } from "./dataPersones"
+import { TeamPopup } from "./TeamPopup"
 
 export function Team() {
   const [refreshData, setRefreshData] = useState(dataPersones)
+  const [isOpenPopup, setIsOpenPopup] = useState(false)
+
   const removePerson = (elem) => {
     let filter = refreshData.filter((person) => person.key !== elem.key)
     setRefreshData([elem, ...filter])
   }
+  const togglePopup = () => setIsOpenPopup(!isOpenPopup)
+
   return (
     <div className="team__block" id="link__team">
-      <p className="team__block_title">ЭКСПЕРТЫ СВОЕГО ДЕЛА</p>
+      <p className="team__block_title">команда Frontiers</p>
       <div className="team__block_main">
         <div className="team__block_description">
           <p>
-            Для нас это не просто бизнес,<br className="br__tablet"></br>но и вклад в развитие здорового предпринимательства в России.<br></br>
-            <br></br>Нам в кайф видеть, как предприниматели растут, появляются новые рабочие места, как повышается доверие между предпринимателями и
-            инвесторами.
+            Для нас <span className="team__yellow_line">это не просто работа</span>, но и вклад в развитие здорового предпринимательства в России. Нам
+            приятно видеть, как бизнес и инвесторы начинают больше доверять друг другу.
           </p>
-          <div className="team__first_yellow_line"></div>
-          <div className="team__second_yellow_line"></div>
         </div>
         <div className="persones">
           <div className="big_persona" style={{ backgroundImage: `url('${refreshData[0].url}')` }}>
@@ -27,6 +30,10 @@ export function Team() {
               <hr className="persones__hr"></hr>
               <p className="persones__name">{refreshData[0].name}</p>
               <p className="persones__text">{refreshData[0].text}</p>
+              <button className="persones__read_more persones__text" onClick={togglePopup}>
+                читать подробнее
+              </button>
+              {isOpenPopup && <TeamPopup useData={refreshData} />}
             </div>
           </div>
           {refreshData.slice(1).map((elem) => (

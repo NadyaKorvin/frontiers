@@ -1,10 +1,11 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { useForm } from "react-hook-form"
 import Button from "../button/Button.js"
 import Personal from "./PersonalData"
 import ModalSuccess from "./ModalSuccess"
 import ModalError from "./ModalError"
 import Preloader from "./Preloader"
+import React from "react"
 
 export default function Form() {
   const [isPersonal, setIsPersonal] = useState(false)

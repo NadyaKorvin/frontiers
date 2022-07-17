@@ -1,3 +1,4 @@
+import React from "react"
 import { useState } from "react"
 
 export function AboutUs() {
@@ -22,10 +23,10 @@ export function AboutUs() {
         <div>
           <div className="animation__text" onMouseOver={listenMousePosition}>
             <p className={goUp !== "up" ? "animation__text_first_part" : "animation__text_first_part animation__text_first_part_white"}>
-              Инвесторам сложно найти хорошие проекты,
+              Инвестору <br></br> сложно найти прибыльные проекты,
             </p>
             <p className={goUp !== "up" ? "animation__text_second_part" : "animation__text_second_part animation__text_second_part_black"}>
-              а хорошим проектам — инвестиции.
+              еще сложнее определить, можно ли доверять собственнику бизнеса
             </p>
           </div>
           <div className="animation__black_lines">
@@ -39,10 +40,13 @@ export function AboutUs() {
         <div className="conversation__image"></div>
         <p className="decoration_marks">“</p>
         <div className="about_us__text">
-          <p className="text_paragraph_1">За 15 лет работы наши эксперты провели несколько тысяч сделок по купле-продаже бизнесов в России.</p>
-          <div className="second_screen__yellow_mark"></div>
-          <p className="text_paragraph_2">Оценили десятки тысяч компаний.</p>
-          <p className="text_paragraph_3">Поэтому мы знаем, как выглядят надёжные бизнесы и успешные предприниматели</p>
+          <p className="text_paragraph">
+            Мы знаем, как выглядят устойчивый бизнес и надежные предприниматели, потому что за 15 лет провели
+            <span className="second_screen__yellow_mark"> несколько </span>
+            <span className="second_screen__yellow_mark">тысяч сделок</span> по купле-продаже бизнесов в России и оценили
+            <span className="second_screen__yellow_mark"> десятки тысяч </span>
+            <span className="second_screen__yellow_mark">компаний.</span>
+          </p>
         </div>
       </div>
     </div>

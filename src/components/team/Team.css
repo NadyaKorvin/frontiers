@@ -9,6 +9,7 @@
   font-size: 8.33vh;
   font-weight: 400;
   line-height: 10.09vh;
+  text-transform: uppercase;
 }
 
 .team__block_main {
@@ -18,31 +19,18 @@
 }
 
 .team__block_description {
-  position: relative;
   align-self: flex-end;
-  width: 33.055vh;
+  width: 30.277vh;
   font-size: 1.48vh;
   font-weight: 500;
   line-height: 130%;
-  text-transform: uppercase;
 }
 
-.team__first_yellow_line {
-  margin-top: -15.3vh;
-  margin-left: 3.5vh;
-  position: absolute;
-  width: 26.018vh;
-  height: 1.48vh;
-  background: no-repeat url("./img/first_yellow_line.svg");
-  background-size: contain;
-  z-index: -99;
-}
-.team__second_yellow_line {
-  position: absolute;
-  margin-top: -13.1vh;
-  width: 20.185vh;
-  height: 1.48vh;
-  background: no-repeat url("./img/second_yellow_line.svg");
+.team__yellow_line {
+  width: 16.203vh;
+  height: 1.66vh;
+  background: no-repeat url("./img/yellow_line.svg");
+  background-position: center;
   background-size: contain;
   z-index: -99;
 }
@@ -62,7 +50,7 @@
 .big_persona:hover {
   background-color: rgba(0, 0, 0, 0.39);
   background-blend-mode: multiply;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .persones_description {
@@ -76,7 +64,7 @@
 
 .persones_description:hover {
   margin: 0 auto;
-  padding-top: 2.77vh;
+  padding-top: 19vh;
   height: 46.296vh;
 }
 
@@ -106,11 +94,23 @@
   border-bottom: none;
   border-right: none;
 }
+
 .persones__name {
   font-size: 3.704vh;
   font-weight: 700;
-  line-height: 4.444vh;
+  line-height: 130%;
 }
+
+.persones__read_more {
+  margin-top: 3.703vh;
+  border: none;
+  font-size: 1.48vh;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #fff;
+  background: none;
+}
+
 .persona_01,
 .persona_02,
 .persona_03,

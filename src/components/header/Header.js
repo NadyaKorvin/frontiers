@@ -1,3 +1,4 @@
+import React from "react"
 import { BurgerMenu } from "./BurgerMenu"
 
 export function Header({ setActivePage }) {
@@ -12,11 +13,11 @@ export function Header({ setActivePage }) {
                 <li className="nav_links" onClick={() => setActivePage(2)}>
                   О нас
                 </li>
-                <li className="nav_links" onClick={() => setActivePage(4)}>
-                  Команда
-                </li>
                 <li className="nav_links" onClick={() => setActivePage(3)}>
                   Цифры
+                </li>
+                <li className="nav_links" onClick={() => setActivePage(4)}>
+                  Команда
                 </li>
               </ul>
             </nav>

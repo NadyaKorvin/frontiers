@@ -7,35 +7,20 @@
   flex-direction: column;
 }
 
-.numbers__description {
-  position: relative;
-  font-size: 3.7vh;
+.numbers__title_first,
+.numbers__title_second {
+  font-size: 6.018vh;
   font-weight: 700;
-  line-height: 4.44vh;
+  line-height: 130%;
   text-transform: uppercase;
-  width: 101.2vh;
 }
 
-.numbers__yellow_line {
-  margin-left: 32vh;
-  position: absolute;
-  background: no-repeat url("./numbers_yelliw_line.svg");
-  background-size: contain;
-  width: 72.13vh;
-  height: 4.16vh;
-  z-index: -99;
-}
-
-.numbers__year {
-  margin-top: 5.55vh;
-  font-size: 1.296vh;
-  font-weight: 400;
-  line-height: 1.57vh;
-  align-self: flex-end;
+.numbers__title_second {
+  padding-left: 31.852vh;
 }
 
 .numbers__flex_box {
-  margin-top: 0.926vh;
+  margin-top: 7.476vh;
   width: 110.37vh;
   border-top: 0.1vh solid #000;
   display: flex;
@@ -77,6 +62,7 @@
   .numbers__yellow_line {
     margin-left: 310px;
     background: no-repeat url("./numbers_yelliw_line.svg");
+    background-position: center;
     background-size: contain;
     width: 653px;
     height: 45px;

@@ -9,16 +9,17 @@
 
 .animation__text_block {
   display: block;
+  width: 100.648vh;
 }
 
 .animation__text_first_part,
 .animation__text_second_part {
-  width: 71.21vh;
+  width: 78.055vh;
   text-transform: uppercase;
   font-size: 6.02vh;
   font-weight: 700;
   line-height: 7.31vh;
-  transition: 0.7s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .animation__text_first_part_white {
@@ -26,6 +27,7 @@
 }
 
 .animation__text_second_part {
+  width: 92.5vh;
   color: #fff;
 }
 
@@ -44,20 +46,20 @@
   margin-bottom: 0.463vh;
   height: 6.944vh;
   background-color: #000;
-  transition: 0.7s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .animation__1th_black_line {
-  width: 41.11vh;
+  width: 94.074vh;
 }
 
 .animation__1th_black_line_go_upp {
   margin-top: -43.98vh;
-  width: 44.815vh;
+  width: 39.3vh;
 }
 
 .animation__2th_black_line {
-  width: 43.98vh;
+  width: 72.407vh;
 }
 
 .animation__2th_black_line_go_upp {
@@ -65,21 +67,20 @@
 }
 
 .animation__3th_black_line {
-  width: 46.48vh;
+  width: 83.703vh;
 }
 
 .animation__3th_black_line_go_upp {
-  width: 66.85vh;
+  width: 79.85vh;
 }
 
 .right__part {
   display: flex;
-  margin-left: 17.6px;
   flex-direction: column;
 }
 
 .conversation__image {
-  margin-right: 20.55vh;
+  margin-right: 11vh;
   display: block;
   width: 37.037vh;
   height: 37.037vh;
@@ -94,33 +95,19 @@
   font-weight: 300;
 }
 
-.text_paragraph_1,
-.text_paragraph_2,
-.text_paragraph_3 {
-  margin-left: 9.722vh;
-  width: 35vh;
+.text_paragraph {
+  margin-left: 6vh;
+  width: 31.4vh;
   font-size: 1.48vh;
   font-weight: 500;
-  text-transform: uppercase;
   line-height: 130%;
 }
 
-.text_paragraph_1 {
-  position: relative;
-}
-
-.text_paragraph_2,
-.text_paragraph_3 {
-  margin-top: 1.38vh;
-}
-
 .second_screen__yellow_mark {
-  margin-top: -3.8vh;
-  position: absolute;
-  margin-left: 8vh;
-  width: 31.48vh;
-  height: 1.66vh;
+  height: 1.48vh;
+  width: 7.87vh;
   background: no-repeat url("./img/yellow_line.svg");
+  background-position: center;
   background-size: contain;
   z-index: -99;
 }
@@ -150,7 +137,7 @@
     margin-bottom: 3px;
     height: 45px;
     background-color: #000;
-    transition: 0.7s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
 
   .animation__1th_black_line {
