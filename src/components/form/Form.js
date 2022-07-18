@@ -1,48 +1,47 @@
-import React, { useState, useRef } from "react"
+import React, { useState } from "react"
+import axios from "axios"
 import { useForm } from "react-hook-form"
 import Button from "../button/Button.js"
 import Personal from "./PersonalData"
 import ModalSuccess from "./ModalSuccess"
 import ModalError from "./ModalError"
 import Preloader from "./Preloader"
-import emailjs from "emailjs-com"
-
-// зарегистрироваться на emailjs.com
-// получить ключи SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY
-// поменять значения ниже
-
-const SERVICE_ID = 'service_woillgx'
-const TEMPLATE_ID = 'template_is6o93c'
-const PUBLIC_KEY = 'voBy1eSygtB9fTOr2'
 
 export default function Form() {
-  const form = useRef();
   const [isPersonal, setIsPersonal] = useState(false)
   const [isActiveModalSuccess, setActiveModalSuccess] = useState(false)
   const [isActiveModalError, setActiveModalError] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [checked, setChecked] = useState(false);
 
   const {
     register,
     formState: { errors, isValid },
     handleSubmit,
     reset
-  } = useForm({})
+  } = useForm({
+    mode: "onSubmit"
+  })
 
-  const onSubmit = () => {
+  const onSubmit = async() => {
     setIsLoading(true)
-    emailjs
-    .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-    .then((res) => {
-    setActiveModalSuccess(true)
-    setTimeout(setActiveModalSuccess, 5000)
-    setIsLoading(false)
-    })
-    .catch((err) => {
-      setActiveModalError(true)
-      setTimeout(setActiveModalError, 5000);
+    try {
+      axios.post('http://localhost:4000/api/email', {
+        name, phone, message
+      })
+      setIsLoading(false)
+      setActiveModalSuccess(true);
+      setTimeout(setActiveModalSuccess, 5000);
+    } catch (error) {
+      console.log(error)
       setIsLoading(false);
-    });
+      setActiveModalError(true);
+      setTimeout(setActiveModalError, 5000);
+    }
+    setChecked(false)
     reset()
   }
 
@@ -60,7 +59,7 @@ export default function Form() {
 
   return (
     <>
-      <form name="form" id="form" className="form" ref={form} onSubmit={handleSubmit(onSubmit)}>
+      <form name="form" id="form" className="form" onSubmit={handleSubmit(onSubmit)}>
         <div className="form__line">
           <label htmlFor="name" className="form_labels">
             ИМЯ
@@ -80,6 +79,7 @@ export default function Form() {
             })}
             id="name"
             className="form__input"
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
 
@@ -102,6 +102,7 @@ export default function Form() {
             className="form__input"
             type="tel"
             placeholder="+79000000000"
+            onChange={(e) => setPhone(e.target.value)}
           />
         </div>
         <div>{errors?.phone && <p className="form__focus">{errors?.phone?.message || "Error!"}</p>}</div>
@@ -110,9 +111,12 @@ export default function Form() {
           <label htmlFor="message" className="form_labels">
             СООБЩЕНИЕ
           </label>
-          <textarea name="message" id="message" className="form__textarea" />
+          <textarea 
+            name="message" {...register("message")}
+            id="message" 
+            className="form__textarea" 
+            onChange={(e) => setMessage(e.target.value)} />
         </div>
-        <div>{errors?.message && <p className="form__focus">{errors?.message?.message || "Error!"}</p>}</div>
         <div>{errors?.message && <p className="form__focus">{errors?.message?.message || "Error!"}</p>}</div>
         <div className="form__borders"></div>
         <div className="agree_and_button">
@@ -121,13 +125,15 @@ export default function Form() {
               <input
                 name="consent"
                 type="checkbox"
-                {...register("consent", {
-                  required: "Подтвердите свое согласие для отправки формы"
-                })}
+                checked={checked}
+                onChange={() => setChecked(!checked)}
+                {...register("consent", 
+                {required: "Подтвердите свое согласие для отправки формы"}
+                )}
                 id="consent"
                 className="form__checkbox"
               />
-              <span className="form__checkfake"></span>
+              <span className="form__checkfake" onClick={() => setChecked(!checked)}></span>
             </label>
             <p className="form__policy_text">
               Я соглашаюсь на обработку&nbsp;<br></br>
@@ -136,7 +142,7 @@ export default function Form() {
                 style={{
                   textDecoration: "underline",
                   cursor: "pointer",
-                  lineHeight: "200%",
+                  lineHeight: "200%"
                 }}
               >
                 персональных данных
@@ -151,7 +157,7 @@ export default function Form() {
       </form>
       {isActiveModalSuccess && <ModalSuccess clouseModal={clouseModal} />}
       {isActiveModalError && <ModalError clouseModal={clouseModal} />}
-      {isPersonal && <Personal closePersonal={closePersonal} />}
+      {isPersonal && <Personal closePersonal={closePersonal} setChecked={setChecked} />}
       {isLoading && <Preloader />}
     </>
   )

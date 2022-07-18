@@ -5,6 +5,8 @@
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100vw;
+  height: 100vh;
   background: rgba(31, 31, 31, 0.5);
   z-index: 110;
 }
@@ -16,24 +18,26 @@
 
 .modal__container {
   display: flex;
+  width: 100vw;
   height: 50vh;
-  padding-top: 15vh;
+  padding-top: 25vh;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
+  overflow-y: scroll;
 }
 
 .modal__message {
   margin: 0 auto;
-  width: 80vh;
+  width: 50vw;
   height: 50vh;
   background: #fff;
   border-radius: 5px;
 }
 
 .modal__title {
-  padding-top: 15vh;
+  padding-top: 10vh;
   margin-bottom: 6.25vh;
-  font-size: 3.91vh;
+  font-size: 3vh;
   line-height: 6vh;
   text-align: center;
   text-transform: uppercase;
@@ -41,7 +45,7 @@
 
 .modal__text {
   margin-bottom: 3vh;
-  font-size: 2.31vh;
+  font-size: 2vh;
   line-height: 4.69vh;
   text-align: center;
   text-transform: uppercase;
