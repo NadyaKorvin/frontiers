@@ -114,14 +114,14 @@
 
 @media screen and (max-width: 1024px) {
   .about__us_main {
-    padding-top: 110px;
+    padding-top: 130px;
     height: 556px;
     width: 964px;
   }
 
   .animation__text_first_part,
   .animation__text_second_part {
-    width: 462px;
+    width: 615px;
     font-size: 40px;
     line-height: 48px;
   }
@@ -141,16 +141,16 @@
   }
 
   .animation__1th_black_line {
-    width: 275px;
+    width: 623px;
   }
 
   .animation__1th_black_line_go_upp {
     margin-top: -287px;
-    width: 296px;
+    width: 258px;
   }
 
   .animation__2th_black_line {
-    width: 290px;
+    width: 258px;
   }
 
   .animation__2th_black_line_go_upp {
