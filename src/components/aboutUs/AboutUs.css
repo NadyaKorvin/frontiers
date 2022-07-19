@@ -114,9 +114,10 @@
 
 @media screen and (max-width: 1024px) {
   .about__us_main {
-    padding-top: 130px;
-    height: 556px;
+    padding-top: 120px;
+    height: 488px;
     width: 964px;
+    justify-content: space-between;
   }
 
   .animation__text_first_part,
@@ -128,7 +129,7 @@
 
   .animation__black_lines {
     margin-left: -5px;
-    margin-top: -143px;
+    margin-top: -142px;
   }
 
   .animation__1th_black_line,
@@ -150,27 +151,28 @@
   }
 
   .animation__2th_black_line {
-    width: 258px;
+    width: 479px;
   }
 
   .animation__2th_black_line_go_upp {
-    width: 360px;
+    width: 357px;
   }
 
   .animation__3th_black_line {
-    width: 307px;
+    width: 556px;
   }
 
   .animation__3th_black_line_go_upp {
-    width: 445px;
+    width: 527px;
   }
 
   .right__part {
     margin-left: 0;
+    width: 300px;
   }
 
   .conversation__image {
-    margin-right: 100px;
+    margin-right: 0;
     width: 300px;
     height: 300px;
     background: no-repeat url("./img/people_to_1024.webp");
@@ -178,32 +180,24 @@
   }
 
   .decoration_marks {
-    margin-top: -100px;
+    margin-top: -77px;
     transform: rotate(-180deg);
     font-size: 150px;
   }
 
-  .text_paragraph_1,
-  .text_paragraph_2,
-  .text_paragraph_3 {
-    margin-left: 68px;
+  .text_paragraph {
+    margin-left: 0;
     width: 300px;
     font-size: 14px;
     line-height: 130%;
   }
 
-  .text_paragraph_2,
-  .text_paragraph_3 {
-    margin-top: 10px;
-  }
-
   .second_screen__yellow_mark {
-    margin-top: -53px;
-    margin-left: 50px;
     width: 300px;
-    height: 18px;
+    height: 16px;
     background: no-repeat url("./img/yellow_line.svg");
     background-size: contain;
+    background-position: center;
   }
 }
 
@@ -218,9 +212,12 @@
   .animation__text_block {
     height: 288px;
   }
+
   .right__part {
     flex-direction: row-reverse;
     margin-top: 68px;
+    min-width: 728px;
+    max-width: 728px;
   }
 
   .conversation__image {
@@ -232,30 +229,12 @@
   }
 
   .decoration_marks {
-    margin: -95px 24px 0 0;
+    margin: 90px 24px 0 0;
     align-self: flex-start;
   }
 
   .about_us__text {
     align-self: flex-end;
-  }
-
-  .text_paragraph_1,
-  .text_paragraph_2,
-  .text_paragraph_3 {
-    margin-left: 0;
-    width: 304px;
-  }
-
-  .text_paragraph_2,
-  .text_paragraph_3 {
-    margin-top: 15px;
-  }
-
-  .second_screen__yellow_mark {
-    margin-top: -35px;
-    margin-left: 0px;
-    width: 286px;
   }
 }
 
@@ -267,53 +246,55 @@
   }
 
   .animation__text_block {
-    height: 216px;
+    height: 168px;
   }
 
   .animation__text_first_part,
   .animation__text_second_part {
     width: 335px;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 21px;
+    line-height: 25px;
   }
 
   .animation__black_lines {
-    margin-top: -109px;
+    margin-top: -77px;
   }
 
   .animation__1th_black_line,
   .animation__2th_black_line,
   .animation__3th_black_line {
-    height: 35px;
+    height: 25px;
     margin-bottom: 1px;
   }
 
   .animation__1th_black_line {
-    width: 206px;
+    width: 330px;
   }
 
   .animation__1th_black_line_go_upp {
-    margin-top: -215px;
-    width: 223px;
+    margin-top: -152px;
+    width: 140px;
   }
 
   .animation__2th_black_line {
-    width: 220px;
+    width: 254px;
   }
 
   .animation__2th_black_line_go_upp {
-    width: 270px;
+    width: 191px;
   }
 
   .animation__3th_black_line {
-    width: 232px;
+    width: 294px;
   }
 
   .animation__3th_black_line_go_upp {
-    width: 335px;
+    width: 281px;
   }
 
   .right__part {
+    max-width: 330px;
+    min-width: 330px;
     margin-top: 40px;
     flex-direction: column;
     justify-content: space-between;
