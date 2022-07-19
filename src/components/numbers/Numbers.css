@@ -34,6 +34,7 @@
   font-size: 6.018vh;
   font-weight: 700;
   line-height: 8.98vh;
+  text-transform: uppercase;
 }
 
 .numbers__small_description {
@@ -48,34 +49,21 @@
   .numbers__content_block {
     margin: 0 auto;
     padding-top: 120px;
-    height: 540px;
+    height: 408px;
     width: 964px;
   }
 
-  .numbers__description {
-    position: relative;
-    font-size: 35px;
-    line-height: 42px;
-    width: 964px;
+  .numbers__title_first,
+  .numbers__title_second {
+    font-size: 30px;
   }
 
-  .numbers__yellow_line {
-    margin-left: 310px;
-    background: no-repeat url("./numbers_yelliw_line.svg");
-    background-position: center;
-    background-size: contain;
-    width: 653px;
-    height: 45px;
-  }
-
-  .numbers__year {
-    margin-top: 33px;
-    font-size: 14px;
-    line-height: 17px;
+  .numbers__title_second {
+    padding-left: 211px;
   }
 
   .numbers__flex_box {
-    margin-top: 10px;
+    margin-top: 50px;
     width: 964px;
     border-top: 1px solid #000;
   }
@@ -95,41 +83,38 @@
 @media screen and (max-width: 768px) {
   .numbers__content_block {
     margin: 0 auto;
-    padding-top: 101px;
-    height: auto;
+    padding-top: 100x;
+    height: 390px;
     width: 728px;
   }
 
-  .numbers__description {
-    font-size: 25px;
-    line-height: 30px;
-    width: 728px;
+  .numbers__title_first,
+  .numbers__title_second {
+    font-size: 40px;
+    width: 460px;
   }
 
-  .numbers__yellow_line {
-    margin-left: 150px;
-    background: no-repeat url("./numbers_yelliw_line.svg");
-    background-size: contain;
-    width: 518px;
-    height: 31px;
+  .numbers__title_second {
+    padding-left: 0;
+    width: 650px;
   }
 
   .numbers__flex_box {
+    margin-top: 40px;
     width: 728px;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .numbers__flex_box_1v,
-  .numbers__flex_box_2v,
-  .numbers__flex_box_3v {
-    display: flex;
-    max-width: 728px;
-    min-width: 728px;
+  .numbers__big_numbers {
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 36px;
   }
 
-  .numbers__flex_block {
-    width: 354px;
+  .numbers__small_description {
+    margin-top: 10px;
+    font-size: 13px;
   }
 }
 
@@ -138,19 +123,17 @@
     margin: 0 auto;
     padding-top: 70px;
     width: 335px;
+    height: 682px;
+  }
+
+  .numbers__title_first,
+  .numbers__title_second {
+    font-size: 25px;
+    width: 280px;
   }
 
   .numbers__description {
     width: 335px;
-  }
-
-  .numbers__yellow_line {
-    margin-top: 35px;
-    margin-left: 0;
-    background: no-repeat url("./numbers_yelliw_line.svg");
-    background-size: contain;
-    width: 335px;
-    height: 33px;
   }
 
   .numbers__flex_box {
@@ -167,5 +150,15 @@
 
   .numbers__flex_block {
     width: 335px;
+  }
+  .numbers__big_numbers {
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .numbers__small_description {
+    margin-top: 10px;
+    font-size: 13px;
   }
 }

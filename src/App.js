@@ -73,7 +73,7 @@ function App() {
           <Nambers />
         </div>
         <div className="js-page div4">
-          <Team />
+          <Team width={width} />
         </div>
         <div className="js-page div5">
           <LastScreen />

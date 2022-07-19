@@ -215,3 +215,411 @@
 .slider__navigation_goback_arrow {
   transform: rotate(360deg);
 }
+
+@media screen and (max-width: 1024px) {
+  .team__popup {
+    position: relative;
+    width: 964px;
+    height: 640px;
+  }
+
+  .team__sliders {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    min-width: 964px;
+    max-width: 964px;
+  }
+
+  .popUp__closer {
+    display: none;
+  }
+
+  .team__slide {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+    width: 964px;
+    gap: 20px;
+  }
+
+  .popup__img {
+    min-width: 472px;
+    height: 640px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .popup_description {
+    margin: 0 auto;
+    margin-top: 530px;
+    width: 412px;
+    color: #fff;
+  }
+
+  .popup__title {
+    font-size: 20px;
+  }
+
+  .popup__hr {
+    margin: 10px 0;
+    border-top: 2px solid #fff;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .popup__name {
+    font-size: 30px;
+  }
+
+  .popup__info_texts {
+    position: relative;
+    margin-top: 36px;
+    width: 472px;
+  }
+
+  .popup__numbers_checked {
+    font-size: 18px;
+  }
+
+  .popup__numbers_block_checked {
+    opacity: 100%;
+    min-width: 472px;
+    max-width: 472px;
+  }
+
+  .popup__numbers_block {
+    margin-bottom: 58px;
+    min-width: 200px;
+    max-width: 200px;
+  }
+
+  .popup__numbers_big_element {
+    font-size: 35px;
+    text-transform: none;
+  }
+
+  .popup__numbers_small_element {
+    font-size: 14px;
+  }
+
+  .popup__numbers_unchecked {
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 18px;
+  }
+
+  .popup__numbers_block_unchecked {
+    opacity: 0%;
+    min-width: 472px;
+    max-width: 472px;
+    transform: translate(100%);
+  }
+
+  .popup__biografy_unchecked {
+    font-size: 18px;
+  }
+
+  .popup__biografy_checked {
+    font-size: 18px;
+  }
+
+  .popup__biografy_block_unchecked {
+    width: 472px;
+    opacity: 0%;
+    transform: translate(100%);
+  }
+
+  .popup__biografy_block_checked {
+    width: 472px;
+    opacity: 100%;
+  }
+
+  .popup__biografy_title {
+    font-size: 16px;
+  }
+
+  .popup__biografy_text {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .slider__navigation {
+    margin: -24px 0 0 630px;
+    gap: 60px;
+  }
+
+  .slider__navigation_goback_arrow,
+  .slider__navigation_goforward_arrow {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team__popup {
+    width: 728px;
+    height: 480px;
+  }
+
+  .team__sliders {
+    min-width: 728px;
+    max-width: 728px;
+  }
+
+  .team__slide {
+    margin-top: 40px;
+    width: 728px;
+    gap: 20px;
+  }
+
+  .popup__img {
+    min-width: 354px;
+    max-width: 354px;
+    height: 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .popup_description {
+    margin-top: 380px;
+    width: 314px;
+  }
+
+  .popup__title {
+    font-size: 20px;
+  }
+
+  .popup__hr {
+    margin: 10px 0;
+    border-top: 2px solid #fff;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .popup__name {
+    font-size: 30px;
+  }
+
+  .popup__info_texts {
+    margin-top: 26px;
+    width: 354px;
+  }
+
+  .popup__numbers_checked {
+    font-size: 18px;
+  }
+
+  .popup__numbers_block_checked {
+    opacity: 100%;
+    min-width: 354px;
+    max-width: 354px;
+  }
+
+  .popup__numbers_block {
+    margin-bottom: 57px;
+    min-width: 170px;
+    max-width: 170px;
+  }
+
+  .popup__numbers_big_element {
+    font-size: 25px;
+    text-transform: none;
+  }
+
+  .popup__numbers_small_element {
+    font-size: 13px;
+  }
+
+  .popup__numbers_unchecked {
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 18px;
+  }
+
+  .popup__numbers_block_unchecked {
+    opacity: 0%;
+    min-width: 354px;
+    max-width: 354px;
+    transform: translate(100%);
+  }
+
+  .popup__biografy_unchecked {
+    font-size: 18px;
+  }
+
+  .popup__biografy_checked {
+    font-size: 18px;
+  }
+
+  .popup__biografy_block_unchecked {
+    width: 354px;
+    opacity: 0%;
+    transform: translate(100%);
+  }
+
+  .popup__biografy_block_checked {
+    width: 354px;
+    opacity: 100%;
+  }
+
+  .popup__biografy_title {
+    font-size: 14px;
+  }
+
+  .popup__biografy_text {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+
+  .slider__navigation {
+    margin: -24px 0 0 450px;
+    font-size: 16px;
+    gap: 50px;
+  }
+
+  .slider__navigation_goback_arrow,
+  .slider__navigation_goforward_arrow {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .team__popup {
+    min-width: 335px;
+    max-width: 335px;
+    height: auto;
+  }
+
+  .team__sliders {
+    min-width: 335px;
+    max-width: 335px;
+    height: auto;
+  }
+
+  .team__slide {
+    margin-top: 30px;
+    min-width: 335px;
+    max-width: 335px;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .popup__img {
+    min-width: 335px;
+    max-width: 335px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .popup_description {
+    margin-top: 102px;
+    width: 305px;
+  }
+
+  .popup__title {
+    font-size: 15px;
+  }
+
+  .popup__hr {
+    margin: 10px 0;
+    border-top: 2px solid #fff;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .popup__name {
+    font-size: 25px;
+  }
+
+  .popup__info {
+    min-height: 400px;
+  }
+
+  .popup__info_texts {
+    margin-top: 26px;
+    width: 335px;
+  }
+
+  .popup__numbers_checked {
+    font-size: 16px;
+  }
+
+  .popup__numbers_block_checked {
+    opacity: 100%;
+    min-width: 335px;
+    max-width: 335px;
+  }
+
+  .popup__numbers_block {
+    margin-bottom: 57px;
+    min-width: 150px;
+    max-width: 150px;
+  }
+
+  .popup__numbers_big_element {
+    font-size: 22px;
+  }
+
+  .popup__numbers_small_element {
+    font-size: 12px;
+  }
+
+  .popup__numbers_unchecked {
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 16px;
+  }
+
+  .popup__numbers_block_unchecked {
+    opacity: 0%;
+    min-width: 335px;
+    max-width: 335px;
+    transform: translate(100%);
+  }
+
+  .popup__biografy_unchecked {
+    font-size: 16px;
+  }
+
+  .popup__biografy_checked {
+    font-size: 16px;
+  }
+
+  .popup__biografy_block_unchecked {
+    width: 335px;
+    opacity: 0%;
+    transform: translate(100%);
+  }
+
+  .popup__biografy_block_checked {
+    width: 335px;
+    opacity: 100%;
+  }
+
+  .popup__biografy_title {
+    font-size: 14px;
+  }
+
+  .popup__biografy_text {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+
+  .slider__navigation {
+    margin: 0 auto;
+    font-size: 14px;
+  }
+
+  .slider__navigation_goback_arrow,
+  .slider__navigation_goforward_arrow {
+    width: 40px;
+  }
+}
