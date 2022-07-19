@@ -1,7 +1,7 @@
 import React from "react"
 import Button from "../button/Button.js"
 
-const Personal = ({ closePersonal }) => {
+const Personal = ({ closePersonal, setChecked }) => {
   React.useEffect(() => {
     document.body.style.overflow = "hidden"
     return () => (document.body.style.overflow = "")
@@ -140,7 +140,9 @@ const Personal = ({ closePersonal }) => {
             </p>
           </div>
           <div onClick={closePersonal}>
-            <Button title="принять" />
+            <div onClick={setChecked}>
+              <Button title="принять" />
+            </div>
           </div>
         </div>
       </div>
