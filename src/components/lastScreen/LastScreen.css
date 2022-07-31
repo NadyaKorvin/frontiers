@@ -17,7 +17,7 @@
 .lastscreen__title {
   font-weight: 700;
   font-size: 6.018vh;
-  line-height: 7.315vh;
+  line-height: 130%;
   text-transform: uppercase;
 }
 
@@ -61,111 +61,109 @@
 @media screen and (max-width: 1024px) {
   .lastscreen {
     margin: 0 auto;
-    padding-top: 120px;
+    padding-top: 11.72vw;
     height: auto;
-    width: 964px;
+    width: 94.14vw;
   }
 
   .lastscreen__wrapper {
     flex-direction: column;
-    gap: 50px;
+    gap: 4.88vw;
   }
 
   .lastscreen__title {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 3.91vw;
   }
 
   .lastscreen__decoration_marks {
-    margin: -60px 0 0 20px;
-    width: 40px;
-    font-size: 180px;
+    margin: -5.86vw 0 0 1.95vw;
+    width: 3.91vw;
+    font-size: 17.58vw;
   }
 
   .lastscreen__description {
-    margin: -10px 0 0 57px;
-    width: 318px;
-    font-size: 16px;
+    margin: -0.98vw 0 0 5.57vw;
+    width: 31.05vw;
+    font-size: 1.56vw;
   }
 
   .lastscreen__right_content {
-    width: 964px;
+    width: 94.14vw;
     height: auto;
   }
 
   .lastscreen__text_form {
-    width: 500px;
+    width: 48.83vw;
     height: auto;
-    font-size: 18px;
+    font-size: 1.76vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .lastscreen {
     margin: 0 auto;
-    padding-top: 100px;
-    width: 728px;
+    padding-top: 13.02vw;
+    width: 94.79vw;
   }
 
   .lastscreen__left_content,
   .lastscreen__right_content {
-    width: 728px;
+    width: 94.79vw;
   }
 
   .lastscreen__decoration_marks {
-    margin: -60px 0 0 10px;
-    width: 40px;
-    font-size: 130px;
+    margin: -7.81vw 0 0 1.3vw;
+    width: 5.21;
+    font-size: 16.93vw;
   }
 
   .lastscreen__description {
-    font-size: 15px;
+    font-size: 1.95vw;
   }
   .lastscreen__text_form {
-    font-size: 16px;
+    font-size: 2.08vw;
+    width: 53vw;
   }
 }
 
 @media screen and (max-width: 375px) {
   .lastscreen {
     margin: 0 auto;
-    padding-top: 70px;
-    width: 335px;
+    padding-top: 18.67vw;
+    width: 89.33vw;
   }
 
   .lastscreen__wrapper {
-    gap: 40px;
+    gap: 10.67vw;
   }
 
   .lastscreen__left_content {
-    width: 335px;
-    font-size: 30px;
-    line-height: 36px;
+    width: 89.33vw;
+    font-size: 8vw;
   }
 
   .lastscreen__title {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 6.67vw;
   }
 
   .lastscreen__decoration_marks {
-    margin: -5px 0 0 5px;
-    width: 40px;
-    font-size: 120px;
+    margin: -15vw 0 0 1.33vw;
+    width: 10.67vw;
+    font-size: 34.13vw;
   }
 
   .lastscreen__description {
-    margin: 30px 0 0 55px;
-    width: 318px;
-    font-size: 14px;
+    margin: 2vw 0 0 14.67vw;
+    width: 84.8vw;
+    font-size: 3.73vw;
   }
 
   .lastscreen__right_content {
-    width: 335px;
+    width: 89.33vw;
   }
 
   .lastscreen__text_form {
-    width: 335px;
-    font-size: 14px;
+    width: 89.33vw;
+    font-size: 3.73vw;
   }
 }

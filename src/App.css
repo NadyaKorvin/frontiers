@@ -49,6 +49,15 @@ a {
   height: 0;
 }
 
+.div1,
+.div2,
+.div3,
+.div4,
+.div5 {
+  width: 100vw;
+  overflow: hidden;
+}
+
 @media (min-width: 1025px) {
   html,
   body {
@@ -139,7 +148,6 @@ a {
 
 @media screen and (max-whidth: 768px) {
   body {
-    width: 768px;
     overflow: hidden;
   }
 }

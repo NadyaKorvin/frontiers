@@ -15,29 +15,12 @@
 }
 
 .firstscreen__logotype {
-  width: 13.98vh;
-  height: 2.77vh;
   font-weight: 700;
   font-size: 2.31vh;
-  line-height: 2.77vh;
+  line-height: 130%;
   letter-spacing: 0.05em;
+  cursor: pointer;
 }
-
-/* .firstscreen__logotype:hover {
-  animation: firstscreen__logotype 1s ease-in-out;
-}
-
-@keyframes firstscreen__logotype {
-  0% {
-    transform: translateX(0vh);
-  }
-  50% {
-    transform: translateX(4vh);
-  }
-  100% {
-    transform: translateX(0vh);
-  }
-} */
 
 .firstscreen__menu {
   width: 60.46vh;
@@ -55,7 +38,7 @@
   justify-content: space-between;
   font-weight: 500;
   font-size: 1.48vh;
-  line-height: 1.76vh;
+  line-height: 130%;
 }
 
 .nav_links {
@@ -64,56 +47,79 @@
   transition: 0.2s ease-in-out;
 }
 
+.nav_links_tablet {
+  display: none;
+}
+
 .firstscreen__button {
   width: 22.5vh;
   height: 4.166vh;
-  font-weight: 500;
-  font-size: 1.48vh;
   text-align: center;
   border: none;
-  color: #ffffff;
   background-color: #000000;
+  font-weight: 500;
+  font-size: 1.48vh;
+  color: #ffffff;
+}
+
+.firstscreen__button_tablet {
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
   .firstscreen__header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 99;
-    background: linear-gradient(#ffffff, #ffffffda);
+    background: #fff;
+    width: 100vw;
   }
 
   .header_block {
+    overflow: hidden;
     margin: 0 auto;
-    width: 964px;
-    height: 80px;
-    border-bottom: 1px solid #000000;
+    width: 94.14vw;
+    height: 7.8125vw;
+    border-bottom: 0.097vw solid #000000;
   }
 
   .firstscreen__logotype {
-    width: 151px;
-    height: 30px;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 2.441vw;
   }
 
   .firstscreen__menu {
-    width: 657px;
+    width: 64.16vw;
   }
 
   .firstscreen__nav {
-    width: 331px;
+    width: 32.324vw;
   }
 
   .firstscreen__nav_team {
-    font-size: 16px;
-    line-height: 19.36px;
+    font-size: 1.5625vw;
+  }
+
+  .nav_links {
+    display: none;
+  }
+
+  .nav_links_tablet {
+    display: block;
+    color: #000000;
   }
 
   .firstscreen__button {
-    width: 226px;
-    height: 45px;
-    font-size: 16px;
+    display: none;
+  }
+
+  .firstscreen__button_tablet {
+    display: block;
+    padding: 1.2695vw 1.5625vw;
+    font-size: 1.5625vw;
+    text-align: center;
+    background: #000000;
+    color: #fff;
   }
 }
 

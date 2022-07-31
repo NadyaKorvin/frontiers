@@ -16,7 +16,7 @@
   margin-bottom: 1.39vh;
   font-weight: 500;
   font-size: 1.48vh;
-  line-height: 1.76vh;
+  line-height: 130%;
 }
 
 .lastscreen__contact_group_contact,
@@ -24,12 +24,14 @@
   margin-bottom: 1.85vh;
   font-weight: 700;
   font-size: 2.31vh;
-  line-height: 2.77vh;
+  line-height: 130%;
 }
 
 .lastscreen__contact_group_frontiers {
+  display: block;
   margin-bottom: 5.278vh;
   letter-spacing: 0.05em;
+  cursor: pointer;
 }
 
 .lastscreen__frontiers_group {
@@ -67,84 +69,99 @@
 @media screen and (max-width: 1024px) {
   .lastscreen__footer {
     margin: 0 auto;
-    margin-top: 120px;
-    width: 964px;
+    margin-top: 11.72vw;
+    width: 94.14vw;
     border-top: 1px solid #000000;
   }
 
   .lastscreen__footer_wrapper_info {
-    margin-top: 33px;
+    margin-top: 3.22vw;
   }
 
   .lastscreen__footer_text {
-    margin-bottom: 15px;
-    font-size: 14px;
-    line-height: 17px;
+    margin-bottom: 1.46vw;
+    font-size: 1.37vw;
   }
 
   .lastscreen__contact_group_contact,
   .lastscreen__contact_group_frontiers {
-    margin-bottom: 20px;
-    font-size: 25px;
-    line-height: 30px;
+    margin-bottom: 1.95vw;
+    font-size: 2.44vw;
   }
 
   .lastscreen__contact_group_frontiers {
-    margin-bottom: 52px;
+    margin-bottom: 5.08vw;
   }
 
   .lastscreen__design_dev {
-    top: -50px;
+    top: -4.88vw;
     margin: 0 auto;
-    width: 240px;
-    height: 17px;
+    width: 23.44vw;
+    height: 1.66vw;
   }
 
   .kojo__logo {
-    width: 85px;
-    height: 14px;
+    width: 8.3vw;
+    height: 1.37vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .lastscreen__footer_wrapper_info {
-    margin-bottom: 77px;
+    margin-bottom: 10.03vw;
   }
 
   .lastscreen__footer {
     margin: 0 auto;
-    margin-top: 100px;
-    width: 728px;
-    border-top: 1px solid #000000;
+    margin-top: 13.02vw;
+    width: 94.79;
+    border-top: 0.13vw solid #000000;
+  }
+
+  .lastscreen__footer_text {
+    margin-bottom: 1.95vw;
+    font-size: 1.86vw;
+  }
+
+  .lastscreen__contact_group_contact,
+  .lastscreen__contact_group_frontiers {
+    margin-bottom: 2.6vw;
+    font-size: 3.26vw;
   }
 
   .lastscreen__contact_group_frontiers {
-    margin-bottom: 50px;
+    margin-bottom: 6.51vw;
   }
 
   .lastscreen__design_dev {
-    top: -70px;
+    top: -9.11vw;
     margin: 0 0;
-    width: 240px;
-    height: 17px;
+    width: 31.25vw;
+    height: 2.21vw;
   }
 
   .kojo__logo {
-    width: 85px;
-    height: 14px;
+    width: 11.07vw;
+    height: 1.86vw;
   }
 }
 
 @media screen and (max-width: 375px) {
+  .lastscreen__footer {
+    height: 98.67vw;
+    margin: 0 auto;
+    margin-top: 10.67vw;
+    width: 89.33vw;
+  }
+
   .lastscreen__footer_wrapper_info {
     margin-bottom: 0px;
     flex-direction: column;
   }
 
-  .lastscreen__footer {
-    margin: 0 auto;
-    margin-top: 40px;
-    width: 335px;
+  .lastscreen__footer_text {
+    margin-bottom: 4vw;
+    font-size: 3.73vw;
   }
 
   .lastscreen__frontiers_group {
@@ -152,20 +169,24 @@
   }
 
   .lastscreen__contact_group_frontiers {
-    margin: 25px 0 20px 0;
-    font-size: 20px;
-    line-height: 24px;
+    margin: 6.67vw 0 5.33vw 0;
+  }
+
+  .lastscreen__contact_group_contact,
+  .lastscreen__contact_group_frontiers {
+    margin-bottom: 5.33vw;
+    font-size: 5.33vw;
   }
 
   .lastscreen__design_dev {
-    top: 20px;
+    top: 5.33vw;
     margin: 0 0;
-    width: 241px;
-    height: 17px;
+    width: 64.27vw;
+    height: 4.53vw;
   }
 
   .kojo__logo {
-    width: 84px;
-    height: 14px;
+    width: 22.4vw;
+    height: 3.73vw;
   }
 }

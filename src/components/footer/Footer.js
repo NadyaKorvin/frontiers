@@ -1,4 +1,6 @@
-export function Footer() {
+import React from "react"
+
+export function Footer({ setActivePage }) {
   return (
     <footer className="lastscreen__footer">
       <div className="lastscreen__footer_wrapper_info">
@@ -13,7 +15,9 @@ export function Footer() {
           </a>
         </div>
         <div className="lastscreen__frontiers_group">
-          <p className="lastscreen__contact_group_frontiers">FRONTIERS</p>
+          <a className="lastscreen__contact_group_frontiers" onClick={() => setActivePage(1)} href="#main">
+            FRONTIERS
+          </a>
           <a href="#" className="lastscreen__footer_text">
             Политика конфиденциальности
           </a>

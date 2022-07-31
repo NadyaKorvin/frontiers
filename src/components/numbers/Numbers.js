@@ -2,7 +2,7 @@ import React from "react"
 
 export function Nambers() {
   return (
-    <div className="numbers__content_block" id="link__numbers">
+    <div className="numbers__content_block">
       <p className="numbers__title_first">Сколько вложили и заработали </p>
       <p className="numbers__title_second">наши клиенты в 2021 году:</p>
       <div className="numbers__flex_box">

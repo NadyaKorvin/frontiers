@@ -124,45 +124,45 @@ textarea {
 
 @media screen and (max-width: 1024px) {
   .form {
-    margin-top: 30px;
-    width: 964px;
+    margin-top: 2.93vw;
+    width: 94.14vw;
     height: auto;
-    border-top: 1px solid #d1d1d1;
+    border-top: 0.1vw solid #d1d1d1;
   }
 
   .form_labels {
-    font-size: 14px;
+    font-size: 1.37vw;
   }
 
   .form__input,
   .form__textarea {
-    width: 700px;
-    height: 80px;
-    font-size: 14px;
+    width: 68.36vw;
+    height: 7.81vw;
+    font-size: 1.37vw;
   }
 
   textarea {
-    padding-top: 10px;
-    font-size: 14px;
+    padding-top: 0.98vw;
+    font-size: 1.37vw;
   }
 
   .form__borders {
-    border-bottom: 1px solid #d1d1d1;
+    border-bottom: 0.1vw solid #d1d1d1;
   }
 
   .agree_and_button {
-    margin: 60px 0 0;
+    margin: 5.86vw 0 0;
   }
 
   .form__policy {
-    margin: 14px 0 0;
+    margin: 1.37vw 0 0;
     align-items: center;
   }
 
   .form__policy_text {
-    margin-left: 15px;
-    font-size: 13px;
-    width: 330px;
+    margin-left: 1.46vw;
+    font-size: 1.27vw;
+    width: 32.23vw;
   }
 
   .form__policy_text > br {
@@ -170,55 +170,189 @@ textarea {
   }
 
   .form__checkfake {
-    width: 10px;
-    height: 10px;
-    border: 1px solid #1f1f1f;
+    width: 0.98vw;
+    height: 0.98vw;
+    border: 0.1vw solid #1f1f1f;
   }
 
   .form__checkfake::before {
-    width: 10px;
-    height: 10px;
+    width: 0.98vw;
+    height: 0.98vw;
   }
 
   .form__focus {
-    margin-bottom: 8px;
-    font-size: 12px;
+    margin-bottom: 0.78vw;
+    font-size: 1.17vw;
   }
 
   .form__focus_consent {
-    top: 8px;
-    font-size: 12px;
+    top: 0.78vw;
+    font-size: 1.17vw;
   }
 
   .form__btn {
-    margin-top: 10px;
+    margin-top: 0.98vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .form {
-    width: 728px;
+    margin-top: 5.21vw;
+    width: 94.79vw;
+    height: auto;
+    border-top: 0.13vw solid #d1d1d1;
   }
 
-  .form__line {
-    max-width: 728px;
+  .form_labels {
+    font-size: 1.82vw;
+  }
+
+  .form__input,
+  .form__textarea {
+    width: 94.79vw;
+    height: 10.42vw;
+    font-size: 1.82vw;
+  }
+
+  textarea {
+    padding-top: 1.3vw;
+    font-size: 1.82vw;
   }
 
   .form__borders {
-    width: 728px;
+    border-bottom: 0.13vw solid #d1d1d1;
+  }
+
+  .agree_and_button {
+    margin: 7.81vw 0 0;
+  }
+
+  .form__policy {
+    margin: 1.86vw 0 0;
+    align-items: center;
+  }
+
+  .form__policy_text {
+    margin-left: 1.95vw;
+    font-size: 1.69vw;
+    width: 43vw;
+  }
+
+  .form__policy_text > br {
+    display: none;
+  }
+
+  .form__checkfake {
+    width: 1.3vw;
+    height: 1.3vw;
+    border: 0.13vw solid #1f1f1f;
+  }
+
+  .form__checkfake::before {
+    width: 1.3vw;
+    height: 1.3vw;
+  }
+
+  .form__focus {
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+  }
+
+  .form__focus_consent {
+    top: 1vw;
+    font-size: 1.5vw;
+  }
+
+  .form__btn {
+    width: 31.64vw;
+    height: 7.16vw;
+    font-size: 2.08vw;
   }
 }
 
 @media screen and (max-width: 375px) {
   .form {
-    width: 335px;
-  }
-
-  .form__line {
-    max-width: 335px;
+    margin-top: 5.33vw;
+    width: 89.33vw;
+    border-top: 0.27vw solid #d1d1d1;
   }
 
   .form__borders {
-    width: 335px;
+    width: 89.33vw;
+  }
+
+  .form_labels {
+    font-size: 3.47vw;
+  }
+
+  .form__input,
+  .form__textarea {
+    width: 89.33vw;
+    height: 15.2vw;
+    font-size: 3.47vw;
+  }
+
+  textarea {
+    padding-top: 2.67vw;
+    font-size: 3.47vw;
+  }
+
+  .form__borders {
+    border-bottom: 0.27vw solid #d1d1d1;
+  }
+
+  .agree_and_button {
+    margin-top: 8vw;
+    flex-direction: column;
+  }
+
+  .form__line {
+    max-width: 89.33vw;
+  }
+
+  .form__policy {
+    margin: 0;
+    align-items: flex-start;
+  }
+
+  .form__policy_text {
+    margin-left: 2.67vw;
+    font-size: 3.47vw;
+    width: 82.67vw;
+  }
+
+  .form__policy_text > br {
+    display: block;
+  }
+
+  .form__btn {
+    margin-top: 8.8vw;
+  }
+
+  .form__checkfake {
+    width: 2.67vw;
+    height: 2.67vw;
+    border: 0.27vw solid #1f1f1f;
+  }
+
+  .form__checkfake::before {
+    width: 2.67vw;
+    height: 2.67vw;
+  }
+
+  .form__focus {
+    margin-bottom: 2.67vw;
+    font-size: 3.47vw;
+  }
+
+  .form__focus_consent {
+    top: 2.67vw;
+    font-size: 3.47vw;
+  }
+
+  .form__btn {
+    height: 14.67vw;
+    width: 89.33vw;
+    font-size: 4.27vw;
   }
 }

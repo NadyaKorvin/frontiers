@@ -19,7 +19,7 @@
   text-align: end;
   font-weight: 400;
   font-size: 14.81vh;
-  line-height: 17.96vh;
+  line-height: 130%;
   text-transform: uppercase;
 }
 
@@ -47,7 +47,7 @@
   height: 17.96vh;
   font-weight: 400;
   font-size: 14.81vh;
-  line-height: 17.96vh;
+  line-height: 130%;
   text-transform: uppercase;
 }
 
@@ -100,44 +100,43 @@
 @media screen and (max-width: 1024px) {
   .firstscreen {
     height: auto;
+    margin-top: 7.81vw;
   }
 
   .firstscreen__content {
     margin: 0 auto;
-    padding-top: 30px;
-    width: 964px;
-    height: 387px;
+    padding-top: 2.93vw;
+    width: 94.14vw;
+    height: 37.79vw;
   }
 
   .firstscreen__content_left_text {
-    width: 641px;
-    font-size: 90px;
-    line-height: 109px;
+    width: 62.6vw;
+    font-size: 8.79vw;
   }
 
   .firstscreen__content_rihgt_text {
-    margin-top: 20px;
-    width: 221px;
-    height: 290px;
+    margin-top: 1.95vw;
+    width: 21.58vw;
+    height: 28.32vw;
   }
 
   .firstscreen__content_rihgt_text_up {
-    font-size: 14px;
+    font-size: 1.37vw;
   }
 
   .firstscreen__content_rihgt_text_down {
-    margin-top: 37px;
-    margin-left: -10px;
-    width: 121px;
-    height: 109px;
-    font-size: 90px;
-    line-height: 109px;
+    margin-top: 3.61vw;
+    margin-left: -0.98vw;
+    width: 11.82vw;
+    height: 10.64vw;
+    font-size: 8.79vw;
   }
 
   .firstscreen__content_bottom_content {
     margin: 0 auto;
-    margin-top: 80px;
-    width: 964px;
+    margin-top: 7.81vw;
+    width: 94.14vw;
   }
 
   .firstscreen__content_bottom_content_left,
@@ -147,8 +146,8 @@
   }
 
   .firstscreen__content_bottom_content_right {
-    width: 964px;
-    height: 600px;
+    width: 94.14vw;
+    height: 58.59vw;
     background: no-repeat center url("./img/main_img_1024.webp");
     background-size: cover;
   }
@@ -157,15 +156,16 @@
 @media screen and (max-width: 768px) {
   .firstscreen__content {
     margin: 0 auto;
-    width: 728px;
+    padding-top: 6vw;
+    width: 94.79vw;
     height: auto;
   }
 
   .firstscreen__content_left_text {
-    width: 499px;
-    height: 285px;
-    font-size: 70px;
-    line-height: 85px;
+    width: 64.97vw;
+    height: 37.11vw;
+    font-size: 9.11vw;
+    line-height: 11.07vw;
   }
 
   .firstscreen__content_rihgt_text {
@@ -178,36 +178,35 @@
   }
 
   .firstscreen__content_rihgt_text_down {
-    margin-top: 125px;
+    margin-top: 16.28vw;
     margin-left: 0;
-    width: 94px;
-    height: 85px;
-    font-size: 70px;
-    line-height: 85px;
+    width: 12.24vw;
+    height: 11.07vw;
+    font-size: 9.11vw;
     align-self: flex-end;
   }
 
   .firstscreen__content_bottom_content {
     margin: 0 auto;
-    width: 728px;
-    margin-top: 57px;
+    width: 94.79vw;
+    margin-top: 7.42vw;
     display: flex;
     flex-direction: column;
   }
 
   .firstscreen__text_description {
     display: block;
-    width: 343px;
+    width: 44.66vw;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.82vw;
     line-height: 130%;
     text-transform: uppercase;
   }
 
   .firstscreen__content_bottom_content_right {
-    margin-top: 30px;
-    width: 728px;
-    height: 458px;
+    margin-top: 3.91vw;
+    width: 94.79vw;
+    height: 59.64vw;
     background: no-repeat center url("./img/main_img_768.webp");
     background-size: cover;
   }
@@ -216,43 +215,43 @@
 @media screen and (max-width: 375px) {
   .firstscreen__content {
     margin: 0 auto;
-    width: 335px;
+    margin-top: 17vw;
+    width: 89.33vw;
     height: auto;
   }
 
   .firstscreen__content_left_text {
-    width: 285px;
-    height: 154px;
-    font-size: 40px;
-    line-height: 48px;
+    width: 76vw;
+    height: 41.07vw;
+    font-size: 10.67vw;
   }
 
   .firstscreen__content_left_text_hard {
-    padding-right: 20px;
+    padding-right: 5.33vw;
   }
 
   .firstscreen__content_rihgt_text_down {
-    margin: 33px 10px 0 0;
-    width: 48px;
-    height: 54px;
-    font-size: 40px;
-    line-height: 48px;
+    margin: 8.8vw 2.67vw 0 0;
+    width: 12.8vw;
+    height: 14.4vw;
+    font-size: 10.67vw;
   }
 
   .firstscreen__content_bottom_content {
     margin: 0 auto;
-    width: 335px;
-    margin-top: 40px;
+    width: 89.33vw;
+    margin-top: 10.67vw;
   }
 
   .firstscreen__text_description {
-    width: 335px;
+    width: 89.33vw;
+    font-size: 3.73vw;
   }
 
   .firstscreen__content_bottom_content_right {
-    margin-top: 20px;
-    width: 335px;
-    height: 370px;
+    margin-top: 5.33vw;
+    width: 89.33vw;
+    height: 98.67vw;
     background: no-repeat center url("./img/main_img_375.webp");
     background-size: cover;
   }

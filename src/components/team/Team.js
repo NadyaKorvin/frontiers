@@ -14,7 +14,7 @@ export function Team({ width }) {
   const togglePopup = () => setIsOpenPopup(!isOpenPopup)
 
   return (
-    <div className="team__block" id="link__team">
+    <div className="team__block">
       <p className="team__block_title">команда Frontiers</p>
       <div className="team__block_main">
         <div className="team__block_description">
@@ -23,7 +23,7 @@ export function Team({ width }) {
             приятно видеть, как бизнес и инвесторы начинают больше доверять друг другу.
           </p>
         </div>
-        {width > 1023 ? (
+        {width > 1024 ? (
           <div className="persones">
             <div className="big_persona" style={{ backgroundImage: `url('${refreshData[0].url}')` }}>
               <div className="persones_description">

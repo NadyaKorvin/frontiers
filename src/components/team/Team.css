@@ -141,76 +141,76 @@
 @media screen and (max-width: 1024px) {
   .team__block {
     margin: 0 auto;
-    padding-top: 120px;
-    height: 879px;
-    width: 964px;
+    padding-top: 11.72vw;
+    height: 85.84vw;
+    width: 94.14vw;
   }
 
   .team__block_title {
-    font-size: 70px;
-    line-height: 85px;
+    font-size: 6.84vw;
+    line-height: 130%;
   }
 
   .team__block_main {
-    margin-top: 50px;
+    margin-top: 4.88vw;
     flex-direction: column;
   }
 
   .team__block_description {
-    width: 472px;
-    font-size: 14px;
+    width: 46.09vw;
+    font-size: 1.37vw;
     align-self: flex-start;
   }
 
   .team__yellow_line {
-    width: 158px;
-    height: 16px;
+    width: 15.43vw;
+    height: 1.56vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .team__block {
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 13.02vw;
     height: auto;
-    width: 728px;
+    width: 94.79vw;
   }
 
   .team__block_title {
-    font-size: 55px;
-    line-height: 67px;
+    font-size: 7.16vw;
   }
 
   .team__block_main {
-    margin-top: 40px;
+    margin-top: 5.21vw;
   }
 
   .team__block_description {
     padding-top: 0;
     padding-left: 0;
-    width: 354px;
+    width: 46.09vw;
+    font-size: 1.82vw;
   }
 }
 
 @media screen and (max-width: 375px) {
   .team__block {
     margin: 0 auto;
-    padding-top: 70px;
-    width: 335px;
+    padding-top: 18.67vw;
+    width: 89.33vw;
   }
 
   .team__block_title {
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 9.33vw;
   }
 
   .team__block_main {
-    margin-top: 40px;
+    margin-top: 10.67vw;
   }
 
   .team__block_description {
     padding-top: 0;
     padding-left: 0px;
-    width: 335px;
+    width: 89.33vw;
+    font-size: 3.73vw;
   }
 }
