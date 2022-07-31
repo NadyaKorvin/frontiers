@@ -71,13 +71,13 @@ export function TeamPopup({ useData }) {
             </div>
           </div>
         </div>
-        <div className="slider__navigation">
-          <button className="slider__navigation_goback_arrow" onClick={() => goBack()}></button>
-          <p>
-            {currentSlider + 1}/{useData.length}
-          </p>
-          <button className="slider__navigation_goforward_arrow" onClick={() => goForward()}></button>
-        </div>
+      </div>
+      <div className="slider__navigation">
+        <button className="slider__navigation_goback_arrow" onClick={() => goBack()}></button>
+        <p>
+          {currentSlider + 1}/{useData.length}
+        </p>
+        <button className="slider__navigation_goforward_arrow" onClick={() => goForward()}></button>
       </div>
     </div>
   )

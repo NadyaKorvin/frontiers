@@ -12,10 +12,10 @@ export default function Form() {
   const [isActiveModalSuccess, setActiveModalSuccess] = useState(false)
   const [isActiveModalError, setActiveModalError] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  const [checked, setChecked] = useState(false);
+  const [name, setName] = useState("")
+  const [phone, setPhone] = useState("")
+  const [message, setMessage] = useState("")
+  const [checked, setChecked] = useState(false)
 
   const {
     register,
@@ -26,20 +26,22 @@ export default function Form() {
     mode: "onSubmit"
   })
 
-  const onSubmit = async() => {
+  const onSubmit = async () => {
     setIsLoading(true)
     try {
-      axios.post('http://localhost:4000/api/email', {
-        name, phone, message
+      axios.post("http://localhost:4000/api/email", {
+        name,
+        phone,
+        message
       })
       setIsLoading(false)
-      setActiveModalSuccess(true);
-      setTimeout(setActiveModalSuccess, 5000);
+      setActiveModalSuccess(true)
+      setTimeout(setActiveModalSuccess, 5000)
     } catch (error) {
       console.log(error)
-      setIsLoading(false);
-      setActiveModalError(true);
-      setTimeout(setActiveModalError, 5000);
+      setIsLoading(false)
+      setActiveModalError(true)
+      setTimeout(setActiveModalError, 5000)
     }
     setChecked(false)
     reset()
@@ -59,7 +61,7 @@ export default function Form() {
 
   return (
     <>
-      <form name="form" id="form" className="form" onSubmit={handleSubmit(onSubmit)}>
+      <form name="form" className="form" onSubmit={handleSubmit(onSubmit)}>
         <div className="form__line">
           <label htmlFor="name" className="form_labels">
             ИМЯ
@@ -111,11 +113,7 @@ export default function Form() {
           <label htmlFor="message" className="form_labels">
             СООБЩЕНИЕ
           </label>
-          <textarea 
-            name="message" {...register("message")}
-            id="message" 
-            className="form__textarea" 
-            onChange={(e) => setMessage(e.target.value)} />
+          <textarea name="message" {...register("message")} id="message" className="form__textarea" onChange={(e) => setMessage(e.target.value)} />
         </div>
         <div>{errors?.message && <p className="form__focus">{errors?.message?.message || "Error!"}</p>}</div>
         <div className="form__borders"></div>
@@ -127,9 +125,7 @@ export default function Form() {
                 type="checkbox"
                 checked={checked}
                 onChange={() => setChecked(!checked)}
-                {...register("consent", 
-                {required: "Подтвердите свое согласие для отправки формы"}
-                )}
+                {...register("consent", { required: "Подтвердите свое согласие для отправки формы" })}
                 id="consent"
                 className="form__checkbox"
               />

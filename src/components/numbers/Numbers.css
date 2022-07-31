@@ -33,7 +33,7 @@
   margin-top: 3.7vh;
   font-size: 6.018vh;
   font-weight: 700;
-  line-height: 8.98vh;
+  line-height: 130%;
   text-transform: uppercase;
 }
 
@@ -48,117 +48,109 @@
 @media screen and (max-width: 1024px) {
   .numbers__content_block {
     margin: 0 auto;
-    padding-top: 120px;
-    height: 408px;
-    width: 964px;
+    padding-top: 11.72vw;
+    height: 39.84vw;
+    width: 94.14vw;
   }
 
   .numbers__title_first,
   .numbers__title_second {
-    font-size: 30px;
+    font-size: 2.93vw;
   }
 
   .numbers__title_second {
-    padding-left: 211px;
+    padding-left: 20.61vw;
   }
 
   .numbers__flex_box {
-    margin-top: 50px;
-    width: 964px;
-    border-top: 1px solid #000;
+    margin-top: 4.88vw;
+    width: 94.14vw;
+    border-top: 0.1vw solid #000;
   }
 
   .numbers__big_numbers {
-    margin-top: 40px;
-    font-size: 40px;
-    line-height: 48px;
+    margin-top: 3.91vw;
+    font-size: 3.91vw;
   }
 
   .numbers__small_description {
-    margin-top: 10px;
-    font-size: 14px;
+    margin-top: 0.98vw;
+    font-size: 1.97vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .numbers__content_block {
     margin: 0 auto;
-    padding-top: 100x;
-    height: 390px;
-    width: 728px;
+    padding-top: 13.02vw;
+    height: 50.78vw;
+    width: 94.79vw;
   }
 
   .numbers__title_first,
   .numbers__title_second {
-    font-size: 40px;
-    width: 460px;
+    font-size: 5.21vw;
+    width: 59.9vw;
   }
 
   .numbers__title_second {
     padding-left: 0;
-    width: 650px;
+    width: 84.64vw;
   }
 
   .numbers__flex_box {
-    margin-top: 40px;
-    width: 728px;
+    margin-top: 5.21vw;
+    width: 94.79vw;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .numbers__big_numbers {
-    margin-top: 30px;
-    font-size: 30px;
-    line-height: 36px;
+    margin-top: 3.91vw;
+    font-size: 3.91vw;
   }
 
   .numbers__small_description {
-    margin-top: 10px;
-    font-size: 13px;
+    margin-top: 1.3vw;
+    font-size: 1.69vw;
   }
 }
 
 @media screen and (max-width: 375px) {
   .numbers__content_block {
     margin: 0 auto;
-    padding-top: 70px;
-    width: 335px;
-    height: 682px;
+    padding-top: 18.67vw;
+    width: 89.33vw;
+    height: 167.47vw;
   }
 
   .numbers__title_first,
   .numbers__title_second {
-    font-size: 25px;
-    width: 280px;
+    font-size: 6.67vw;
+    width: 74.67vw;
   }
 
-  .numbers__description {
-    width: 335px;
-  }
-
-  .numbers__flex_box {
-    width: 335px;
+  .numbers__description,
+  .numbers__flex_box,
+  .numbers__flex_block {
+    width: 89.33vw;
   }
 
   .numbers__flex_box_1v,
   .numbers__flex_box_2v,
   .numbers__flex_box_3v {
     flex-direction: column;
-    max-width: 335px;
-    min-width: 335px;
+    max-width: 89.33vw;
+    min-width: 89.33vw;
   }
 
-  .numbers__flex_block {
-    width: 335px;
-  }
   .numbers__big_numbers {
-    margin-top: 20px;
-    font-size: 25px;
-    line-height: 30px;
+    margin-top: 5.33vw;
+    font-size: 6.67vw;
   }
 
   .numbers__small_description {
-    margin-top: 10px;
-    font-size: 13px;
+    margin-top: 2.67vw;
+    font-size: 3.47vw;
   }
 }

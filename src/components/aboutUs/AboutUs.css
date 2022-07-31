@@ -9,16 +9,16 @@
 
 .animation__text_block {
   display: block;
-  width: 100.648vh;
+  min-width: 100.648vh;
 }
 
 .animation__text_first_part,
 .animation__text_second_part {
-  width: 78.055vh;
+  min-width: 78.055vh;
   text-transform: uppercase;
   font-size: 6.02vh;
   font-weight: 700;
-  line-height: 7.31vh;
+  line-height: 130%;
   transition: 0.6s ease-in-out;
 }
 
@@ -114,87 +114,90 @@
 
 @media screen and (max-width: 1024px) {
   .about__us_main {
-    padding-top: 120px;
-    height: 488px;
-    width: 964px;
+    margin: 0 auto;
+    padding-top: 11.71875vw;
+    height: 47.66vw;
+    width: 94.14vw;
     justify-content: space-between;
+  }
+
+  .animation__text_block {
+    min-width: 61.5234375vw;
   }
 
   .animation__text_first_part,
   .animation__text_second_part {
-    width: 615px;
-    font-size: 40px;
-    line-height: 48px;
+    width: 61.5234375vw;
+    font-size: 3.9vw;
   }
 
   .animation__black_lines {
-    margin-left: -5px;
-    margin-top: -142px;
+    margin-left: -0.48828125vw;
+    margin-top: -14.87vw;
   }
 
   .animation__1th_black_line,
   .animation__2th_black_line,
   .animation__3th_black_line {
-    margin-bottom: 3px;
-    height: 45px;
+    margin-bottom: 0.29296875vw;
+    height: 4.7vw;
     background-color: #000;
     transition: 0.6s ease-in-out;
   }
 
   .animation__1th_black_line {
-    width: 623px;
+    width: 60.84vw;
   }
 
   .animation__1th_black_line_go_upp {
-    margin-top: -287px;
-    width: 258px;
+    margin-top: -30.02734375vw;
+    width: 25.2vw;
   }
 
   .animation__2th_black_line {
-    width: 479px;
+    width: 46.78vw;
   }
 
   .animation__2th_black_line_go_upp {
-    width: 357px;
+    width: 34.86vw;
   }
 
   .animation__3th_black_line {
-    width: 556px;
+    width: 54.3vw;
   }
 
   .animation__3th_black_line_go_upp {
-    width: 527px;
+    width: 51.46vw;
   }
 
   .right__part {
     margin-left: 0;
-    width: 300px;
+    width: 29.3vw;
   }
 
   .conversation__image {
     margin-right: 0;
-    width: 300px;
-    height: 300px;
+    width: 29.3vw;
+    height: 29.3vw;
     background: no-repeat url("./img/people_to_1024.webp");
     background-size: cover;
   }
 
   .decoration_marks {
-    margin-top: -77px;
+    margin-top: -7.52vw;
     transform: rotate(-180deg);
-    font-size: 150px;
+    font-size: 14.65vw;
   }
 
   .text_paragraph {
     margin-left: 0;
-    width: 300px;
-    font-size: 14px;
-    line-height: 130%;
+    width: 29.3vw;
+    font-size: 1.37vw;
   }
 
   .second_screen__yellow_mark {
-    width: 300px;
-    height: 16px;
+    width: 29.3vw;
+    height: 1.56vw;
     background: no-repeat url("./img/yellow_line.svg");
     background-size: contain;
     background-position: center;
@@ -203,34 +206,91 @@
 
 @media screen and (max-width: 768px) {
   .about__us_main {
-    padding-top: 100px;
+    margin: 0 auto;
+    padding-top: 13.02vw;
     height: auto;
-    width: 728px;
+    max-width: 94.79vw;
+    min-width: 94.79vw;
     flex-direction: column;
   }
 
   .animation__text_block {
-    height: 288px;
+    display: block;
+    min-width: 94.79vw;
+    height: 37.5vw;
+  }
+
+  .animation__text_first_part,
+  .animation__text_second_part {
+    width: 94.79vw;
+    font-size: 5.21vw;
+  }
+
+  .animation__black_lines {
+    margin-left: -1.3vw;
+    margin-top: -19.87vw;
+  }
+
+  .animation__1th_black_line,
+  .animation__2th_black_line,
+  .animation__3th_black_line {
+    margin-bottom: 0.7vw;
+    height: 5.86vw;
+    background-color: #000;
+    transition: 0.6s ease-in-out;
+  }
+
+  .animation__1th_black_line {
+    width: 81.9vw;
+  }
+
+  .animation__1th_black_line_go_upp {
+    margin-top: -40.03vw;
+    width: 34.64vw;
+  }
+
+  .animation__2th_black_line {
+    width: 62.89vw;
+  }
+
+  .animation__2th_black_line_go_upp {
+    width: 47.53vw;
+  }
+
+  .animation__3th_black_line {
+    width: 73.05vw;
+  }
+
+  .animation__3th_black_line_go_upp {
+    width: 69.66vw;
   }
 
   .right__part {
     flex-direction: row-reverse;
-    margin-top: 68px;
-    min-width: 728px;
-    max-width: 728px;
+    justify-content: space-between;
+    margin-top: 8.85vw;
+    min-width: 94.79vw;
+    max-width: 94.79vw;
   }
 
   .conversation__image {
     margin-right: 0;
-    width: 354px;
-    height: 354px;
+    width: 46.09vw;
+    height: 46.09vw;
     background: no-repeat url("./img/people_to_768.webp");
     background-size: cover;
   }
 
   .decoration_marks {
-    margin: 90px 24px 0 0;
-    align-self: flex-start;
+    margin-bottom: 13vw;
+    transform: rotate(-180deg);
+    font-size: 23.44vw;
+  }
+
+  .text_paragraph {
+    margin-left: 0;
+    width: 39.06vw;
+    font-size: 1.82vw;
   }
 
   .about_us__text {
@@ -240,93 +300,89 @@
 
 @media screen and (max-width: 375px) {
   .about__us_main {
-    padding-top: 70px;
-    width: 335px;
+    padding-top: 18.67vw;
+    width: 89.33vw;
+    max-width: 89.33vw;
+    min-width: 89.33vw;
     flex-direction: column;
   }
 
   .animation__text_block {
-    height: 168px;
+    height: 44.8vw;
   }
 
   .animation__text_first_part,
   .animation__text_second_part {
-    width: 335px;
-    font-size: 21px;
-    line-height: 25px;
+    width: 89.33vw;
+    font-size: 5.6vw;
   }
 
   .animation__black_lines {
-    margin-top: -77px;
+    margin-top: -21.53vw;
   }
 
   .animation__1th_black_line,
   .animation__2th_black_line,
   .animation__3th_black_line {
-    height: 25px;
-    margin-bottom: 1px;
+    height: 7vw;
+    margin-bottom: 0.27vw;
   }
 
   .animation__1th_black_line {
-    width: 330px;
+    width: 88vw;
   }
 
   .animation__1th_black_line_go_upp {
-    margin-top: -152px;
-    width: 140px;
+    margin-top: -43.53vw;
+    width: 37.33vw;
   }
 
   .animation__2th_black_line {
-    width: 254px;
+    width: 67.73vw;
   }
 
   .animation__2th_black_line_go_upp {
-    width: 191px;
+    width: 50.93vw;
   }
 
   .animation__3th_black_line {
-    width: 294px;
+    width: 78.4vw;
   }
 
   .animation__3th_black_line_go_upp {
-    width: 281px;
+    width: 74.93vw;
   }
 
   .right__part {
-    max-width: 330px;
-    min-width: 330px;
-    margin-top: 40px;
+    max-width: 88vw;
+    min-width: 88vw;
+    margin-top: 12.8vw;
     flex-direction: column;
     justify-content: space-between;
   }
 
   .conversation__image {
-    width: 335px;
-    height: 335px;
+    width: 89.33vw;
+    height: 89.33vw;
     background: no-repeat url("./img/people_to_375.webp");
     background-size: cover;
   }
 
   .decoration_marks {
-    margin: -55px 0 0 0;
+    margin: -10vw 0 0 0;
     align-self: flex-end;
+    font-size: 27vw;
   }
 
   .about_us__text {
-    margin: 10px 0 0 0;
-    width: 335px;
+    margin: 2.67vw 0 0 0;
+    width: 89.33vw;
     align-self: flex-end;
   }
 
-  .text_paragraph_1,
-  .text_paragraph_2,
-  .text_paragraph_3 {
+  .text_paragraph {
     margin-left: 0;
-  }
-
-  .second_screen__yellow_mark {
-    margin-top: -35px;
-    margin-left: 0px;
-    width: 286px;
+    width: 89.33vw;
+    font-size: 3.73vw;
   }
 }

@@ -25,7 +25,6 @@ function App() {
       window.removeEventListener("resize", handleWindowSizeChange)
     }
   }, [])
-  console.log(width)
 
   useEffect(() => {
     const onWheel = (event) => {
@@ -63,21 +62,21 @@ function App() {
         style={{ transform: width > 1024 ? `translateY(${(activePage - 1) * -100}%)` : "none" }}
         data-page={activePage}
       >
-        <div className="js-page div1">
+        <div className="js-page div1" id="main">
           <FirstScreen />
         </div>
-        <div className="js-page div2">
+        <div className="js-page div2" id="about_us">
           <AboutUs />
         </div>
-        <div className="js-page div3">
+        <div className="js-page div3" id="numbers">
           <Nambers />
         </div>
-        <div className="js-page div4">
+        <div className="js-page div4" id="team">
           <Team width={width} />
         </div>
-        <div className="js-page div5">
+        <div className="js-page div5" id="form">
           <LastScreen />
-          <Footer />
+          <Footer setActivePage={setActivePage} />
         </div>
       </div>
     </>

@@ -18,15 +18,15 @@ export function AboutUs() {
   goUpBlackLines(mousePosition)
 
   return (
-    <div className="about__us_main" id="link__about_us">
+    <div className="about__us_main">
       <div className="animation__text_block">
         <div>
           <div className="animation__text" onMouseOver={listenMousePosition}>
             <p className={goUp !== "up" ? "animation__text_first_part" : "animation__text_first_part animation__text_first_part_white"}>
-              Инвестору <br></br> сложно найти прибыльные проекты,
+              Инвестору <br></br> сложно найти <br></br> прибыльные проекты,
             </p>
             <p className={goUp !== "up" ? "animation__text_second_part" : "animation__text_second_part animation__text_second_part_black"}>
-              еще сложнее определить, можно ли доверять собственнику бизнеса
+              еще сложнее определить, <br></br> можно ли доверять <br></br> собственнику бизнеса
             </p>
           </div>
           <div className="animation__black_lines">

@@ -5,7 +5,9 @@ export function BurgerMenu() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="mobail__firstscreen_logotype">FRONTIERS</div>
+        <a className="mobail__firstscreen_logotype" href="#main">
+          FRONTIERS
+        </a>
         <input type="checkbox" name="" id="" />
         <div className="hamburger-lines">
           <span className="line line1"></span>
@@ -14,21 +16,21 @@ export function BurgerMenu() {
         <span className="white__block_under_logo"></span>
         <div className="menu-items">
           <ul className="menu-items__ul">
-            <li>
-              <a className="menu-items__string about_us_yellow_line" href="#link__about_us">
+            <li className="menu__closer">
+              <a className="menu-items__string about_us_yellow_line" href="#about_us">
                 О нас
               </a>
               <div className="menu__numbers">(01)</div>
             </li>
             <li>
-              <a className="menu-items__string team_yellow_line" href="#link__team">
-                Команда
+              <a className="menu-items__string numbers_yellow_line" href="#numbers">
+                Цифры
               </a>
               <div className="menu__numbers">(02)</div>
             </li>
             <li>
-              <a className="menu-items__string numbers_yellow_line" href="#link__numbers">
-                Цифры
+              <a className="menu-items__string team_yellow_line" href="#team">
+                Команда
               </a>
               <div className="menu__numbers">(03)</div>
             </li>
@@ -39,7 +41,7 @@ export function BurgerMenu() {
               <div className="menu__numbers">(04)</div>
             </li>
           </ul>
-          <Footer />
+          <Footer setActivePage={undefined} />
           <div className="white__line_for_footer_border"></div>
         </div>
       </div>
