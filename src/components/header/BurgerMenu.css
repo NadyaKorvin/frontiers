@@ -201,7 +201,7 @@
     margin-top: -111vw;
     width: 100vw;
     height: 13.33vw;
-    background-color: #ffffff;
+    background-color: #fff;
   }
 
   .navbar-container > input[type="checkbox"]:checked ~ .menu-items,
