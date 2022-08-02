@@ -1,3 +1,5 @@
+import React from "react"
+
 export function ScrollBar({ activePage }) {
   return (
     <div className="scroll__bar">
