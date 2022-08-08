@@ -9,7 +9,8 @@
 .square2,
 .square3,
 .square4,
-.square5 {
+.square5,
+.square6 {
   z-index: 99;
   left: 4%;
   position: fixed;
@@ -34,6 +35,10 @@
 }
 .square5 {
   top: 55.726vh;
+}
+
+.square6 {
+  top: 59.426vh;
 }
 
 .activ_page_square {

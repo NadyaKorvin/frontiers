@@ -1,3 +1,4 @@
+import React from "react"
 import { useState, useEffect, useRef } from "react"
 import "./App.css"
 import { Header } from "./components/header/Header"
@@ -8,7 +9,7 @@ import { Nambers } from "./components/numbers/Numbers"
 import { Team } from "./components/team/Team"
 import LastScreen from "./components/lastScreen/LastScreen"
 import { Footer } from "./components/footer/Footer"
-import React from "react"
+import { Projects } from "./components/projects/Projects"
 
 function App() {
   const [activePage, setActivePage] = useState(1)
@@ -33,7 +34,7 @@ function App() {
 
       if (!direction) return
       if (direction === "up" && activePage === 1) return
-      if (direction === "down" && activePage === 5) return
+      if (direction === "down" && activePage === 6) return
 
       setActivePage((prev) => (direction === "up" ? prev - 1 : prev + 1))
       animatingPage.current = true
@@ -68,13 +69,16 @@ function App() {
         <div className="js-page div2" id="about_us">
           <AboutUs />
         </div>
-        <div className="js-page div3" id="numbers">
+        <div className="js-page div3" id="projects">
+          <Projects />
+        </div>
+        <div className="js-page div4" id="numbers">
           <Nambers />
         </div>
-        <div className="js-page div4" id="team">
+        <div className="js-page div5" id="team">
           <Team width={width} />
         </div>
-        <div className="js-page div5" id="form">
+        <div className="js-page div6" id="form">
           <LastScreen />
           <Footer setActivePage={setActivePage} />
         </div>
