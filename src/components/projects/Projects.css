@@ -46,6 +46,7 @@
   background: no-repeat url("./img/slider_range.svg");
   background-size: 100% 100%;
   background-position: center;
+  border: none;
   z-index: -2;
 }
 
