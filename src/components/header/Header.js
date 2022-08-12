@@ -6,7 +6,7 @@ export function Header({ setActivePage }) {
     <header className="firstscreen__header">
       <div className="header_block">
         <a className="firstscreen__logotype" onClick={() => setActivePage(1)} href="#main">
-          FRONTIERS
+          <span className="frontiers_logo"></span>FRONTIERS
         </a>
         <div className="firstscreen__menu">
           <div className="firstscreen__nav">
@@ -19,12 +19,18 @@ export function Header({ setActivePage }) {
                   О нас
                 </a>
                 <li className="nav_links" onClick={() => setActivePage(3)}>
+                  Проекты
+                </li>
+                <a className="nav_links_tablet" href="#projects">
+                  Проекты
+                </a>
+                <li className="nav_links" onClick={() => setActivePage(4)}>
                   Цифры
                 </li>
                 <a className="nav_links_tablet" href="#numbers">
                   Цифры
                 </a>
-                <li className="nav_links" onClick={() => setActivePage(4)}>
+                <li className="nav_links" onClick={() => setActivePage(5)}>
                   Команда
                 </li>
                 <a className="nav_links_tablet" href="#team">

@@ -24,7 +24,7 @@ export default function firstScreen() {
       </div>
       <div className="firstscreen__content_bottom_content">
         <div className="firstscreen__content_bottom_content_left">
-          <p className="firstscreen__content_bottom_content_left_scrolldown">ПРОКРУТИ ВНИЗ</p>
+          <p className="firstscreen__content_bottom_content_left_scrolldown">ПРОКРУТИТЕ ВНИЗ</p>
         </div>
         <div className="firstscreen__text_description">
           <p>

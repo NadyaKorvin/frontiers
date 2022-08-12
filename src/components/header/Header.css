@@ -14,6 +14,12 @@
   align-items: center;
 }
 
+.frontiers_logo {
+  background: no-repeat url("./frontiers_logo.svg");
+  width: 2.22vh;
+  height: 1.75vh;
+}
+
 .firstscreen__logotype {
   font-weight: 700;
   font-size: 2.31vh;
@@ -23,14 +29,14 @@
 }
 
 .firstscreen__menu {
-  width: 60.46vh;
+  width: 67.12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .firstscreen__nav {
-  width: 30.64vh;
+  width: 37.22vh;
 }
 
 .firstscreen__nav_team {

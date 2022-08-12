@@ -95,10 +95,506 @@
 
 .projects_filter__cadrs_block {
   display: flex;
+  gap: 2.7vh;
+  max-width: 110.37vh;
+  min-width: 110.37vh;
 }
 
-.projects_filter__card {
-  width: 20vh;
-  height: 30vh;
-  background: no-repeat url("./img/generation_coffe_1920.png");
+.project_filter_card__grey {
+  max-width: 35vh;
+  min-width: 35vh;
+  height: 46.29vh;
+  border: solid 0.09vh rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.85vh;
+  color: rgba(3, 3, 3, 0.2);
+  line-height: 130%;
+  text-align: center;
+}
+
+.project_filter_card__grey_logo,
+.project_filter_card__logo {
+  width: 31.29vh;
+  height: 3.98vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project_filter_card_min_invest__numbers,
+.project_filter_card_income_money_numbers,
+.project_filter_card_income_percent_numbers {
+  font-size: 2.31vh;
+  font-weight: 500;
+}
+
+.project_filter_card_min_invest__description,
+.project_filter_card_income_money_description,
+.project_filter_card_income_percent_description {
+  font-size: 1.48vh;
+  font-weight: 500;
+}
+
+.project_filter_card__color {
+  max-width: 35vh;
+  min-width: 35vh;
+  height: 46.29vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.85vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(128, 128, 128);
+  background-blend-mode: multiply;
+  border: solid 0.09vh rgba(255, 255, 255, 0);
+  line-height: 130%;
+  text-align: center;
+  color: #fff;
+  transition: 0.6s ease-out;
+}
+
+.project_filter_card__color:hover {
+  background-color: rgba(255, 255, 255, 0.746);
+  transition: 0.6s ease-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    margin: 0 auto;
+    padding-top: 11.72vw;
+    height: auto;
+    width: 94.14vw;
+  }
+
+  .projects__title {
+    font-size: 6.84vw;
+  }
+
+  .projects__filter {
+    margin-top: 4.88vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .range_slider__container {
+    width: 94.14vw;
+  }
+
+  .range_slider__title,
+  .information_about_projects__title {
+    display: inline;
+    font-size: 2.44vw;
+  }
+
+  .range_slider {
+    position: relative;
+    margin-left: -1.8vw;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 102.3%;
+    height: 4.2vw;
+    outline: none;
+  }
+
+  .range_slider__img {
+    height: 5vw;
+    background: no-repeat url("./img/slider_range_1024.svg");
+    background-size: 100% 100%;
+    background-position: center;
+    border: none;
+    z-index: -2;
+  }
+
+  .range_slider::-webkit-slider-thum {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 2vw;
+    width: 2.93vw;
+    height: 4.39vw;
+    background: no-repeat url("./img/slider_range_cursor.svg");
+    background-size: contain;
+    cursor: pointer;
+    border-left: solid 0.49vw #fff;
+    border-right: solid 0.49vw #fff;
+  }
+
+  .range_slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 2vw;
+    width: 2.93vw;
+    height: 4.39vw;
+    background: no-repeat url("./img/slider_range_cursor.svg");
+    background-size: contain;
+    cursor: pointer;
+    border-left: solid 0.49vw #fff;
+    border-right: solid 0.49vw #fff;
+  }
+
+  .range_slider__label {
+    position: absolute;
+    top: 13vw;
+    font-size: 1.56vw;
+  }
+
+  .information_about_projects {
+    margin-top: 8.5vw;
+    order: 1;
+    min-width: 36.82vw;
+    max-width: 36.82vw;
+  }
+
+  .projects__instuction {
+    margin-top: 3.91vw;
+    font-size: 1.56vw;
+  }
+
+  .projects_filter__cadrs_block {
+    margin-top: 8.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.93vw;
+    max-width: 46.09vw;
+    min-width: 46.09vw;
+  }
+
+  .project_filter_card__grey {
+    max-width: 46.09vw;
+    min-width: 46.09vw;
+    height: 21.48vw;
+    border: solid 0.1vw rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1.95vw;
+    color: rgba(3, 3, 3, 0.2);
+  }
+
+  .project_filter_card__grey_logo,
+  .project_filter_card__logo {
+    width: 25vw;
+    height: 3.03vw;
+  }
+
+  .project_filter_card_min_invest__numbers,
+  .project_filter_card_income_money_numbers,
+  .project_filter_card_income_percent_numbers {
+    font-size: 1.95vw;
+  }
+
+  .project_filter_card_min_invest__description,
+  .project_filter_card_income_money_description,
+  .project_filter_card_income_percent_description {
+    font-size: 1.37vw;
+  }
+
+  .project_filter_card__color {
+    max-width: 46.09vw;
+    min-width: 46.09vw;
+    height: 21.48vw;
+    gap: 1.95vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(128, 128, 128);
+    background-blend-mode: multiply;
+    border: solid 0.1vw rgba(255, 255, 255, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    margin: 0 auto;
+    padding-top: 13.02vw;
+    height: auto;
+    width: 94.79vw;
+  }
+
+  .projects__title {
+    font-size: 7.16vw;
+  }
+
+  .projects__filter {
+    margin-top: 5.21vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .range_slider__container {
+    width: 94.79vw;
+  }
+
+  .range_slider__title,
+  .information_about_projects__title {
+    display: inline;
+    font-size: 3.26vw;
+  }
+
+  .range_slider {
+    position: relative;
+    margin-left: -1.8vw;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 102.3%;
+    height: 5.2vw;
+    outline: none;
+  }
+
+  .range_slider__img {
+    height: 5vw;
+    background: no-repeat url("./img/slider_range_768.svg");
+    background-size: 100% 100%;
+    background-position: center;
+    border: none;
+    z-index: -2;
+  }
+
+  .range_slider::-webkit-slider-thum {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 2vw;
+    width: 3.91vw;
+    height: 5.86vw;
+    background: no-repeat url("./img/slider_range_cursor.svg");
+    background-size: contain;
+    cursor: pointer;
+    border-left: solid 0.65vw #fff;
+    border-right: solid 0.65vw #fff;
+  }
+
+  .range_slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 2vw;
+    width: 3.91vw;
+    height: 5.86vw;
+    background: no-repeat url("./img/slider_range_cursor.svg");
+    background-size: contain;
+    cursor: pointer;
+    border-left: solid 0.65vw #fff;
+    border-right: solid 0.65vw #fff;
+  }
+
+  .range_slider__label {
+    position: absolute;
+    top: 15.5vw;
+    font-size: 1.82vw;
+  }
+
+  .information_about_projects {
+    margin-top: 13.02vw;
+    order: 1;
+    min-width: 43.49vw;
+    max-width: 43.49vw;
+  }
+
+  .projects__instuction {
+    margin-top: 5.21vw;
+    font-size: 1.82vw;
+  }
+
+  .projects_filter__cadrs_block {
+    margin-top: 13.02vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3.91vw;
+    max-width: 46.09vw;
+    min-width: 46.09vw;
+  }
+
+  .project_filter_card__grey {
+    max-width: 46.09vw;
+    min-width: 46.09vw;
+    height: 28.65vw;
+    border: solid 0.1vw rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1.95vw;
+    color: rgba(3, 3, 3, 0.2);
+  }
+
+  .project_filter_card__grey_logo,
+  .project_filter_card__logo {
+    width: 25vw;
+    height: 3.03vw;
+  }
+
+  .project_filter_card_min_invest__numbers,
+  .project_filter_card_income_money_numbers,
+  .project_filter_card_income_percent_numbers {
+    font-size: 2.6vw;
+  }
+
+  .project_filter_card_min_invest__description,
+  .project_filter_card_income_money_description,
+  .project_filter_card_income_percent_description {
+    font-size: 1.82vw;
+  }
+
+  .project_filter_card__color {
+    max-width: 46.09vw;
+    min-width: 46.09vw;
+    height: 28.65vw;
+    gap: 1.95vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(128, 128, 128);
+    background-blend-mode: multiply;
+    border: solid 0.1vw rgba(255, 255, 255, 0);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .projects {
+    margin: 0 auto;
+    padding-top: 33.07vw;
+    width: 89.33vw;
+  }
+
+  .projects__title {
+    font-size: 9.33vw;
+  }
+
+  .projects__filter {
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .range_slider__container {
+    width: 89.33vw;
+  }
+
+  .range_slider__title,
+  .information_about_projects__title {
+    display: inline;
+    font-size: 5.33vw;
+  }
+
+  .range_slider {
+    position: relative;
+    margin-left: -2.2vw;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 105%;
+    height: 8vw;
+    outline: none;
+  }
+
+  .range_slider__img {
+    margin-top: -3vw;
+    height: 9vw;
+    background: no-repeat url("./img/slider_range_375.svg");
+    background-size: 100% 100%;
+    background-position: center;
+    border: none;
+    z-index: -2;
+  }
+
+  /* .range_slider::-webkit-slider-thum {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 5vw;
+    width: 3.91vw;
+    height: 5.86vw;
+    background: no-repeat url("./img/slider_range_cursor.svg");
+    background-size: contain;
+    cursor: pointer;
+    border-left: solid 0.65vw #fff;
+    border-right: solid 0.65vw #fff;
+  }
+
+  .range_slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 2vw;
+    width: 3.91vw;
+    height: 5.86vw;
+    background: no-repeat url("./img/slider_range_cursor.svg");
+    background-size: contain;
+    cursor: pointer;
+    border-left: solid 0.65vw #fff;
+    border-right: solid 0.65vw #fff;
+  } */
+
+  .range_slider__label {
+    position: absolute;
+    top: 25.5vw;
+    font-size: 3.47vw;
+  }
+
+  .information_about_projects {
+    margin-top: 17vw;
+    order: 0;
+    min-width: 89.33vw;
+    max-width: 89.33vw;
+  }
+
+  .projects__instuction {
+    margin-top: 10vw;
+    font-size: 3.73vw;
+  }
+
+  .projects_filter__cadrs_block {
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5.33vw;
+    max-width: 89.33vw;
+    min-width: 89.33vw;
+  }
+
+  .project_filter_card__grey {
+    max-width: 89.33vw;
+    min-width: 89.33vw;
+    height: 46.67vw;
+    border: solid 0.1vw rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1.95vw;
+    color: rgba(3, 3, 3, 0.2);
+  }
+
+  .project_filter_card__grey_logo,
+  .project_filter_card__logo {
+    width: 62.4vw;
+    height: 10vw;
+  }
+
+  .project_filter_card_min_invest__numbers,
+  .project_filter_card_income_money_numbers,
+  .project_filter_card_income_percent_numbers {
+    font-size: 4.27vw;
+  }
+
+  .project_filter_card_min_invest__description,
+  .project_filter_card_income_money_description,
+  .project_filter_card_income_percent_description {
+    font-size: 3.47vw;
+  }
+
+  .project_filter_card__color {
+    gap: 1.95vw;
+    max-width: 89.33vw;
+    min-width: 89.33vw;
+    height: 46.67vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(128, 128, 128);
+    background-blend-mode: multiply;
+    border: solid 0.1vw rgba(255, 255, 255, 0);
+  }
 }

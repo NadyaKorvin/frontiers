@@ -20,6 +20,7 @@
   font-weight: 700;
   line-height: 7.2833333333333vh;
   transition: 0.6s ease-in-out;
+  white-space: nowrap;
 }
 
 .animation__text_first_part_white {

@@ -202,7 +202,7 @@
   }
 
   .menu-items__string {
-    font-size: 10.67vw;
+    font-size: 10vw;
     line-height: 130%;
   }
   /* 
@@ -214,11 +214,12 @@
   } */
 
   .menu-items__ul {
+    margin-top: -8vw;
     margin-bottom: 0;
   }
 
   .menu-items__ul > li {
-    margin-bottom: 5.33vw;
+    margin-bottom: 0;
     gap: 4vw;
   }
 

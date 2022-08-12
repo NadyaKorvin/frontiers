@@ -24,22 +24,28 @@ export function BurgerMenu() {
               <div className="menu__numbers">(01)</div>
             </li>
             <li>
+              <a className="menu-items__string projects_yellow_line" href="#projects" onClick={() => setOpenBurger(false)}>
+                Проекты
+              </a>
+              <div className="menu__numbers">(02)</div>
+            </li>
+            <li>
               <a className="menu-items__string numbers_yellow_line" href="#numbers" onClick={() => setOpenBurger(false)}>
                 Цифры
               </a>
-              <div className="menu__numbers">(02)</div>
+              <div className="menu__numbers">(03)</div>
             </li>
             <li>
               <a className="menu-items__string team_yellow_line" href="#team" onClick={() => setOpenBurger(false)}>
                 Команда
               </a>
-              <div className="menu__numbers">(03)</div>
+              <div className="menu__numbers">(04)</div>
             </li>
             <li>
               <a className="menu-items__string form_yellow_line" href="#form" onClick={() => setOpenBurger(false)}>
                 Консультация
               </a>
-              <div className="menu__numbers">(04)</div>
+              <div className="menu__numbers">(05)</div>
             </li>
           </ul>
           <Footer setActivePage={1} />
