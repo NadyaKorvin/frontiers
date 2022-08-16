@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-export function TeamPopup({ useData }) {
+export function TeamPopup({ useData, width }) {
   const [checkedNumbers, setChecedNumbers] = useState(true)
   const [checkedBiografy, setChecedBiografy] = useState(false)
   const [currentSlider, setCurrenrSlider] = useState(0)
@@ -53,31 +53,48 @@ export function TeamPopup({ useData }) {
             </button>
             <div className="popup__info_texts">
               <div className={checkedNumbers ? "popup__numbers_block_checked" : "popup__numbers_block_unchecked"}>
-                {useData[currentSlider].numbers.map((elem) => (
-                  <div className="popup__numbers_block" key={elem.key}>
-                    <p className="popup__numbers_big_element">{elem.num}</p>
-                    <p className="popup__numbers_small_element">{elem.desc}</p>
-                  </div>
-                ))}
+                <div className="popup_numbers__flex_box">
+                  {useData[currentSlider].numbers.map((elem) => (
+                    <div className="popup__numbers_block" key={elem.key}>
+                      <p className="popup__numbers_big_element">{elem.num}</p>
+                      <p className="popup__numbers_small_element">{elem.desc}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="slider__navigation">
+                  <button className="slider__navigation_goback_arrow" onClick={() => goBack()}></button>
+                  <p>
+                    {currentSlider + 1}/{useData.length}
+                  </p>
+                  <button className="slider__navigation_goforward_arrow" onClick={() => goForward()}></button>
+                </div>
               </div>
               <div className={checkedBiografy ? "popup__biografy_block_checked" : "popup__biografy_block_unchecked"}>
-                <p className="popup__biografy_title">{useData[currentSlider].biografyTitle}</p>
-                {useData[currentSlider].biografy.map((elem) => (
-                  <p className="popup__biografy_text" key={elem.key}>
-                    {elem.paragraph}
+                <div className="popup__biografy_block">
+                  <p className="popup__biografy_title">{useData[currentSlider].biografyTitle}</p>
+                  {width > 1024
+                    ? useData[currentSlider].biografy.map((elem) => (
+                        <p className="popup__biografy_text" key={elem.key}>
+                          {elem.paragraph}
+                        </p>
+                      ))
+                    : useData[currentSlider].biografy_short.map((elem) => (
+                        <p className="popup__biografy_text" key={elem.key}>
+                          {elem.paragraph}
+                        </p>
+                      ))}
+                </div>
+                <div className="slider__navigation">
+                  <button className="slider__navigation_goback_arrow" onClick={() => goBack()}></button>
+                  <p>
+                    {currentSlider + 1}/{useData.length}
                   </p>
-                ))}
+                  <button className="slider__navigation_goforward_arrow" onClick={() => goForward()}></button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="slider__navigation">
-        <button className="slider__navigation_goback_arrow" onClick={() => goBack()}></button>
-        <p>
-          {currentSlider + 1}/{useData.length}
-        </p>
-        <button className="slider__navigation_goforward_arrow" onClick={() => goForward()}></button>
       </div>
     </div>
   )

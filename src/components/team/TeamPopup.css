@@ -33,7 +33,7 @@
   display: flex;
   margin-top: 5.555vh;
   width: 148.148vh;
-  gap: 10vh;
+  gap: 5vh;
 }
 
 .popup__img {
@@ -92,16 +92,27 @@
 .popup__numbers_block_checked {
   position: absolute;
   opacity: 100%;
+  min-width: 79vh;
+  max-width: 79vh;
+  height: 73.5vh;
+  transition: 0.6s ease-in-out;
   display: flex;
-  min-width: 83vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup_numbers__flex_box {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  transition: 0.6s ease-in-out;
+  min-width: 79vh;
+  max-width: 79vh;
 }
 
 .popup__numbers_block {
   margin-bottom: 9.722vh;
-  min-width: 32.22vh;
+  min-width: 37vh;
+  max-width: 37vh;
 }
 
 .popup__numbers_big_element {
@@ -112,6 +123,7 @@
 }
 
 .popup__numbers_small_element {
+  margin-top: 1vh;
   font-weight: 500;
   font-size: 1.48vh;
   line-height: 130%;
@@ -133,11 +145,16 @@
   position: absolute;
   opacity: 0%;
   display: flex;
-  min-width: 83vh;
+  min-width: 79vh;
+  max-width: 79vh;
   flex-wrap: wrap;
   justify-content: space-between;
   transition: 0.6s ease-in-out;
   transform: translate(100%);
+  height: 73.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .popup__biografy_unchecked {
@@ -164,17 +181,25 @@
 
 .popup__biografy_block_unchecked {
   position: absolute;
-  width: 55.555vh;
+  width: 79vh;
   opacity: 0%;
   transform: translate(100%);
   transition: 0.6s ease-in-out;
+  height: 73.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .popup__biografy_block_checked {
   position: absolute;
-  width: 55.555vh;
+  width: 79vh;
   opacity: 100%;
   transition: 0.6s ease-in-out;
+  height: 73.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .popup__biografy_title {
@@ -185,14 +210,14 @@
 }
 
 .popup__biografy_text {
-  margin-top: 1.852vh;
+  margin-top: 1.38vh;
   font-weight: 500;
   font-size: 1.481vh;
   line-height: 130%;
 }
 
 .slider__navigation {
-  margin: -2vh 0 0 125vh;
+  margin-left: 35%;
   color: #000;
   display: flex;
   gap: 5.555vh;
@@ -286,6 +311,12 @@
     opacity: 100%;
     min-width: 46.09vw;
     max-width: 46.09vw;
+    height: 55.5vw;
+  }
+
+  .popup_numbers__flex_box {
+    min-width: 46.09vw;
+    max-width: 46.09vw;
   }
 
   .popup__numbers_block {
@@ -315,6 +346,7 @@
     min-width: 46.09vw;
     max-width: 46.09vw;
     transform: translate(100%);
+    height: 55.5vw;
   }
 
   .popup__biografy_unchecked,
@@ -326,11 +358,13 @@
     width: 46.09vw;
     opacity: 0%;
     transform: translate(100%);
+    height: 55.5vw;
   }
 
   .popup__biografy_block_checked {
     width: 46.09vw;
     opacity: 100%;
+    height: 55.5vw;
   }
 
   .popup__biografy_title {
@@ -343,7 +377,7 @@
   }
 
   .slider__navigation {
-    margin: -2.34vw 0 0 61.52vw;
+    margin-left: 30%;
     gap: 5.86vw;
   }
 
@@ -356,7 +390,7 @@
 @media screen and (max-width: 768px) {
   .team__popup {
     width: 94.79vw;
-    min-height: 62.5vw;
+    min-height: 74.5vw;
   }
 
   .team__sliders {
@@ -371,16 +405,17 @@
   }
 
   .popup__img {
-    min-width: 46.09vw;
-    max-width: 46.09vw;
-    height: 62.5vw;
+    min-width: 35vw;
+    max-width: 35vw;
+    height: 67vw;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 
   .popup_description {
-    margin-top: 44.5vw;
-    width: 40.89vw;
+    margin-top: 52.5vw;
+    width: 30vw;
   }
 
   .popup__title {
@@ -400,7 +435,7 @@
   }
 
   .popup__info_texts {
-    margin-top: 3.39vw;
+    margin-top: 1.5vw;
     width: 46.09vw;
   }
 
@@ -410,6 +445,12 @@
 
   .popup__numbers_block_checked {
     opacity: 100%;
+    min-width: 46.09vw;
+    max-width: 46.09vw;
+    height: 62vw;
+  }
+
+  .popup_numbers__flex_box {
     min-width: 46.09vw;
     max-width: 46.09vw;
   }
@@ -441,6 +482,7 @@
     min-width: 50vw;
     max-width: 50vw;
     transform: translate(100%);
+    height: 62vw;
   }
 
   .popup__biografy_unchecked,
@@ -449,31 +491,33 @@
   }
 
   .popup__biografy_block_unchecked {
-    width: 46.07vw;
-    height: 41.67vw;
+    width: 55vw;
+    height: 50vw;
     opacity: 0%;
     transform: translate(100%);
     overflow: hidden;
+    height: 62vw;
   }
 
   .popup__biografy_block_checked {
-    width: 46.07vw;
+    width: 55vw;
     opacity: 100%;
-    height: 41.67vw;
+    height: 50vw;
     overflow: hidden;
+    height: 62vw;
   }
 
   .popup__biografy_title {
-    font-size: 1.82vw;
+    font-size: 1.69vw;
   }
 
   .popup__biografy_text {
-    margin-top: 1.95vw;
+    margin-top: 1.85vw;
     font-size: 1.69vw;
   }
 
   .slider__navigation {
-    margin: -7.13vw 0 0 58.59vw;
+    margin-left: 25%;
     font-size: 2.08vw;
     gap: 6.51vw;
   }
@@ -487,7 +531,7 @@
 @media screen and (max-width: 375px) {
   .team__popup {
     width: 89.33vw;
-    height: auto;
+    height: 235vw;
   }
 
   .team__sliders {
@@ -550,6 +594,10 @@
     min-width: 89.33vw;
     max-width: 89.33vw;
   }
+  .popup_numbers__flex_box {
+    min-width: 89.33vw;
+    max-width: 89.33vw;
+  }
 
   .popup__numbers_block {
     margin-bottom: 15.2vw;
@@ -584,6 +632,10 @@
     font-size: 4.27vw;
   }
 
+  .popup__biografy_block {
+    margin-bottom: 5vw;
+  }
+
   .popup__biografy_block_unchecked {
     width: 89.33vw;
     opacity: 0%;
@@ -592,7 +644,7 @@
 
   .popup__biografy_block_checked {
     width: 89.33vw;
-    height: 90vw;
+    height: auto;
     opacity: 100%;
   }
 
@@ -612,8 +664,9 @@
   }
 
   .slider__navigation {
-    width: 48.27vw;
     margin: 0 auto;
+    /* margin-top: 35vw; */
+    width: 48.27vw;
     gap: 13.33vw;
     justify-content: space-between;
   }

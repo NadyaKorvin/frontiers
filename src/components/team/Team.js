@@ -34,7 +34,7 @@ export function Team({ width }) {
                 <button className="persones__read_more persones__text" onClick={togglePopup}>
                   читать подробнее
                 </button>
-                {isOpenPopup && <TeamPopup useData={refreshData} />}
+                {isOpenPopup && <TeamPopup useData={refreshData} width={width} />}
               </div>
             </div>
             {refreshData.slice(1).map((elem) => (
@@ -47,7 +47,7 @@ export function Team({ width }) {
             ))}
           </div>
         ) : (
-          <TeamPopup useData={refreshData} />
+          <TeamPopup useData={refreshData} width={width} />
         )}
       </div>
     </div>
