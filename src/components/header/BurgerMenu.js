@@ -8,9 +8,12 @@ export function BurgerMenu() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a className="mobail__firstscreen_logotype" href="#main">
-          FRONTIERS
-        </a>
+        <div className="mobail__firstscreen_logo_block">
+          <div className="mobail__frontiers_logo"></div>
+          <a className="mobail__firstscreen_logotype" href="#main">
+            FRONTIERS
+          </a>
+        </div>
         <div className={openBurger ? "hamburger-lines__go_to_closer" : "hamburger-lines"} onClick={() => setOpenBurger(!openBurger)}>
           <div></div>
           <div></div>

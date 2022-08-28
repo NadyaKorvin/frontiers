@@ -14,8 +14,15 @@
   align-items: center;
 }
 
+.firstscreen__logo_block {
+  display: flex;
+  align-items: center;
+  gap: 0.3vh;
+}
+
 .frontiers_logo {
   background: no-repeat url("./frontiers_logo.svg");
+  background-size: contain;
   width: 2.22vh;
   height: 1.75vh;
 }
@@ -88,6 +95,17 @@
     width: 94.14vw;
     height: 7.8125vw;
     border-bottom: 0.097vw solid #000000;
+  }
+
+  .firstscreen__logo_block {
+    gap: 0.3vw;
+  }
+
+  .frontiers_logo {
+    background: no-repeat url("./frontiers_logo.svg");
+    background-size: contain;
+    width: 2.34vw;
+    height: 1.86vw;
   }
 
   .firstscreen__logotype {

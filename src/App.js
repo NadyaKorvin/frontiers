@@ -70,7 +70,7 @@ function App() {
           <AboutUs />
         </div>
         <div className="js-page div3" id="projects">
-          <Projects />
+          <Projects width={width} setActivePage={setActivePage} />
         </div>
         <div className="js-page div4" id="numbers">
           <Nambers />
