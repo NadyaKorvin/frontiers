@@ -29,7 +29,7 @@ app.post("/api/email", cors(), async (req, res) => {
 
   const options = {
     from: process.env.MAIL_USER, //почта, которую использует nodemailer как шлюз
-    to: "kojomailserver@yandex.ru", //почта на которую будут приходить заявки
+    to: "nk@frontiers.ru", //почта на которую будут приходить заявки
     subject: "frontiers.ru",
     html: `<p>Вам пишет ${name}</p>
               <p>Сообщение: ${message}</p>

@@ -1,11 +1,14 @@
 import React, { useState } from "react"
 import { DataProjects } from "./DataProjects"
 
-export function Projects({ width, setActivePage }) {
+export function Projects({ width }) {
   const [handleValue, setHandleValue] = useState(0)
   const [handleValueLabel, setHandleValueLabel] = useState("100 тыс. ₽")
   const [selectedProjectCard, setSelectedProjectCard] = useState("")
   const [clickOnCard, setClickOnCard] = useState(false)
+  const [onTapToQuastion, setOnTapToQuastion] = useState(false)
+  const [showDescription, setShowDescription] = useState(false)
+  const [useKey, setUseKey] = useState("")
 
   const handleChangeValue = (event) => {
     setHandleValue(event.target.value)
@@ -15,6 +18,16 @@ export function Projects({ width, setActivePage }) {
   const clickOnProjectCard = (key) => {
     setSelectedProjectCard(key)
     setClickOnCard(true)
+  }
+
+  const clickOnProtectionCard = (key) => {
+    setSelectedProjectCard(key)
+    width > 1024 ? setClickOnCard(true) : setClickOnCard(false)
+  }
+
+  const findElementOnTap = (event, key) => {
+    setUseKey(event.target.parentElement.parentElement.className)
+    event.target.parentElement.parentElement.className === key ? setShowDescription(!showDescription) : setShowDescription(false)
   }
 
   return (
@@ -58,7 +71,11 @@ export function Projects({ width, setActivePage }) {
         <div className="projects_filter__cadrs_block">
           {DataProjects.map((elem) =>
             handleValue <= elem.min ? (
-              <div className={`project_filter__card ${elem.key}`} key={elem.key} onClick={() => clickOnProjectCard(elem.key)}>
+              <div
+                className={`project_filter__card ${elem.key}`}
+                key={elem.key + "project_filter__card"}
+                onClick={() => clickOnProjectCard(elem.key)}
+              >
                 <div className={`project_filter_card__grey ${elem.key}`}>
                   <div className={`project_filter_card__grey_logo ${elem.key}`} style={{ backgroundImage: `url('${elem.grey_logo}')` }}></div>
                   <div className={`project_filter_card__min_invest ${elem.key}`}>
@@ -68,7 +85,11 @@ export function Projects({ width, setActivePage }) {
                 </div>
               </div>
             ) : (
-              <div className={`project_filter__card ${elem.key}`} key={elem.key} onClick={() => clickOnProjectCard(elem.key)}>
+              <div
+                className={`project_filter__card ${elem.key}`}
+                key={elem.key + "project_filter__card2"}
+                onClick={() => clickOnProjectCard(elem.key)}
+              >
                 <div className={`project_filter_card__color ${elem.key}`} style={{ backgroundImage: `url('${elem.background}')` }}>
                   <div className={`project_filter_card__logo ${elem.key}`} style={{ backgroundImage: `url('${elem.logo}')` }}></div>
                   <div className={`project_filter_card__income_money ${elem.key}`}>
@@ -112,37 +133,56 @@ export function Projects({ width, setActivePage }) {
           )}
           {!clickOnCard
             ? DataProjects.map((elem) => (
-                <div className="card__with_protections" key={elem.key + "card__with_protections"} onClick={() => clickOnProjectCard(elem.key)}>
+                <div className="card__with_protections" key={elem.key + "card__with_protections"} onClick={() => clickOnProtectionCard(elem.key)}>
                   {elem.inshure.map((element) =>
                     handleValue >= element.need_to_invest ? (
-                      <div key={element.key}>
+                      <div
+                        key={element.key + "need_to_invest"}
+                        className={element.key}
+                        onTouchEndCapture={(event) => findElementOnTap(event, element.key)}
+                      >
                         <p className="card_with_protections__title">{element.title}</p>
                         <div className="card_with_protections__list">
                           <p className="card_with_protections__provide">{element.provide}</p>
                           <div className="card_with_protections__quastion"></div>
-                          <p className="card_with_protections__provide_description">{element.provide_descriptoin}</p>
+                          {width <= 1024 ? (
+                            <p
+                              className="card_with_protections__provide_description"
+                              style={{ display: useKey === element.key && showDescription ? "block" : "none" }}
+                            >
+                              {element.provide_descriptoin}
+                            </p>
+                          ) : (
+                            <p className="card_with_protections__provide_description">{element.provide_descriptoin}</p>
+                          )}
                         </div>
                       </div>
                     ) : (
-                      <div></div>
+                      <div key={element.key + Math.random()}></div>
                     )
                   )}
                 </div>
               ))
             : DataProjects.map((elem) =>
                 elem.key === selectedProjectCard ? (
-                  <div className="after_click__information_about_project">
+                  <div className="after_click__information_about_project" key={elem.key + "after_click__information_about_project"}>
                     <div className="after_click__closer" onClick={() => setClickOnCard(false)}></div>
                     <p className="after_click__title">{elem.title}</p>
                     <p className="after_click__description">{elem.description}</p>
-                    <div className="after_click__handle_invest">
+                    <div className="after_click__handle_invest" onTouchEndCapture={() => setOnTapToQuastion(!onTapToQuastion)}>
                       <p className="after_click__handle_invest__numbers">{Number(handleValue).toLocaleString("ru-RU") + " ₽"}</p>
                       <div className="after_click_handle_invest__string">
                         <p className="after_click__handle_invest__description">Размер инвестиций</p>
                         <div className="after_click_handle_invest__question"></div>
-                        <div className="after_click_handle_invest_description">
-                          Для расчета дохода при инвестициях свыше 10 млн. ₽ оставьте заявку на консультацию или позвоните нам
-                        </div>
+                        {width <= 1024 ? (
+                          <div className="after_click_handle_invest_description" style={{ display: onTapToQuastion ? "block" : "none" }}>
+                            Для расчета дохода при инвестициях свыше 10 млн. ₽ оставьте заявку на консультацию или позвоните нам
+                          </div>
+                        ) : (
+                          <div className="after_click_handle_invest_description">
+                            Для расчета дохода при инвестициях свыше 10 млн. ₽ оставьте заявку на консультацию или позвоните нам
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="after_click____income_money">
@@ -173,15 +213,30 @@ export function Projects({ width, setActivePage }) {
                       <p className="after_click_protections__title">Обеспечение по проекту:</p>
                       {elem.inshure.map((element) =>
                         handleValue >= element.need_to_invest ? (
-                          <div key={element.key}>
+                          <div
+                            key={element.key + "after_click_protections"}
+                            className={element.key}
+                            onTouchEndCapture={(event) => findElementOnTap(event, element.key)}
+                          >
                             <div className="after_click_protections__list">
                               <p className="after_click_protections__provide">{element.provide}</p>
                               <div className="after_click_protections__question"></div>
-                              <p className="after_click_protections__provide_description">{element.provide_descriptoin}</p>
+                              {width <= 1024 ? (
+                                <p
+                                  className="after_click_protections__provide_description"
+                                  style={{ display: useKey === element.key && showDescription ? "block" : "none" }}
+                                >
+                                  {element.provide_descriptoin}
+                                </p>
+                              ) : (
+                                <p className="after_click_protections__provide_description">{element.provide_descriptoin}</p>
+                              )}
                             </div>
                           </div>
                         ) : (
-                          <div className="after_click_protections__provide">Для получения дополнительных гарантий увеличьте сумму инестиций</div>
+                          <div className="after_click_protections__provide" key={element.key + Math.random()}>
+                            Для получения дополнительных гарантий увеличьте сумму инестиций
+                          </div>
                         )
                       )}
                     </div>
@@ -190,7 +245,7 @@ export function Projects({ width, setActivePage }) {
                     </a>
                   </div>
                 ) : (
-                  <div></div>
+                  <div key={elem.key + Math.random()}></div>
                 )
               )}
         </div>

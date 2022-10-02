@@ -33,6 +33,18 @@ body {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  background: #fff;
+}
+
+::selection {
+  background: #fff; 
+  }
+::-moz-selection {
+  background: #fff; 
+  }
+
 ::placeholder {
   color: #bebebe;
   font-size: 1.66vh;

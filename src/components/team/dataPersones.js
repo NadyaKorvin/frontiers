@@ -9,8 +9,8 @@ export const dataPersones = [
     numbers: [
       {
         key: "maria_num_1",
-        num: "70 млн. ₽",
-        desc: "инвестиций"
+        num: "320+",
+        desc: "франшиз упаковано"
       },
       {
         key: "maria_num_2",
@@ -19,18 +19,13 @@ export const dataPersones = [
       },
       {
         key: "maria_num_3",
-        num: "35 млн. ₽ ",
-        desc: "в отдельный бизнес"
+        num: "350 млн ₽ ",
+        desc: "инвестиций привлечено в проекты"
       },
       {
         key: "maria_num_4",
-        num: "300",
-        desc: "франшиз упаковано"
-      },
-      {
-        key: "maria_num_5",
-        num: "971",
-        desc: "проданная франшиза"
+        num: "5",
+        desc: "собственных стартапов запущено"
       }
     ],
     biografyTitle:
@@ -125,28 +120,23 @@ export const dataPersones = [
     numbers: [
       {
         key: "nikita_num_1",
-        num: "70 млн. ₽",
-        desc: "инвестиций"
+        num: "420 млн ₽",
+        desc: "инвестиций привлечено"
       },
       {
         key: "nikita_num_2",
-        num: "81",
-        desc: "сделка по продаже бизнеса"
+        num: "128",
+        desc: "сделок по продаже бизнеса"
       },
       {
         key: "nikita_num_3",
-        num: "35 млн. ₽ ",
-        desc: "в отдельный бизнес"
+        num: "175 млн ₽ ",
+        desc: "привлечено инвестиций в отдельный проект"
       },
       {
         key: "nikita_num_4",
-        num: "300",
-        desc: "франшиз упаковано"
-      },
-      {
-        key: "nikita_num_5",
-        num: "971",
-        desc: "проданная франшиза"
+        num: "4",
+        desc: "инвест-проекта запущено «с нуля»"
       }
     ],
     biografyTitle:
@@ -211,28 +201,23 @@ export const dataPersones = [
     numbers: [
       {
         key: "dmitry_num_1",
-        num: "70 млн. ₽",
-        desc: "инвестиций"
+        num: "270 млн ₽",
+        desc: "инвестиций привлечено"
       },
       {
         key: "dmitry_num_2",
-        num: "81",
-        desc: "сделка по продаже бизнеса"
+        num: "90+",
+        desc: "сделок по продаже бизнеса"
       },
       {
         key: "dmitry_num_3",
-        num: "35 млн. ₽ ",
-        desc: "в отдельный бизнес"
+        num: "26 млн ₽ ",
+        desc: "привлечено инвестиций в отдельный проект"
       },
       {
         key: "dmitry_num_4",
-        num: "300",
-        desc: "франшиз упаковано"
-      },
-      {
-        key: "dmitry_num_5",
-        num: "971",
-        desc: "проданная франшиза"
+        num: "38",
+        desc: "объектов гостиничного бизнеса запущено"
       }
     ],
     biografyTitle:
@@ -322,28 +307,23 @@ export const dataPersones = [
     numbers: [
       {
         key: "alexandr_k_num_1",
-        num: "70 млн. ₽",
-        desc: "инвестиций"
+        num: "155 млн ₽",
+        desc: "инвестиций привлечено"
       },
       {
         key: "alexandr_k_num_2",
-        num: "81",
-        desc: "сделка по продаже бизнеса"
+        num: "45+",
+        desc: "сделок по продаже бизнеса"
       },
       {
         key: "alexandr_k_num_3",
-        num: "35 млн. ₽ ",
-        desc: "в отдельный бизнес"
+        num: "5,5 млн ₽ ",
+        desc: "привлечено инвестиций в отдельный проект"
       },
       {
         key: "alexandr_k_num_4",
-        num: "300",
-        desc: "франшиз упаковано"
-      },
-      {
-        key: "alexandr_k_num_5",
-        num: "971",
-        desc: "проданная франшиза"
+        num: "1",
+        desc: "собственный стартап запущен"
       }
     ],
     biografyTitle:
@@ -418,28 +398,13 @@ export const dataPersones = [
     numbers: [
       {
         key: "artem_num_1",
-        num: "70 млн. ₽",
-        desc: "инвестиций"
-      },
-      {
-        key: "artem_num_2",
-        num: "81",
-        desc: "сделка по продаже бизнеса"
+        num: "175 млн ₽",
+        desc: "инвестиций привлечено"
       },
       {
         key: "artem_num_3",
-        num: "35 млн. ₽ ",
-        desc: "в отдельный бизнес"
-      },
-      {
-        key: "artem_num_4",
-        num: "300",
-        desc: "франшиз упаковано"
-      },
-      {
-        key: "artem_num_5",
-        num: "971",
-        desc: "проданная франшиза"
+        num: "8 млн ₽ ",
+        desc: "привлечено инвестиций в отдельный проект"
       }
     ],
     biografyTitle:
@@ -519,28 +484,18 @@ export const dataPersones = [
     numbers: [
       {
         key: "ilya_num_1",
-        num: "70 млн. ₽",
-        desc: "инвестиций"
+        num: "33+ млн ₽",
+        desc: "инвестиций привлечено в проекты"
       },
       {
         key: "ilya_num_2",
-        num: "81",
-        desc: "сделка по продаже бизнеса"
+        num: "110+",
+        desc: "франчайзинговых точек продано"
       },
       {
         key: "ilya_num_3",
-        num: "35 млн. ₽ ",
-        desc: "в отдельный бизнес"
-      },
-      {
-        key: "ilya_num_4",
-        num: "300",
-        desc: "франшиз упаковано"
-      },
-      {
-        key: "ilya_num_5",
-        num: "971",
-        desc: "проданная франшиза"
+        num: "8 млн ₽ ",
+        desc: "привлечено инвестиций в отдельный проект"
       }
     ],
     biografyTitle:
@@ -625,7 +580,7 @@ export const dataPersones = [
       },
       {
         key: "alexandr_num_3",
-        num: "2,8 млрд ₽",
+        num: "2,8 млд ₽",
         desc: "общая сумма оформленных сделок"
       },
       {
