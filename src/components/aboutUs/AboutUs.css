@@ -47,9 +47,9 @@
 .animation__1th_black_line,
 .animation__2th_black_line,
 .animation__3th_black_line {
-  margin-bottom: 0.46vh;
   height: 6.95vh;
   background-color: #000;
+  border: solid 0.01vh #fff;
   transition: 0.6s ease-in-out;
 }
 
@@ -138,15 +138,15 @@
 
   .animation__black_lines {
     margin-left: -0.48828125vw;
-    margin-top: -14.87vw;
+    margin-top: -15.1vw;
   }
 
   .animation__1th_black_line,
   .animation__2th_black_line,
   .animation__3th_black_line {
-    margin-bottom: 0.29296875vw;
     height: 4.7vw;
     background-color: #000;
+    border: solid 0.15vw #fff;
     transition: 0.6s ease-in-out;
   }
 
@@ -155,7 +155,7 @@
   }
 
   .animation__1th_black_line_go_upp {
-    margin-top: -30.02734375vw;
+    margin-top: -30.3vw;
     width: 25.2vw;
   }
 
@@ -233,13 +233,13 @@
 
   .animation__black_lines {
     margin-left: -1.3vw;
-    margin-top: -19.87vw;
+    margin-top: -20.1vw;
   }
 
   .animation__1th_black_line,
   .animation__2th_black_line,
   .animation__3th_black_line {
-    margin-bottom: 0.7vw;
+    border: solid 0.4vw #fff;
     height: 5.86vw;
     background-color: #000;
     transition: 0.6s ease-in-out;
@@ -250,7 +250,7 @@
   }
 
   .animation__1th_black_line_go_upp {
-    margin-top: -40.03vw;
+    margin-top: -40.5vw;
     width: 34.64vw;
   }
 
@@ -323,14 +323,14 @@
   }
 
   .animation__black_lines {
-    margin-top: -21.53vw;
+    margin-top: -22vw;
   }
 
   .animation__1th_black_line,
   .animation__2th_black_line,
   .animation__3th_black_line {
     height: 7vw;
-    margin-bottom: 0.27vw;
+    border: solid 0.01vw #fff;
   }
 
   .animation__1th_black_line {
@@ -338,7 +338,7 @@
   }
 
   .animation__1th_black_line_go_upp {
-    margin-top: -43.53vw;
+    margin-top: -44vw;
     width: 37.33vw;
   }
 

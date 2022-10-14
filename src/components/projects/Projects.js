@@ -234,7 +234,11 @@ export function Projects({ width }) {
                             </div>
                           </div>
                         ) : (
-                          <div className="after_click_protections__provide" key={element.key + Math.random()}>
+                          <div
+                            className="after_click_protections__provide"
+                            style={{ display: element.count < 1 ? "block" : "none" }}
+                            key={element.key + Math.random()}
+                          >
                             Для получения дополнительных гарантий увеличьте сумму инестиций
                           </div>
                         )

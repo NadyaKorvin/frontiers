@@ -12,7 +12,7 @@ export function Nambers() {
             <p className="numbers__small_description">прибыль инвесторов</p>
           </div>
           <div className="numbers__flex_block">
-            <p className="numbers__big_numbers">360 млн ₽</p>
+            <p className="numbers__big_numbers">913 млн ₽</p>
             <p className="numbers__small_description">Вложили инвесторы</p>
           </div>
         </div>

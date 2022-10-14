@@ -22,6 +22,7 @@ export function Footer({ setActivePage }) {
             Политика конфиденциальности
           </a>
           <p className="lastscreen__footer_text">© 2022 Frontiers Group</p>
+          <p className="lastscreen__footer_text">Информация на сайте не является публичной офертой</p>
         </div>
       </div>
       <div className="lastscreen__design_dev">

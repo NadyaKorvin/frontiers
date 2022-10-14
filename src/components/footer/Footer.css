@@ -29,7 +29,6 @@
 
 .lastscreen__contact_group_frontiers {
   display: block;
-  margin-bottom: 5.278vh;
   letter-spacing: 0.05em;
   cursor: pointer;
 }
@@ -48,7 +47,7 @@
 
 .lastscreen__design_dev {
   position: relative;
-  top: -6.5vh;
+  top: -3.5vh;
   margin: 0 auto;
   width: 24.074vh;
   height: 1.76vh;
@@ -89,13 +88,13 @@
     font-size: 2.44vw;
   }
 
-  .lastscreen__contact_group_frontiers {
+  /* .lastscreen__contact_group_frontiers {
     margin-bottom: 5.08vw;
-  }
+  } */
 
   .lastscreen__design_dev {
-    top: -4.88vw;
-    margin: 0 auto;
+    top: -3.5vw;
+    margin-left: 20vw;
     width: 23.44vw;
     height: 1.66vw;
   }
@@ -148,7 +147,7 @@
 
 @media screen and (max-width: 375px) {
   .lastscreen__footer {
-    height: 98.67vw;
+    height: auto;
     margin: 0 auto;
     margin-top: 10.67vw;
     width: 89.33vw;
@@ -169,7 +168,7 @@
   }
 
   .lastscreen__contact_group_frontiers {
-    margin: 6.67vw 0 5.33vw 0;
+    margin: 4vw 0 5.33vw 0;
   }
 
   .lastscreen__contact_group_contact,
@@ -179,8 +178,9 @@
   }
 
   .lastscreen__design_dev {
-    top: 5.33vw;
-    margin: 0 0;
+    top: 0;
+    margin: 0 auto;
+    margin-top: 4vw;
     width: 64.27vw;
     height: 4.53vw;
   }

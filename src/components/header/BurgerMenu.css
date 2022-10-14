@@ -92,9 +92,6 @@
     padding-bottom: 0.65vw;
   }
 
-  .menu-items__ul {
-    margin-bottom: 6.9vw;
-  }
 
   .menu-items__ul > li {
     margin-bottom: 3.91vw;
@@ -111,7 +108,7 @@
   }
 
   .white__line_for_footer_border {
-    margin-top: -39.06vw;
+    margin-top: -45vw;
     width: 100vw;
     height: 6.51vw;
     background-color: #ffffff;
