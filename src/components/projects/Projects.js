@@ -8,19 +8,20 @@ export function Projects({ width }) {
   const [handleValue, setHandleValue] = useState(0)
   const [selectedProjectCard, setSelectedProjectCard] = useState("")
   const [clickOnCard, setClickOnCard] = useState(false)
+  const [errorHandleRange, setErrorHandleRange] = useState(false)
 
   return (
     <div className="projects">
       <div className="projects__left_part">
         <h2 className="projects__title">Проекты</h2>
         <div className="projects__filter">
-          <RangeSlider width={width} setHandleValue={setHandleValue} handleValue={handleValue} />
+          <RangeSlider width={width} setHandleValue={setHandleValue} handleValue={handleValue} setErrorHandleRange={setErrorHandleRange} />
           <ProjectCards setSelectedProjectCard={setSelectedProjectCard} handleValue={handleValue} setClickOnCard={setClickOnCard} />
         </div>
       </div>
       <div className="projects__right_part">
         {!clickOnCard ? (
-          <Provide />
+          <Provide errorHandleRange={errorHandleRange}/>
         ) : (
           <ProjectFullDescription width={width} selectedProjectCard={selectedProjectCard} setClickOnCard={setClickOnCard} handleValue={handleValue} />
         )}

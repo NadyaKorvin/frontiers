@@ -1,7 +1,17 @@
 import React, { useState } from "react"
+import { useForm } from "react-hook-form"
 
-export function RangeSlider({ width, setHandleValue, handleValue }) {
+export function RangeSlider({ width, setHandleValue, handleValue, setErrorHandleRange }) {
   const [handleValueLabel, setHandleValueLabel] = useState("100 тыс. ₽")
+  const {
+    register,
+    handleSubmit,
+    formState: { errors }
+  } = useForm()
+
+  function onSubmit(data) {
+    setHandleValue(Number(data.number))
+  }
 
   const handleChangeValue = (event) => {
     setHandleValue(event.target.value)
@@ -12,10 +22,12 @@ export function RangeSlider({ width, setHandleValue, handleValue }) {
     <div className="range_slider__container">
       <div className="range_slider__title_and_handle_input">
         <h1 className="range_slider__title">Куда инвестировать деньги</h1>
-        <div className="range_slider__handel_input">
-          <input type="number" placeholder="Ввести сумму вручную"></input>
-          <button></button>
-        </div>
+        <form onSubmit={handleSubmit(onSubmit)} onChange={handleSubmit(onSubmit)}>
+          <input type="number" {...register("number", { required: true, max: 10000000, maxLength: 8 })} placeholder="Ввести сумму вручную" />
+          <input type="submit" />
+          {errors.number && errors.number.type != "required" ? setErrorHandleRange(true) : setErrorHandleRange(false)}
+          {console.log(errors.number)}
+        </form>
       </div>
 
       <input className="range_slider" type="range" min="100000" max="10000000" step="100000" value={handleValue} onChange={handleChangeValue} />

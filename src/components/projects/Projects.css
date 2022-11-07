@@ -106,6 +106,14 @@
   line-height: 130%;
 }
 
+.projects_instuction_with_handle_range_error {
+  margin-top: 3.38vh;
+  font-size: 1.48vh;
+  font-weight: 500;
+  line-height: 130%;
+  background-color: #ffc906b7;
+}
+
 .information_about_project__cards_with_protections {
   width: 32.9vh;
 }

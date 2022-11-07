@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { DataProvide } from "./DataProvide"
 
-export function Provide() {
+export function Provide({ errorHandleRange }) {
   const [showDescription, setShowDescription] = useState(false)
   const [useKey, setUseKey] = useState("")
 
@@ -15,15 +15,14 @@ export function Provide() {
     <div>
       <div className="information_about_projects">
         <p className="information_about_projects__title">Калькулятор доходности</p>
-        <p className="projects__instuction">
-          Двигайте ползунок или напишите сумму — калькулятор покажет, сколько можно заработать на разных проектах.
-          <br />
-          <br /> Нажимайте на карточки с логотипами, чтобы увидеть подробности о каждом из проектов.
-          <br />
-          <br /> Листайте страницы с проектами — стрелки находятся под карточками с логотипами.
-          <br />
-          <br /> Калькулятор считает доходность инвестиций до 10 млн ₽. Хотите узнать доходность большей суммы — оставьте заявку.
-        </p>
+        <div className="projects__instuction">
+          <p>Двигайте ползунок или напишите сумму — калькулятор покажет, сколько можно заработать на разных проектах.</p>
+          <p>Нажимайте на карточки с логотипами, чтобы увидеть подробности о каждом из проектов.</p>
+          <p>Листайте страницы с проектами — стрелки находятся под карточками с логотипами.</p>
+          <p className={errorHandleRange ? "projects_instuction_with_handle_range_error" : ""}>
+            Калькулятор считает доходность инвестиций до 10 млн ₽. Хотите узнать доходность большей суммы — оставьте заявку.
+          </p>
+        </div>
       </div>
 
       <div className="poride__block">
