@@ -16,7 +16,7 @@ export default function LastScreen() {
             </div>
             <div className="lastscreen__right_content">
               <div className="lastscreen__text_form">
-                <p>ЗАПОЛНИТЕ ФОРМУ И МЫ С ВАМИ СВЯЖЕМСЯ</p>
+                <h2>Куда вложить деньги, чтобы они работали? Заполните форму — мы объясним</h2>
               </div>
               <Form />
             </div>

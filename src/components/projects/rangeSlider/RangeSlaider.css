@@ -1,0 +1,160 @@
+.range_slider__container {
+  width: 110.37vh;
+  position: relative;
+}
+
+.range_slider__title,
+.information_about_projects__title {
+  display: inline;
+  font-size: 2.314vh;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.range_slider__title_and_handle_input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range_slider {
+  margin-top: 2vh;
+  margin-left: -1.25vh;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 102.3%;
+  height: 8.42vh;
+  outline: none;
+  cursor: pointer;
+  background: no-repeat url("./img/slider_range.svg");
+  background-size: 110.37vh 3vh;
+  background-position: center;
+  border: none;
+}
+
+.range_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 21px;
+  height: 35px;
+  background: no-repeat url("./img/slider_range_cursor.svg");
+  background-size: contain;
+  cursor: pointer;
+  border-left: solid 3px #fff;
+  border-right: solid 3px #fff;
+}
+
+.range_slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 21px;
+  height: 35px;
+  background: no-repeat url("./img/slider_range_cursor.svg");
+  background-size: contain;
+  cursor: pointer;
+  border-left: solid 3px #fff;
+  border-right: solid 3px #fff;
+}
+
+.range_slider__label {
+  position: absolute;
+  top: 12vh;
+  font-size: 1.48vh;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+@media screen and (max-width: 1024px) {
+  .range_slider__container {
+    width: 94.14vw;
+  }
+
+  .range_slider__title,
+  .information_about_projects__title {
+    display: inline;
+    font-size: 2.44vw;
+  }
+
+  .range_slider {
+    margin-top: 2vw;
+    position: relative;
+    margin-left: -1vw;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 101.9%;
+    height: 10vw;
+    outline: none;
+    background: no-repeat url("./img/slider_range.svg");
+    background-size: 94vw 10vw;
+    background-position: center;
+  }
+
+  .range_slider__label {
+    position: absolute;
+    top: 13vw;
+    font-size: 1.56vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .range_slider__container {
+    width: 94.79vw;
+  }
+
+  .range_slider__title,
+  .information_about_projects__title {
+    display: inline;
+    font-size: 3.26vw;
+  }
+
+  .range_slider {
+    margin-top: 4vw;
+    position: relative;
+    margin-left: -1vw;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 102.7%;
+    height: 10vw;
+    outline: none;
+    background: no-repeat url("./img/slider_range_768.svg");
+    background-size: 94.5vw 10vw;
+    background-position: center;
+  }
+
+  .range_slider__label {
+    position: absolute;
+    top: 15.5vw;
+    font-size: 1.82vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .range_slider__container {
+    width: 89.33vw;
+  }
+
+  .range_slider__title,
+  .information_about_projects__title {
+    display: inline;
+    font-size: 5.33vw;
+  }
+
+  .range_slider {
+    margin-top: 5vw;
+    position: relative;
+    margin-left: -3vw;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 106%;
+    height: 20vw;
+    outline: none;
+    background: no-repeat url("./img/slider_range_375.svg");
+    background-size: 89.33vw 8vw;
+    background-position: center;
+  }
+
+  .range_slider__label {
+    position: absolute;
+    top: 27.5vw;
+    font-size: 3.47vw;
+  }
+}

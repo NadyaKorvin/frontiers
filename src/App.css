@@ -16,6 +16,7 @@
 @import url("./components/form/PersonalData.css");
 @import url("./components/team/TeamPopup.css");
 @import url("./components/projects/Projects.css");
+@import url("./components/projects/rangeSlider/RangeSlaider.css");
 
 body,
 textarea,
@@ -39,11 +40,11 @@ body {
 }
 
 ::selection {
-  background: #fff; 
-  }
+  background: #ffc906b7;
+}
 ::-moz-selection {
-  background: #fff; 
-  }
+  background: #ffc906b7;
+}
 
 ::placeholder {
   color: #bebebe;
