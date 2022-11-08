@@ -1,5 +1,6 @@
 import React from "react"
 import { useState, useEffect, useRef } from "react"
+import { Helmet } from "react-helmet-async"
 import "./App.css"
 import { Header } from "./components/header/Header"
 import { ScrollBar } from "./components/scrollBar/ScrollBar"
@@ -55,6 +56,24 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <meta charset="utf-8" />
+        <meta name="robots" content="all" />
+        <meta
+          name="description"
+          content="Эксперты по бизнес-проектам с низкими рисками и хорошей доходностью: знаем, куда лучше инвестировать деньги начинающему и опытному инвестору, чтобы заработать и приумножить капитал"
+          data-rh="true"
+        />
+        <meta
+          name="keywords"
+          content="прибыльные инвестиции в малый и средний бизнес, вложение денег в России, пассивный доход, управление инвестиционными рисками, инструменты для приумножения накоплений, инвест консалтинг"
+        />
+        <link rel="canonical" href="https://www.frontiers.ru/" />
+        <title>
+          Инвестиционное агентство Frontiers — помогаем безопасно вложить деньги
+          в России
+        </title>
+      </Helmet>
       <ScrollBar activePage={activePage} />
       <Header setActivePage={setActivePage} />
       <div
