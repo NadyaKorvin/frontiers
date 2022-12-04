@@ -1,0 +1,151 @@
+.after_click__first_title {
+  font-weight: 500;
+  font-size: 2.31vh;
+  line-height: 130%;
+}
+
+.after_click__project_block {
+  margin-top: 3.7vh;
+  padding: 2.7vh;
+  box-sizing: border-box;
+  width: 34.9vh;
+  box-shadow: 0px 1px 6px rgba(185, 185, 185, 0.5);
+}
+
+.after_click__information_about_project {
+  opacity: 0;
+  animation: easyshow 1s forwards;
+  transition: ease-in-out 0.6s;
+  will-change: opacity;
+}
+
+@keyframes easyshow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.after_click__closer {
+  margin: -1.48vh 0 0 29vh;
+  background: no-repeat url("../img/closer.svg");
+  background-size: contain;
+  width: 1.48vh;
+  height: 1.48vh;
+  cursor: pointer;
+}
+
+.after_click__title {
+  font-weight: 700;
+  font-size: 2.31vh;
+  line-height: 130%;
+  text-transform: uppercase;
+  border-bottom: solid 0.3vh #000;
+  padding-bottom: 0.92vh;
+  margin-right: 3vh;
+}
+
+.after_click__description {
+  margin-top: 1.38vh;
+  font-weight: 500;
+  font-size: 1.48vh;
+  line-height: 130%;
+}
+
+.after_click__handle_invest,
+.after_click____income_money,
+.after_click____income_percent {
+  margin-top: 1.85vh;
+}
+
+.after_click__handle_invest__numbers,
+.after_click____income_money__numbers,
+.after_click____income_percent__numbers {
+  font-weight: 700;
+  font-size: 1.66vh;
+  line-height: 100%;
+}
+
+.after_click__handle_invest__description,
+.after_click____income_money__description,
+.after_click____income_percent__numbers_description {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.29vh;
+  line-height: 100%;
+}
+
+.after_click__handle_invest__description {
+  position: relative;
+}
+
+.after_click_protections__provide_description,
+.card_with_protections__provide_description {
+  display: none;
+  position: absolute;
+  width: 20vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-weight: 500;
+  font-size: 1.29vh;
+  line-height: 130%;
+  color: #ffffff;
+  margin-top: -10vh;
+  margin-left: 2vh;
+  padding: 2.77vh 3.7vh 2.77vh 3.7vh;
+}
+
+.after_click_protections__title {
+  margin-top: 2.77vh;
+  font-weight: 500;
+  font-size: 1.85vh;
+  line-height: 130%;
+}
+
+.after_click_protections__list {
+  cursor: pointer;
+}
+
+.after_click_protections__provide,
+.after_click_protections__no_provide {
+  display: inline-block;
+  margin-top: 1.85vh;
+  font-weight: 500;
+  font-size: 1.48vh;
+  line-height: 130%;
+}
+
+.after_click_protections__no_provide {
+  color: #616161;
+}
+
+.after_click_protections__question {
+  display: inline-block;
+  margin: -0.46vh 0 0 0.46vh;
+  background: no-repeat url("../img/quastion.svg");
+  background-size: contain;
+  width: 1.66vh;
+  height: 1.66vh;
+}
+
+.after_click__outside_link {
+  display: inline-block;
+  margin-top: 2.77vh;
+  font-weight: 500;
+  font-size: 1.29vh;
+  line-height: 130%;
+  text-decoration-line: underline;
+}
+
+.after_click__outside_link::after {
+  display: inline-block;
+  content: "";
+  margin-left: 0.35vh;
+  width: 1.05vh;
+  height: 0.78vh;
+  background: no-repeat url("../img/arrow.svg");
+  background-size: contain;
+}
