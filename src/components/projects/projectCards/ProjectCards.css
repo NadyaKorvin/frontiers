@@ -1,0 +1,206 @@
+.projects_filter__cadrs_block {
+  box-sizing: border-box;
+  display: flex;
+  gap: 2.5vh;
+  width: 110.37vh;
+  flex-wrap: wrap;
+}
+
+.project_filter__card {
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 2px solid #fff;
+}
+
+.project_filter_card__grey {
+  box-sizing: border-box;
+  width: 25.46vh;
+  height: 20.37vh;
+  border: solid 0.09vh rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.04vh;
+  color: rgba(3, 3, 3, 0.2);
+  line-height: 130%;
+  text-align: center;
+  transition: 0.6s ease-out;
+}
+
+.project_filter_card__grey_logo {
+  width: 20vh;
+  height: 3.98vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project_filter_card_min_invest__numbers,
+.project_filter_card_income_money_numbers,
+.project_filter_card_income_percent_numbers {
+  font-size: 2.04vh;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.project_filter_card_income_money_numbers,
+.project_filter_card_income_percent_numbers {
+  margin-top: 0.9vh;
+}
+
+.project_filter_card_min_invest__description {
+  font-size: 1.3vh;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.project_filter_card__color {
+  box-sizing: border-box;
+  padding: 0 0 1.85vh 1.85vh;
+  width: 25.46vh;
+  height: 20.37vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(128, 128, 128);
+  background-blend-mode: multiply;
+  border: solid 0.09vh rgba(255, 255, 255, 0);
+  color: #fff;
+  transition: 0.6s ease-out;
+}
+
+.project_filter_card__logo {
+  margin-top: 3.88vh;
+  box-sizing: border-box;
+  order: 10;
+  height: 2.04vh;
+  width: 20vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project_filter__card:hover {
+  outline: 1px solid #000;
+  transition: 0.6s ease-out;
+}
+
+.project_filter__card:hover .project_filter_card__grey,
+.project_filter__card:hover .project_filter_card__color {
+  transform: scale(0.9, 0.87);
+}
+
+@media screen and (max-width: 1024px) {
+  .projects_filter__cadrs_block {
+    margin-top: 5vw;
+    gap: 2.93vw;
+    width: 46.09vw;
+  }
+
+  .project_filter_card__grey {
+    width: 46.09vw;
+    height: 21.48vw;
+    border: solid 0.1vw rgba(0, 0, 0, 0.15);
+    gap: 2.44vw;
+  }
+
+  .project_filter_card__grey_logo,
+  .project_filter_card__logo {
+    margin: 0 auto;
+    width: 35vw;
+    height: 4vw;
+    order: -1;
+    background-position: center;
+  }
+
+  .project_filter_card_min_invest__numbers,
+  .project_filter_card_income_money_numbers,
+  .project_filter_card_income_percent_numbers {
+    font-size: 1.95vw;
+  }
+
+  .project_filter_card_income_money_numbers,
+  .project_filter_card_income_percent_numbers {
+    margin-top: 1.46vw;
+  }
+
+  .project_filter_card_min_invest__description {
+    font-size: 1.37vw;
+  }
+
+  .project_filter_card__color {
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 2.93vw;
+    justify-content: center;
+    align-items: center;
+    width: 46.09vw;
+    height: 21.48vw;
+    gap: 1.06vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(128, 128, 128);
+    background-blend-mode: multiply;
+    border: solid 0.1vw rgba(255, 255, 255, 0);
+  }
+
+  .project_filter__card:hover .project_filter_card__grey,
+  .project_filter__card:hover .project_filter_card__color {
+    transform: scale(0.9, 0.8);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects_filter__cadrs_block {
+    margin-top: 8.02vw;
+    gap: 3.91vw;
+    width: 46.09vw;
+  }
+
+  .project_filter_card__grey {
+    width: 46.09vw;
+    height: 28.47vw;
+    border: solid 0.1vw rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1.95vw;
+    color: rgba(3, 3, 3, 0.2);
+  }
+
+  .project_filter_card__grey_logo,
+  .project_filter_card__logo {
+    width: 35vw;
+    height: 5.6vw;
+  }
+
+  .project_filter_card_min_invest__numbers,
+  .project_filter_card_income_money_numbers,
+  .project_filter_card_income_percent_numbers {
+    font-size: 2.6vw;
+  }
+
+  .project_filter_card_income_money_numbers,
+  .project_filter_card_income_percent_numbers {
+    margin-top: 2vw;
+  }
+
+  .project_filter_card_min_invest__description {
+    font-size: 1.82vw;
+  }
+
+  .project_filter_card__color {
+    padding-top: 3.9vw;
+    width: 46.09vw;
+    height: 28.47vw;
+    gap: 1.95vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(128, 128, 128);
+    background-blend-mode: multiply;
+    border: solid 0.1vw rgba(255, 255, 255, 0);
+  }
+}

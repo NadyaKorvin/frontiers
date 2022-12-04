@@ -17,6 +17,9 @@
 @import url("./components/team/TeamPopup.css");
 @import url("./components/projects/Projects.css");
 @import url("./components/projects/rangeSlider/RangeSlaider.css");
+@import url("./components/projects/projectCards/ProjectCards.css");
+@import url("./components/projects/projectFullDescription/ProjectFullDescription.css");
+@import url("./components/projects/provide/Provide.css");
 
 body,
 textarea,
@@ -50,8 +53,17 @@ body {
   color: #bebebe;
   font-size: 1.66vh;
   font-weight: 400;
-  line-height: 2.129vh;
+  line-height: 130%;
   padding-left: 3vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 a {
