@@ -20,6 +20,7 @@
 @import url("./components/projects/projectCards/ProjectCards.css");
 @import url("./components/projects/projectFullDescription/ProjectFullDescription.css");
 @import url("./components/projects/provide/Provide.css");
+@import url("./components/projects/provideSmallMobail/ProvideSmallMobail.css");
 
 body,
 textarea,

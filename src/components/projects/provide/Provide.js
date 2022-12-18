@@ -7,7 +7,6 @@ export function Provide({ errorHandleRange }) {
 
   const findElementOnTap = (event, key) => {
     setUseKey(event.target.parentElement.parentElement.className)
-    console.log(useKey)
     event.target.parentElement.parentElement.className === key ? setShowDescription(!showDescription) : setShowDescription(false)
   }
 

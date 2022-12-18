@@ -1,7 +1,10 @@
 import React, { useState } from "react"
+
 import { ProjectCards } from "./projectCards/ProjectCards"
+import { ProjectCardsSmallMobail } from "./projectCardsSmallMobail/ProjectCardsSmallMobail"
 import { ProjectFullDescription } from "./projectFullDescription/ProjectFullDescription"
 import { Provide } from "./provide/Provide"
+import { ProvideSmallMobail } from "./provideSmallMobail/ProvideSmallMobail"
 import { RangeSlider } from "./rangeSlider/RangeSlider"
 
 export function Projects({ width }) {
@@ -24,7 +27,7 @@ export function Projects({ width }) {
                 setErrorHandleRange={setErrorHandleRange}
                 errorHandleRange={errorHandleRange}
               />
-              <ProjectCards setSelectedProjectCard={setSelectedProjectCard} handleValue={handleValue} setClickOnCard={setClickOnCard} clickOnCard={clickOnCard} />
+              <ProjectCards setSelectedProjectCard={setSelectedProjectCard} handleValue={handleValue} setClickOnCard={setClickOnCard} />
             </div>
           </div>
           <div className="projects__right_part">
@@ -50,21 +53,28 @@ export function Projects({ width }) {
             setErrorHandleRange={setErrorHandleRange}
             errorHandleRange={errorHandleRange}
           />
-          <div className="projects__cards_and_description">
-            <ProjectCards setSelectedProjectCard={setSelectedProjectCard} handleValue={handleValue} setClickOnCard={setClickOnCard} clickOnCard={clickOnCard} />
-            <div className="projects__instuction_and_full_information">
-              {!clickOnCard ? (
-                <Provide errorHandleRange={errorHandleRange} />
-              ) : (
-                <ProjectFullDescription
-                  width={width}
-                  selectedProjectCard={selectedProjectCard}
-                  setClickOnCard={setClickOnCard}
-                  handleValue={handleValue}
-                />
-              )}
+          {width > 375 ? (
+            <div className="projects__cards_and_description">
+              <ProjectCards setSelectedProjectCard={setSelectedProjectCard} handleValue={handleValue} setClickOnCard={setClickOnCard} />
+              <div className="projects__instuction_and_full_information">
+                {!clickOnCard ? (
+                  <Provide errorHandleRange={errorHandleRange} />
+                ) : (
+                  <ProjectFullDescription
+                    width={width}
+                    selectedProjectCard={selectedProjectCard}
+                    setClickOnCard={setClickOnCard}
+                    handleValue={handleValue}
+                  />
+                )}
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="projects__cards_and_description">
+              <ProvideSmallMobail errorHandleRange={errorHandleRange} />
+              {/* <ProjectCardsSmallMobail setSelectedProjectCard={setSelectedProjectCard} handleValue={handleValue} setClickOnCard={setClickOnCard} /> */}
+            </div>
+          )}
         </div>
       )}
     </div>

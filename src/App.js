@@ -57,11 +57,8 @@ function App() {
   return (
     <>
       <Helmet>
-        <meta charset="utf-8" />
-        <meta
-          name="robots"
-          content="all"
-        />
+        <meta charSet="utf-8" />
+        <meta name="robots" content="all" />
         <meta
           name="description"
           content="Эксперты по бизнес-проектам с низкими рисками и хорошей доходностью: знаем, куда лучше инвестировать деньги начинающему и опытному инвестору, чтобы приумножить капитал"

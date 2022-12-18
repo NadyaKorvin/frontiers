@@ -79,3 +79,130 @@
   margin-left: 2vh;
   padding: 2.77vh 3.7vh 2.77vh 3.7vh;
 }
+
+@media screen and (max-width: 1024px) {
+  .instuction {
+    margin-top: 5vw;
+    margin-left: 5.86vw;
+    width: 36.82vw;
+  }
+
+  .instruction__title {
+    font-size: 2.44vw;
+  }
+
+  .instruction__text {
+    margin-top: 3.91vw;
+    font-size: 1.37vw;
+  }
+
+  .instruction__text p {
+    margin-bottom: 2vw;
+  }
+
+  .instuction_with_handle_range_error {
+    margin-top: 3.91vw;
+    font-size: 1.37vw;
+    background-color: #ffc906b7;
+  }
+
+  .poride__block {
+    margin-left: 5.86vw;
+    padding: 2.93vw;
+    width: 36.82vw;
+  }
+
+  .provide__title {
+    margin-bottom: 3.71vw;
+    font-size: 2.44vw;
+  }
+
+  .provide__line_text {
+    height: 4vw;
+  }
+
+  .provide__text {
+    font-size: 1.56vw;
+  }
+
+  .provide__quastion {
+    margin: -0.46vw 0 0 0.46vw;
+    background: no-repeat url("../img/quastion.svg");
+    background-size: contain;
+    width: 1.76vw;
+    height: 1.76vw;
+  }
+
+  .provide__description {
+    display: none;
+    position: absolute;
+    width: 24.71vw;
+    font-size: 1.56vw;
+    margin-top: -12vw;
+    margin-left: 3vw;
+    padding: 2.93vw 3.9vw 2.93vw 3.9vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .instuction {
+    margin-top: 8.02vw;
+    margin-left: 5.21vw;
+    width: 43.49vw;
+  }
+
+  .instruction__title {
+    font-size: 2.6vw;
+  }
+
+  .instruction__text {
+    margin-top: 5.21vw;
+    font-size: 1.82vw;
+  }
+
+  .instruction__text p {
+    margin-bottom: 2.7vw;
+  }
+
+  .instuction_with_handle_range_error {
+    margin-top: 5.21vw;
+    font-size: 1.82vw;
+    background-color: #ffc906b7;
+  }
+
+  .poride__block {
+    margin-left: 5.21vw;
+    padding: 3.81vw;
+    width: 43.49vw;
+  }
+
+  .provide__title {
+    margin-bottom: 4.43vw;
+    font-size: 2.6vw;
+  }
+
+  .provide__line_text {
+    height: 4vw;
+  }
+
+  .provide__text {
+    font-size: 1.82vw;
+  }
+
+  .provide__quastion {
+    margin: -0.46vw 0 0 0.46vw;
+    background: no-repeat url("../img/quastion.svg");
+    background-size: contain;
+    width: 2.34vw;
+    height: 2.34vw;
+  }
+
+  .provide__description {
+    display: none;
+    width: 30vw;
+    font-size: 1.82vw;
+    margin-top: -15vw;
+    margin-left: 3vw;
+    padding: 2.6vw 3.91vw 2.6vw 3.91vw;
+  }
+}

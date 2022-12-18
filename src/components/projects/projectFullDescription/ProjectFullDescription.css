@@ -149,3 +149,208 @@
   background: no-repeat url("../img/arrow.svg");
   background-size: contain;
 }
+
+@media screen and (max-width: 1024px) {
+  .after_click__first_title {
+    margin-top: 5vw;
+    margin-left: 5.86vw;
+    font-size: 2.44vw;
+  }
+
+  .after_click__project_block {
+    margin-left: 5.86vw;
+    margin-top: 2.93vw;
+    padding: 2.93vw;
+    width: 36.82vw;
+  }
+
+  .after_click__closer {
+    margin: -1vw 0 0 30.56vw;
+    background: no-repeat url("../img/closer.svg");
+    background-size: contain;
+    width: 1.56vw;
+    height: 1.56vw;
+  }
+
+  .after_click__title {
+    font-size: 2.44vw;
+    border-bottom: solid 0.3vw #000;
+    padding-bottom: 1vw;
+    margin-right: 7vw;
+  }
+
+  .after_click__description {
+    margin-top: 2.44vw;
+    font-size: 1.56vw;
+    width: 35vw;
+  }
+
+  .after_click__handle_invest,
+  .after_click____income_money,
+  .after_click____income_percent {
+    margin-top: 1.95vw;
+  }
+
+  .after_click__handle_invest__numbers,
+  .after_click____income_money__numbers,
+  .after_click____income_percent__numbers {
+    font-size: 1.76vw;
+  }
+
+  .after_click__handle_invest__description,
+  .after_click____income_money__description,
+  .after_click____income_percent__numbers_description {
+    display: inline-block;
+    font-size: 1.37vw;
+  }
+
+  .after_click_handle_invest__question,
+  .after_click_protections__question,
+  .card_with_protections__quastion {
+    margin: -0.57vw 0 0 0.57vw;
+    background: no-repeat url("../img/quastion.svg");
+    background-size: contain;
+    width: 1.95vw;
+    height: 1.95vw;
+  }
+
+  .after_click_handle_invest_description,
+  .after_click_protections__provide_description,
+  .card_with_protections__provide_description {
+    display: none;
+    width: 25vw;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 1.56vw;
+    margin-top: -12vw;
+    margin-left: 3vw;
+    padding: 2.93vw 3.9vw 2.93vw 3.9vw;
+  }
+
+  .after_click_protections__title {
+    margin-top: 2.93vw;
+    font-size: 1.95vw;
+  }
+
+  .after_click_protections__provide,
+  .after_click_protections__no_provide {
+    margin-top: 1.95vw;
+    font-size: 1.56vw;
+  }
+
+  .after_click__outside_link {
+    margin-top: 2.93vw;
+    font-size: 1.37vw;
+  }
+
+  .after_click__outside_link::after {
+    content: "";
+    margin-left: 0.5vw;
+    width: 1.3vw;
+    height: 1vw;
+    background: no-repeat url("../img/arrow.svg");
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .after_click__first_title {
+    margin-top: 8.02vw;
+    margin-left: 5.21vw;
+    font-size: 2.6vw;
+  }
+
+  .after_click__project_block {
+    margin-left: 5.21vw;
+    margin-top: 2.93vw;
+    padding: 2.93vw;
+    width: 43.49vw;
+  }
+
+  .after_click__closer {
+    margin: -1.3vw 0 0 36.8vw;
+    background: no-repeat url("../img/closer.svg");
+    background-size: contain;
+    width: 2.08vw;
+    height: 2.08vw;
+  }
+
+  .after_click__title {
+    font-size: 2.6vw;
+    border-bottom: solid 0.3vw #000;
+    padding-bottom: 1vw;
+    margin-right: 7vw;
+  }
+
+  .after_click__description {
+    margin-top: 2.6vw;
+    font-size: 1.82vw;
+    width: 37vw;
+  }
+
+  .after_click__handle_invest,
+  .after_click____income_money,
+  .after_click____income_percent {
+    margin-top: 2.6vw;
+  }
+
+  .after_click__handle_invest__numbers,
+  .after_click____income_money__numbers,
+  .after_click____income_percent__numbers {
+    font-size: 2.34vw;
+  }
+
+  .after_click__handle_invest__description,
+  .after_click____income_money__description,
+  .after_click____income_percent__numbers_description {
+    font-size: 1.82vw;
+  }
+
+  .after_click_handle_invest__question,
+  .after_click_protections__question,
+  .card_with_protections__quastion {
+    margin: -1vw 0 0 1vw;
+    background: no-repeat url("../img/quastion.svg");
+    background-size: contain;
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+
+  .after_click_handle_invest_description,
+  .after_click_protections__provide_description,
+  .card_with_protections__provide_description {
+    display: none;
+    width: 30vw;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 1.82vw;
+    margin-top: -15vw;
+    margin-left: 3vw;
+    padding: 2.6vw 3.91vw 2.6vw 3.91vw;
+  }
+
+  .after_click_protections__title {
+    margin-top: 2.6vw;
+    font-size: 2.6vw;
+  }
+
+  .after_click_protections__provide,
+  .after_click_protections__no_provide {
+    margin-top: 2.6vw;
+    font-size: 1.82vw;
+  }
+
+  .after_click__outside_link {
+    margin-top: 2.6vw;
+    font-size: 1.82vw;
+  }
+
+  .after_click__outside_link::after {
+    content: "";
+    margin-left: 0.7vw;
+    width: 2vw;
+    height: 1.5vw;
+    background: no-repeat url("../img/arrow.svg");
+    background-size: contain;
+  }
+}

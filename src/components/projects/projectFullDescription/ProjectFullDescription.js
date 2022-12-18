@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { DataProjects } from "../DataProjects"
 
 export function ProjectFullDescription({ width, selectedProjectCard, setClickOnCard, handleValue }) {
-  // const [onTapToQuastion, setOnTapToQuastion] = useState(false)
   const [showDescription, setShowDescription] = useState(false)
   const [useKey, setUseKey] = useState("")
 

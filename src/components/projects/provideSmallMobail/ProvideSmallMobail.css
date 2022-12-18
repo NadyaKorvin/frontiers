@@ -1,0 +1,92 @@
+.provide_small_mobail__block {
+  margin-top: 5.33vw;
+  padding: 4vw 2.67vw 4vw 8vw;
+  box-sizing: border-box;
+  width: 89.33vw;
+  height: 13.07vw;
+  overflow: hidden;
+  box-shadow: 0px 1px 6px rgba(185, 185, 185, 0.5);
+  transition: 0.6s ease-out;
+}
+
+.provide_small_mobail__block_open {
+  height: 100%;
+  transition: 0.6s ease-out;
+}
+
+.provide_small_mobail__block_visible {
+  display: flex;
+  justify-content: space-between;
+}
+
+.provide_small_mobail__block_title {
+  font-weight: 600;
+  font-size: 4.27vw;
+  line-height: 130%;
+}
+
+.provide_small_mobile__arrow_to_down {
+  background: no-repeat url("../img/arrow_to_down_black.svg");
+  background-position: center;
+  background-size: contain;
+  width: 2.93vw;
+  height: 1.35vw;
+  transition: 0.6s ease-out;
+}
+
+.provide_small_mobile__arrow_to_up {
+  transform: rotate(180deg);
+}
+
+.provide_small_mobail__instruction__text {
+  margin-top: 5.33vw;
+  font-weight: 500;
+  font-size: 3.73vw;
+  line-height: 130%;
+}
+
+.provide_small_mobail__instruction__text > p {
+  margin-top: 4vw;
+}
+
+.provide_small_mobail__instuction_with_handle_range_error {
+  background-color: #ffc906b7;
+}
+
+.provide_small_mobail__provide {
+  margin-top: 8vw;
+}
+
+.provide_small_mobail__line_text {
+  display: flex;
+  height: 10vw;
+}
+
+.provide_small_mobail__text {
+  font-weight: 500;
+  font-size: 3.73vw;
+  line-height: 130%;
+}
+
+.provide_small_mobail__quastion {
+  margin: -2vw 0 0 2vw;
+  background: no-repeat url("../img/quastion.svg");
+  background-size: contain;
+  width: 5vw;
+  height: 5vw;
+}
+
+.provide_small_mobail__description {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  width: 60vw;
+  font-size: 3.73vw;
+  line-height: 130%;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-top: -20vw;
+  padding: 5vw 7.8vw 5vw 7.8vw;
+}

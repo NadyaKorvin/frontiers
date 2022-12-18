@@ -63,4 +63,10 @@
   .projects__title {
     font-size: 9.33vw;
   }
+
+  .projects__cards_and_description {
+    display: block;
+    box-sizing: border-box;
+    width: 89.33vw;
+  }
 }
