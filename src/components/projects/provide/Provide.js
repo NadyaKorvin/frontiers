@@ -11,7 +11,7 @@ export function Provide({ errorHandleRange }) {
   }
 
   return (
-    <div>
+    <div className="instuction_and_provide__container">
       <div className="instuction">
         <p className="instruction__title">Калькулятор доходности</p>
         <div className="instruction__text">
@@ -27,11 +27,7 @@ export function Provide({ errorHandleRange }) {
       <div className="poride__block">
         <p className="provide__title">виды обеспечения</p>
         {DataProvide.map((elem) => (
-          <div
-            key={elem.key + "provide"}
-            className={elem.key}
-            onClick={(event) => findElementOnTap(event, elem.key)}
-          >
+          <div key={elem.key + "provide"} className={elem.key} onClick={(event) => findElementOnTap(event, elem.key)}>
             <div className="provide__line_text">
               <p className="provide__text">{elem.title}</p>
               <div className="provide__quastion"></div>

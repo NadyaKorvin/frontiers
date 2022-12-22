@@ -1,0 +1,227 @@
+.small_mobail__project_cards__block {
+  box-sizing: border-box;
+  margin-top: 8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5.33vw;
+  width: 89.33vw;
+}
+
+.small_mobail_project__card {
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 2px solid #fff;
+}
+
+.small_mobail_project_card__grey {
+  box-sizing: border-box;
+  width: 89.33vw;
+  height: 37.33vw;
+  overflow: hidden;
+  border: solid 0.09vh rgba(0, 0, 0, 0.15);
+  transition: 0.6s ease-out;
+}
+
+.small_mobail_project_card__grey__open {
+  height: 100%;
+  transition: 0.6s ease-out;
+}
+
+.small_mobail_project_card_grey__visible {
+  box-sizing: border-box;
+  padding-top: 5vw;
+  display: flex;
+  gap: 4.8vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(3, 3, 3, 0.2);
+  line-height: 130%;
+  text-align: center;
+}
+
+.small_mobail_project_card__grey_logo,
+.small_mobail_project_card__logo {
+  width: 60vw;
+  height: 6.13vw;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.small_mobail_project_card_min_invest__numbers,
+.small_mobail_project_card_income_money_numbers,
+.small_mobail_project_card_income_percent_numbers {
+  font-size: 4.8vw;
+}
+
+.small_mobail_project_card_min_invest__description {
+  font-size: 3.47vw;
+}
+
+.small_mobail_project_card__arrow_to_down_grey {
+  background: no-repeat url("../img/arrow_to_down_grey.svg");
+  background-position: center;
+  background-size: contain;
+  width: 4.8vw;
+  height: 2.4vw;
+  transition: 0.6s ease-out;
+}
+
+.small_mobail_project_card__arrow_to_up_grey,
+.small_mobail_project_card__arrow_to_up {
+  transform: rotate(180deg);
+}
+
+.small_mobail_project_card__color {
+  box-sizing: border-box;
+  width: 89.33vw;
+  height: 37.33vw;
+  overflow: hidden;
+  transition: 0.6s ease-out;
+}
+
+.small_mobail_project_card__color__open {
+  height: 100%;
+  transition: 0.6s ease-out;
+  border: solid 0.09vh #000;
+}
+
+.small_mobail_project_card__color_visible {
+  box-sizing: border-box;
+  padding-top: 5vw;
+  width: 89.33vw;
+  height: 37.33vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  line-height: 130%;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(128, 128, 128);
+  background-blend-mode: multiply;
+}
+
+.small_mobail_project_card__income {
+  display: flex;
+  flex-direction: column;
+  gap: 1.33vw;
+}
+
+.small_mobail_project_card__arrow_to_down {
+  background: url("../img/arrow_to_down.svg");
+  background-position: center;
+  background-size: contain;
+  width: 4.8vw;
+  height: 2.4vw;
+  transition: 0.6s ease-out;
+}
+
+.small_mobail_after_click__project_block {
+  padding: 8vw;
+  box-sizing: border-box;
+  width: 89.33vw;
+}
+
+.small_mobail_after_click__description {
+  margin-bottom: 8vw;
+  font-weight: 500;
+  font-size: 3.73vw;
+  line-height: 130%;
+}
+
+.small_mobail_after_click__handle_invest,
+.small_mobail_after_click____income_money,
+.small_mobail_after_click____income_percent {
+  margin-top: 5.33vw;
+}
+
+.small_mobail_after_click__handle_invest__numbers,
+.small_mobail_after_click____income_money__numbers,
+.small_mobail_after_click____income_percent__numbers {
+  font-size: 4vw;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.small_mobail_after_click__handle_invest__description,
+.small_mobail_after_click____income_money__description,
+.small_mobail_after_click____income_percent__numbers_description {
+  font-size: 3.73vw;
+  line-height: 130%;
+  font-weight: 500;
+}
+
+.small_mobail_after_click_protections__title {
+  margin-top: 5.2vw;
+  margin-bottom: 8vw;
+  font-size: 5.33vw;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.small_mobail_after_click_protections__list {
+  display: flex;
+  height: 10vw;
+  position: relative;
+}
+
+.small_mobail_after_click_protections__provide,
+.small_mobail_after_click_protections__no_provide {
+  font-weight: 500;
+  font-size: 3.73vw;
+  line-height: 130%;
+}
+
+.small_mobail_after_click_protections__no_provide {
+  color: #616161;
+}
+
+.small_mobail_after_click_protections__question {
+  margin: -2vw 0 0 2vw;
+  background: no-repeat url("../img/quastion.svg");
+  background-size: contain;
+  width: 5vw;
+  height: 5vw;
+}
+
+.small_mobail_after_click_protections__provide_description {
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  width: 73.33vw;
+  font-size: 3.73vw;
+  line-height: 130%;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-top: -20vw;
+  padding: 5vw 7.8vw 5vw 7.8vw;
+}
+
+.small_mobail_after_click__outside_link {
+  margin-top: 5.2vw;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 130%;
+  text-decoration-line: underline;
+  font-size: 3.73vw;
+}
+
+.small_mobail_after_click__outside_link::after {
+  display: inline-block;
+  content: "";
+  margin-left: 1.5vw;
+  width: 4vw;
+  height: 2vw;
+  background: no-repeat url("../img/arrow.svg");
+  background-size: contain;
+}

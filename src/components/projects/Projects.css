@@ -20,6 +20,8 @@
   flex-wrap: wrap;
 }
 
+
+
 @media screen and (max-width: 1024px) {
   .projects {
     margin: 0 auto;

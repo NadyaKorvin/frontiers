@@ -13,6 +13,7 @@
 }
 
 .after_click__information_about_project {
+  box-sizing: border-box;
   opacity: 0;
   animation: easyshow 1s forwards;
   transition: ease-in-out 0.6s;
@@ -49,6 +50,9 @@
 
 .after_click__description {
   margin-top: 1.38vh;
+  display: block;
+  box-sizing: border-box;
+  max-width: 30.96vw;
   font-weight: 500;
   font-size: 1.48vh;
   line-height: 130%;

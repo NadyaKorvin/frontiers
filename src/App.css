@@ -21,6 +21,7 @@
 @import url("./components/projects/projectFullDescription/ProjectFullDescription.css");
 @import url("./components/projects/provide/Provide.css");
 @import url("./components/projects/provideSmallMobail/ProvideSmallMobail.css");
+@import url("./components/projects/projectCardsSmallMobail/ProjectCardsSmallMobail.css");
 
 body,
 textarea,

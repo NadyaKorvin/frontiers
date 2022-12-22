@@ -72,7 +72,7 @@ export function Projects({ width }) {
           ) : (
             <div className="projects__cards_and_description">
               <ProvideSmallMobail errorHandleRange={errorHandleRange} />
-              {/* <ProjectCardsSmallMobail setSelectedProjectCard={setSelectedProjectCard} handleValue={handleValue} setClickOnCard={setClickOnCard} /> */}
+              <ProjectCardsSmallMobail handleValue={handleValue} />
             </div>
           )}
         </div>

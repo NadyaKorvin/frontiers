@@ -81,6 +81,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+  /* .instuction_and_provide__container {
+    position: relative;
+  } */
+
   .instuction {
     margin-top: 5vw;
     margin-left: 5.86vw;
