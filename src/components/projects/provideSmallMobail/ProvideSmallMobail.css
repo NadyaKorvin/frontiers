@@ -92,4 +92,5 @@
   margin: 0 auto;
   margin-top: -20vw;
   padding: 5vw 7.8vw 5vw 7.8vw;
+  z-index: 999;
 }
