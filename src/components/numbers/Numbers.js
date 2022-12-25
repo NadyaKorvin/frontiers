@@ -4,14 +4,14 @@ import { DataNumbers } from "./DataNumbers"
 export function Nambers() {
   const [currentSlider, setCurrenrSlider] = useState(0)
 
-  const goForward = () => {
+  const goOld = () => {
     let tmp = currentSlider
-    if (tmp === DataNumbers.length) return
+    if (tmp === DataNumbers.length - 1) return
     tmp++
     setCurrenrSlider(tmp)
   }
 
-  const goBack = () => {
+  const goNext = () => {
     let tmp = currentSlider
     if (tmp === 0) return
     tmp--
@@ -28,9 +28,9 @@ export function Nambers() {
         <p className="numbers__title numbers__title_our">наши</p>
         <p className="numbers__title numbers__title_clients">клиенты</p>
         <p className="numbers__title">в</p>
-        <div className="numbers__navigation_goback_arrow" onClick={() => goForward()}></div>
+        <div className="numbers__navigation_goback_arrow" onClick={() => goOld()}></div>
         <div className="numbers__title">{DataNumbers[currentSlider].key}</div>
-        <div className="numbers__navigation_goforward_arrow" onClick={() => goBack()}></div>
+        <div className="numbers__navigation_goforward_arrow" onClick={() => goNext()}></div>
         <p className="numbers__title">году:</p>
       </div>
       <div className="numbers__flex_box">
