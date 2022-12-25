@@ -28,11 +28,17 @@ export default function Form() {
 
   const onSubmit = async () => {
     setIsLoading(true)
+    const url = new URL(window.location.origin)
     try {
-      axios.post("http://localhost:4000/api/email", {
+      axios.post("http://45.130.42.68:8080/api/bitrix24/send", {
         name,
         phone,
-        message
+        message,
+        utm: {
+          UTM_SOURCE: url.searchParams.get("utm_source"),
+          UTM_MEDIUM: url.searchParams.get("utm_medium"),
+          UTM_CONTENT: url.searchParams.get("utm_content"),
+        },
       })
       setIsLoading(false)
       setActiveModalSuccess(true)
