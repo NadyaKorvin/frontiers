@@ -20,8 +20,6 @@
   flex-wrap: wrap;
 }
 
-
-
 @media screen and (max-width: 1024px) {
   .projects {
     margin: 0 auto;
@@ -39,6 +37,13 @@
     display: flex;
     box-sizing: border-box;
     width: 94.14vw;
+    align-items: flex-start;
+  }
+
+  .projects__instuction_and_full_information {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10vw;
   }
 }
 

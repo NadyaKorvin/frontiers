@@ -7,16 +7,35 @@
   flex-direction: column;
 }
 
-.numbers__title_first,
-.numbers__title_second {
+.numbers__title_flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.7vh;
+}
+
+.numbers__title {
   font-size: 6.018vh;
   font-weight: 700;
   line-height: 130%;
   text-transform: uppercase;
 }
 
-.numbers__title_second {
+.numbers__title_our {
   padding-left: 31.852vh;
+}
+
+.numbers__navigation_goback_arrow,
+.numbers__navigation_goforward_arrow {
+  box-sizing: border-box;
+  background: no-repeat url("../team/img/arrow.svg");
+  background-position: center;
+  background-size: contain;
+  width: 3.703vh;
+  cursor: pointer;
+}
+
+.numbers__navigation_goforward_arrow {
+  transform: rotate(180deg);
 }
 
 .numbers__flex_box {
@@ -53,13 +72,22 @@
     width: 94.14vw;
   }
 
-  .numbers__title_first,
-  .numbers__title_second {
+  .numbers__title_flex {
+    gap: 1.2vw;
+  }
+
+  .numbers__title {
     font-size: 2.93vw;
   }
 
-  .numbers__title_second {
-    padding-left: 20.61vw;
+  .numbers__title_our {
+    padding-left: 27.61vw;
+  }
+
+  .numbers__navigation_goback_arrow,
+  .numbers__navigation_goforward_arrow {
+    width: 3.91vw;
+    margin: 1vw;
   }
 
   .numbers__flex_box {
@@ -87,15 +115,24 @@
     width: 94.79vw;
   }
 
-  .numbers__title_first,
-  .numbers__title_second {
-    font-size: 5.21vw;
-    width: 59.9vw;
+  .numbers__title_flex {
+    gap: 1.2vw;
   }
 
-  .numbers__title_second {
+  .numbers__title {
+    font-size: 5.21vw;
+  }
+
+  .numbers__title_give,
+  .numbers__title_our {
     padding-left: 0;
-    width: 84.64vw;
+    margin-right: 35vw;
+  }
+
+  .numbers__navigation_goback_arrow,
+  .numbers__navigation_goforward_arrow {
+    width: 3.91vw;
+    margin: 2vw;
   }
 
   .numbers__flex_box {
@@ -124,10 +161,32 @@
     height: 167.47vw;
   }
 
-  .numbers__title_first,
-  .numbers__title_second {
+  .numbers__title_flex {
+    gap: 2vw;
+  }
+
+  .numbers__title {
     font-size: 6.67vw;
-    width: 74.67vw;
+  }
+
+  .numbers__title_give,
+  .numbers__title_our {
+    margin-right: 0;
+  }
+
+  .numbers__title_give,
+  .numbers__title_take {
+    margin-right: 15vw;
+  }
+
+  .numbers__title_clients {
+    margin-right: 28vw;
+  }
+
+  .numbers__navigation_goback_arrow,
+  .numbers__navigation_goforward_arrow {
+    width: 8vw;
+    margin: 2vw;
   }
 
   .numbers__description,

@@ -158,6 +158,7 @@
 @media screen and (max-width: 768px) {
   .projects_filter__cadrs_block {
     margin-top: 8.02vw;
+    margin-bottom: 1px;
     gap: 3.91vw;
     width: 46.09vw;
   }

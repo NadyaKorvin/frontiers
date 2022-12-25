@@ -91,8 +91,8 @@
   position: absolute;
   width: 20vh;
   background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   font-weight: 500;
   font-size: 1.29vh;
   line-height: 130%;
@@ -100,6 +100,7 @@
   margin-top: -10vh;
   margin-left: 2vh;
   padding: 2.77vh 3.7vh 2.77vh 3.7vh;
+  z-index: 999;
 }
 
 .after_click_protections__title {
@@ -218,13 +219,9 @@
     height: 1.95vw;
   }
 
-  .after_click_handle_invest_description,
-  .after_click_protections__provide_description,
   .card_with_protections__provide_description {
     display: none;
     width: 25vw;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     font-size: 1.56vw;
     margin-top: -12vw;
     margin-left: 3vw;
@@ -320,13 +317,9 @@
     height: 2.5vw;
   }
 
-  .after_click_handle_invest_description,
-  .after_click_protections__provide_description,
   .card_with_protections__provide_description {
     display: none;
     width: 30vw;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     font-size: 1.82vw;
     margin-top: -15vw;
     margin-left: 3vw;

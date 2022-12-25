@@ -85,7 +85,7 @@ a {
 .div5,
 .div6 {
   width: 100vw;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @media (min-width: 1025px) {
@@ -177,11 +177,5 @@ a {
   [data-page="6"] .div6 {
     opacity: 1;
     transform: none;
-  }
-}
-
-@media screen and (max-whidth: 768px) {
-  body {
-    overflow: hidden;
   }
 }
