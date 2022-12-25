@@ -8,7 +8,7 @@ export function Footer({ setActivePage }) {
           <p className="lastscreen__contact_group_contact">КОНТАКТЫ</p>
           <address className="lastscreen__footer_text">Санкт-Петербург, Невский пр-кт, 71 (5 этаж)</address>
           <a href="tel:89673449754" className="lastscreen__footer_text">
-            +7 967 344 9754
+            +7 963 308 3308
           </a>
           <a className="lastscreen__footer_text" href="mailto:nk@frontiers.ru">
             nk@frontiers.ru
