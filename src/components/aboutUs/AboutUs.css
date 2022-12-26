@@ -15,7 +15,8 @@
 
 .animation__text_first_part,
 .animation__text_second_part {
-  min-width: 78.055vh;
+  box-sizing: border-box;
+  width: 78.055vh;
   text-transform: uppercase;
   font-size: 6.02vh;
   font-weight: 700;

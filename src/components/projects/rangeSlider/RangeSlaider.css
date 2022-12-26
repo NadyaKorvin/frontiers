@@ -52,6 +52,7 @@
   height: 3.7vh;
   background: no-repeat url("./img/form_submit_active.svg");
   background-size: cover;
+  background-position: center;
   border: 0.09vh solid #000;
 }
 
@@ -60,6 +61,7 @@
   height: 3.7vh;
   background: no-repeat url("./img/form_submit_disable.svg");
   background-size: cover;
+  background-position: center;
   border: 0.09vh solid #d8d8d8;
 }
 
@@ -87,6 +89,8 @@
   cursor: pointer;
   border-left: solid 0.46vh #fff;
   border-right: solid 0.46vh #fff;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .range_slider::-moz-range-thumb {
@@ -99,6 +103,8 @@
   cursor: pointer;
   border-left: solid 0.46vh #fff;
   border-right: solid 0.46vh #fff;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .range_slider__label {
