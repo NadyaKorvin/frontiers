@@ -48,6 +48,7 @@
 }
 
 .range_slider__input_number__submit_active {
+  box-sizing: border-box;
   width: 3.7vh;
   height: 3.7vh;
   background: no-repeat url("./img/form_submit_active.svg");
@@ -57,6 +58,7 @@
 }
 
 .range_slider__input_number__submit_disable {
+  box-sizing: border-box;
   width: 3.7vh;
   height: 3.7vh;
   background: no-repeat url("./img/form_submit_disable.svg");
