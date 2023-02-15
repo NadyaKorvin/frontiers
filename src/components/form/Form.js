@@ -26,19 +26,40 @@ export default function Form() {
     mode: "onSubmit"
   })
 
+  // const onSubmit = async () => {
+  //   setIsLoading(true)
+  //   const url = new URL(window.location.origin)
+  //   try {
+  //     axios.post("https://45.130.42.68:8080/api/bitrix24/send", {
+  //       name,
+  //       phone,
+  //       message,
+  //       utm: {
+  //         UTM_SOURCE: url.searchParams.get("utm_source"),
+  //         UTM_MEDIUM: url.searchParams.get("utm_medium"),
+  //         UTM_CONTENT: url.searchParams.get("utm_content")
+  //       }
+  //     })
+  //     setIsLoading(false)
+  //     setActiveModalSuccess(true)
+  //     setTimeout(setActiveModalSuccess, 5000)
+  //   } catch (error) {
+  //     console.log(error)
+  //     setIsLoading(false)
+  //     setActiveModalError(true)
+  //     setTimeout(setActiveModalError, 5000)
+  //   }
+  //   setChecked(false)
+  //   reset()
+  // }
+
   const onSubmit = async () => {
     setIsLoading(true)
-    const url = new URL(window.location.origin)
     try {
-      axios.post("https://45.130.42.68:8080/api/bitrix24/send", {
+      axios.post("http://localhost:4000/api/email", {
         name,
         phone,
-        message,
-        utm: {
-          UTM_SOURCE: url.searchParams.get("utm_source"),
-          UTM_MEDIUM: url.searchParams.get("utm_medium"),
-          UTM_CONTENT: url.searchParams.get("utm_content")
-        }
+        message
       })
       setIsLoading(false)
       setActiveModalSuccess(true)

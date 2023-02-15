@@ -41,13 +41,14 @@ app.post("/api/email", cors(), async (req, res) => {
 
     if (err) {
       console.log(err)
-      return
+      return res.status(500).send("error")
     }
     console.log("Sent: " + info.response)
+    res.send('success')
   })
 })
 
 const port = process.env.PORT || 4000
 app.listen(port, () => {
-  console.log(`serve at hhtp://localhost:${port}`)
+  console.log(`serve at http://localhost:${port}`)
 })
