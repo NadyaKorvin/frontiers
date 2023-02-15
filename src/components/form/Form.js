@@ -37,8 +37,8 @@ export default function Form() {
         utm: {
           UTM_SOURCE: url.searchParams.get("utm_source"),
           UTM_MEDIUM: url.searchParams.get("utm_medium"),
-          UTM_CONTENT: url.searchParams.get("utm_content"),
-        },
+          UTM_CONTENT: url.searchParams.get("utm_content")
+        }
       })
       setIsLoading(false)
       setActiveModalSuccess(true)

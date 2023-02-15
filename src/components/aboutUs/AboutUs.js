@@ -41,7 +41,7 @@ export function AboutUs() {
         <p className="decoration_marks">“</p>
         <div className="about_us__text">
           <p className="text_paragraph">
-            Мы знаем, как выглядят устойчивый бизнес и надежные предприниматели, потому что за 15 лет провели
+            Мы знаем, как выглядит устойчивый бизнес и надежные предприниматели, потому что за 15 лет провели
             <span className="second_screen__yellow_mark"> несколько </span>
             <span className="second_screen__yellow_mark">тысяч сделок</span> по купле-продаже бизнесов в России и оценили
             <span className="second_screen__yellow_mark"> десятки тысяч </span>
