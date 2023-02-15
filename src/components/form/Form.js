@@ -30,7 +30,7 @@ export default function Form() {
     setIsLoading(true)
     const url = new URL(window.location.origin)
     try {
-      axios.post("https://45.130.42.68:8080/api/bitrix24/send", {
+      axios.post("https://server99.ru/api/bitrix24/send", {
         name,
         phone,
         message,
