@@ -55,41 +55,41 @@ export const DataProjects = [
     ],
     url: "https://andplaceinvest.ru/ "
   },
-  {
-    key: "project3",
-    title: "ООО ПРОМЛЕСТОРГ",
-    logo: "./img/projects/forest_logo.svg",
-    grey_logo: "./img/projects/forest_grey_logo.svg",
-    background: "./img/projects/forest_1920.webp",
-    min: 500000,
-    mid: 1000000,
-    max: 1000000,
-    ultra: 1000000,
-    income_min: 27,
-    income_mid: 30,
-    income_max: 30,
-    income_ultra: 30,
-    description: "Лесопильное производство с понятной бизнес-моделью и быстрым масштабированием — девять новых филиалов за пять лет работы",
-    inshure: [
-      {
-        key: "project3_inshure1",
-        title: "ООО ПРОМЛЕСТОРГ",
-        count: 0,
-        need_to_invest: 500000,
-        provide: "Залог товара",
-        provide_descriptoin: "Часть товара в обороте компании. Если возникает задолженность, этот товар выходит из оборота — и продаётся с молотка"
-      },
-      {
-        key: "project3_inshure2",
-        count: 1,
-        need_to_invest: 5000000,
-        provide: "Залог оборудования",
-        provide_descriptoin: "Компания оформляет в залог оборудование, которое будет реализовано с молотка, если возникнет задолженность"
-      }
-    ],
+  // {
+  //   key: "project3",
+  //   title: "ООО ПРОМЛЕСТОРГ",
+  //   logo: "./img/projects/forest_logo.svg",
+  //   grey_logo: "./img/projects/forest_grey_logo.svg",
+  //   background: "./img/projects/forest_1920.webp",
+  //   min: 500000,
+  //   mid: 1000000,
+  //   max: 1000000,
+  //   ultra: 1000000,
+  //   income_min: 27,
+  //   income_mid: 30,
+  //   income_max: 30,
+  //   income_ultra: 30,
+  //   description: "Лесопильное производство с понятной бизнес-моделью и быстрым масштабированием — девять новых филиалов за пять лет работы",
+  //   inshure: [
+  //     {
+  //       key: "project3_inshure1",
+  //       title: "ООО ПРОМЛЕСТОРГ",
+  //       count: 0,
+  //       need_to_invest: 500000,
+  //       provide: "Залог товара",
+  //       provide_descriptoin: "Часть товара в обороте компании. Если возникает задолженность, этот товар выходит из оборота — и продаётся с молотка"
+  //     },
+  //     {
+  //       key: "project3_inshure2",
+  //       count: 1,
+  //       need_to_invest: 5000000,
+  //       provide: "Залог оборудования",
+  //       provide_descriptoin: "Компания оформляет в залог оборудование, которое будет реализовано с молотка, если возникнет задолженность"
+  //     }
+  //   ],
 
-    url: "http://promlestorg-invest.ru/  "
-  },
+  //   url: "http://promlestorg-invest.ru/  "
+  // },
 
   {
     key: "project4",
