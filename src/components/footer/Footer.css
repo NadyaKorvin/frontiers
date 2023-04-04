@@ -1,6 +1,5 @@
 .lastscreen__footer {
   margin: 0 auto;
-  margin-top: 10.55vh;
   width: 148.15vh;
   border-top: 0.09vh solid #000000;
 }
@@ -19,6 +18,12 @@
   line-height: 130%;
 }
 
+.lastscreen__contact_group_frontiers {
+  display: block;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
 .lastscreen__contact_group_contact,
 .lastscreen__contact_group_frontiers {
   margin-bottom: 1.85vh;
@@ -27,14 +32,23 @@
   line-height: 130%;
 }
 
-.lastscreen__contact_group_frontiers {
-  display: block;
-  letter-spacing: 0.05em;
-  cursor: pointer;
+.lastscreen__frontiers_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.lastscreen__frontiers_group {
-  text-align: end;
+.lastscreen__design_dev {
+  display: flex;
+  align-items: baseline;
+  justify-self: flex-end;
+}
+
+.lastscreen__design_dev_text {
+  display: block;
+  font-weight: 500;
+  font-size: 1.48vh;
+  line-height: 130%;
 }
 
 .kojo__logo_hidden {
@@ -45,24 +59,33 @@
   z-index: -99;
 }
 
-.lastscreen__design_dev {
-  position: relative;
-  top: -3.5vh;
-  margin: 0 auto;
-  width: 24.074vh;
-  height: 1.76vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.lastscreen__design_dev > p {
-  margin: 0;
-}
-
 .kojo__logo {
+  margin-left: 1vh;
   width: 7.777vh;
   height: 1.296vh;
+}
+
+.lastscreen__info {
+  width: 67.59vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastscreen__info_375 {
+  display: none;
+}
+
+.lastscreen__footer_info_img {
+  background: center / contain no-repeat url("./img/info_circle.svg");
+  width: 1.48vh;
+  height: 1.48vh;
+}
+
+.lastscreen__footer_info_text {
+  width: 65.1vh;
+  font-size: 1.2vh;
+  font-weight: 500;
+  line-height: 130%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -75,11 +98,16 @@
 
   .lastscreen__footer_wrapper_info {
     margin-top: 3.22vw;
+    flex-wrap: wrap;
   }
 
   .lastscreen__footer_text {
     margin-bottom: 1.46vw;
     font-size: 1.37vw;
+  }
+
+  .lastscreen__frontiers_group {
+    text-align: right;
   }
 
   .lastscreen__contact_group_contact,
@@ -88,33 +116,44 @@
     font-size: 2.44vw;
   }
 
-  /* .lastscreen__contact_group_frontiers {
-    margin-bottom: 5.08vw;
-  } */
-
-  .lastscreen__design_dev {
-    top: -3.5vw;
-    margin-left: 20vw;
-    width: 23.44vw;
-    height: 1.66vw;
+  .lastscreen__design_dev_text {
+    font-size: 1.37vw;
   }
 
   .kojo__logo {
+    margin-left: 1vw;
     width: 8.3vw;
     height: 1.37vw;
+  }
+
+  .lastscreen__info {
+    margin-top: 6.15vw;
+    margin-bottom: 3.91vw;
+    width: 94.14vw;
+  }
+
+  .lastscreen__footer_info_img {
+    background: center / contain no-repeat url("./img/info_circle.svg");
+    width: 1.56vw;
+    height: 1.56vw;
+  }
+
+  .lastscreen__footer_info_text {
+    width: 91.6vw;
+    font-size: 1.27vw;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .lastscreen__footer_wrapper_info {
-    margin-bottom: 10.03vw;
-  }
-
   .lastscreen__footer {
     margin: 0 auto;
     margin-top: 13.02vw;
-    width: 94.79;
+    width: 94.79vw;
     border-top: 0.13vw solid #000000;
+  }
+
+  .lastscreen__footer_wrapper_info {
+    margin-top: 4.3vw;
   }
 
   .lastscreen__footer_text {
@@ -128,20 +167,31 @@
     font-size: 3.26vw;
   }
 
-  .lastscreen__contact_group_frontiers {
-    margin-bottom: 6.51vw;
-  }
-
-  .lastscreen__design_dev {
-    top: -9.11vw;
-    margin: 0 0;
-    width: 31.25vw;
-    height: 2.21vw;
+  .lastscreen__design_dev_text {
+    font-size: 1.86vw;
   }
 
   .kojo__logo {
+    margin-left: 1.3vw;
     width: 11.07vw;
     height: 1.86vw;
+  }
+
+  .lastscreen__info {
+    margin-top: 6.51vw;
+    margin-bottom: 5.21vw;
+    width: 94.79vw;
+  }
+
+  .lastscreen__footer_info_img {
+    background: center / contain no-repeat url("./img/info_circle.svg");
+    width: 2.08vw;
+    height: 2.08vw;
+  }
+
+  .lastscreen__footer_info_text {
+    width: 91.41vw;
+    font-size: 1.69vw;
   }
 }
 
@@ -154,7 +204,7 @@
   }
 
   .lastscreen__footer_wrapper_info {
-    margin-bottom: 0px;
+    margin-top: 8vw;
     flex-direction: column;
   }
 
@@ -178,15 +228,44 @@
   }
 
   .lastscreen__design_dev {
-    top: 0;
-    margin: 0 auto;
-    margin-top: 4vw;
-    width: 64.27vw;
-    height: 4.53vw;
+    margin-top: 10.67vw;
+  }
+
+  .lastscreen__design_dev_text {
+    font-size: 3.73vw;
   }
 
   .kojo__logo {
+    margin-left: 2.67vw;
     width: 22.4vw;
     height: 3.73vw;
+  }
+
+  .lastscreen__info {
+    display: none;
+  }
+
+  .lastscreen__info_375 {
+    display: block;
+    margin-top: 10.93vw;
+    margin-bottom: 10.67vw;
+    width: 89.33vw;
+  }
+
+  .lastscreen__info_375_title {
+    display: flex;
+    margin-bottom: 4vw;
+  }
+
+  .lastscreen__footer_info_img {
+    margin-right: 2.67vw;
+    background: center / contain no-repeat url("./img/info_circle.svg");
+    width: 4.27vw;
+    height: 4.27vw;
+  }
+
+  .lastscreen__footer_info_text {
+    width: 89.33vw;
+    font-size: 3.47vw;
   }
 }

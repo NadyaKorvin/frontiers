@@ -53,6 +53,8 @@ export function BurgerMenu() {
           </ul>
           <Footer setActivePage={1} />
           <div className="white__line_for_footer_border"></div>
+          <div className="white__line_for_footer_info"></div>
+
         </div>
       </div>
     </nav>
