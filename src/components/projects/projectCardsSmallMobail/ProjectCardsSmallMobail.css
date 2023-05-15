@@ -59,6 +59,13 @@
   font-size: 3.47vw;
 }
 
+.small_mobail_project__cadrs_block_stop {
+  font-weight: 600;
+  font-size: 3.73vw;
+  line-height: 130%;
+  text-align: center;
+}
+
 .small_mobail_project_card__arrow_to_down_grey {
   background: no-repeat url("../img/arrow_to_down_grey.svg");
   background-position: center;
@@ -225,4 +232,3 @@
   background: no-repeat url("../img/arrow.svg");
   background-size: contain;
 }
-

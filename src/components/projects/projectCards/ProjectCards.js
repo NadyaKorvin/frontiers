@@ -15,10 +15,16 @@ export function ProjectCards({ setClickOnCard, handleValue, setSelectedProjectCa
             <div className={`project_filter__card ${elem.key}`} key={elem.key + "project_filter__card"} onClick={() => clickOnProjectCard(elem.key)}>
               <div className={`project_filter_card__grey ${elem.key}`}>
                 <div className={`project_filter_card__grey_logo ${elem.key}`} style={{ backgroundImage: `url('${elem.grey_logo}')` }}></div>
-                <div className={`project_filter_card__min_invest ${elem.key}`}>
-                  <p className={`project_filter_card_min_invest__numbers ${elem.key}`}>{Number(elem.min).toLocaleString("ru-RU") + " ₽"}</p>
-                  <p className={`project_filter_card_min_invest__description ${elem.key}`}>Мин. размер инвестиций</p>
-                </div>
+                {elem.stop === false ? (
+                  <div className={`project_filter_card__min_invest ${elem.key}`}>
+                    <p className={`project_filter_card_min_invest__numbers ${elem.key}`}>{Number(elem.min).toLocaleString("ru-RU") + " ₽"}</p>
+                    <p className={`project_filter_card_min_invest__description ${elem.key}`}>Мин. размер инвестиций</p>
+                  </div>
+                ) : (
+                  <p className="projects_filter__cadrs_block_stop">
+                    Привлечение средств<br></br> временно приостановлено
+                  </p>
+                )}
               </div>
             </div>
           ) : (

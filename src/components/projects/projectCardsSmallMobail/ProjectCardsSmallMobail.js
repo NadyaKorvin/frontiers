@@ -48,10 +48,17 @@ export function ProjectCardsSmallMobail({ handleValue }) {
                 <div className={elem.key} onClick={(event) => findProjectOnTap(event, elem.key)}>
                   <div className="small_mobail_project_card_grey__visible">
                     <div className="small_mobail_project_card__grey_logo" style={{ backgroundImage: `url('${elem.grey_logo}')` }}></div>
-                    <div className="small_mobail_project_card__min_invest">
-                      <p className="small_mobail_project_card_min_invest__numbers">{Number(elem.min).toLocaleString("ru-RU") + " ₽"}</p>
-                      <p className="small_mobail_project_card_min_invest__description">Мин. размер инвестиций</p>
-                    </div>
+                    {/* инфа, если проект на стопе */}
+                    {elem.stop === false ? (
+                      <div className="small_mobail_project_card__min_invest">
+                        <p className="small_mobail_project_card_min_invest__numbers">{Number(elem.min).toLocaleString("ru-RU") + " ₽"}</p>
+                        <p className="small_mobail_project_card_min_invest__description">Мин. размер инвестиций</p>
+                      </div>
+                    ) : (
+                      <p className="small_mobail_project_card__cadrs_block_stop">
+                        Привлечение средств<br></br> временно приостановлено
+                      </p>
+                    )}
                     <div
                       className={
                         openFullProjectDescription && useProjectKey === elem.key
@@ -65,10 +72,13 @@ export function ProjectCardsSmallMobail({ handleValue }) {
                 <div className="small_mobail_after_click__project_block">
                   <div className="small_mobail_after_click__information_about_project">
                     <p className="small_mobail_after_click__description">{elem.description}</p>
-                    <div className="small_mobail_after_click__handle_invest">
-                      <p className="small_mobail_after_click__handle_invest__numbers">{Number(handleValue).toLocaleString("ru-RU") + " ₽"}</p>
-                      <p className="small_mobail_after_click__handle_invest__description">Размер инвестиций</p>
-                    </div>
+                    {/* скрыть, если проект на стопе */}
+                    {elem.stop === false ? (
+                      <div>
+                        <div className="small_mobail_after_click__handle_invest">
+                        <p className="small_mobail_after_click__handle_invest__numbers">{Number(handleValue).toLocaleString("ru-RU") + " ₽"}</p>
+                        <p className="small_mobail_after_click__handle_invest__description">Размер инвестиций</p>
+                      </div>
                     <div className="small_mobail_after_click____income_money">
                       <p className="small_mobail_after_click____income_money__numbers">
                         {handleValue < elem.mid
@@ -124,6 +134,11 @@ export function ProjectCardsSmallMobail({ handleValue }) {
                         )
                       )}
                     </div>
+                      </div>
+                    ) : (
+                      <div></div>
+                    )}
+                    
                     <a className="small_mobail_after_click__outside_link" href={elem.url} target="_blank" rel="noreferrer">
                       Перейти на сайт
                     </a>

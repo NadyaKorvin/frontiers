@@ -25,7 +25,8 @@ export const DataProjects = [
         provide_descriptoin: "Компания оформляет в залог оборудование, которое будет реализовано с молотка, если возникнет задолженность"
       }
     ],
-    url: "https://pokolenie.coffee/"
+    url: "https://pokolenie.coffee/",
+    stop: false
   },
   {
     key: "project2",
@@ -33,13 +34,13 @@ export const DataProjects = [
     logo: "./img/projects/place_logo.svg",
     grey_logo: "./img/projects/place_grey_logo.svg",
     background: "./img/projects/plase_1920.webp",
-    min: 200000,
+    min: 500000,
     mid: 500000,
-    max: 1000000,
-    ultra: 3000000,
-    income_min: 25,
-    income_mid: 26,
-    income_max: 27,
+    max: 500000,
+    ultra: 500000,
+    income_min: 28,
+    income_mid: 28,
+    income_max: 28,
     income_ultra: 28,
     description:
       "Сеть коворкингов в центре Петербурга. Всегда заняты полностью — это гибкий формат для компаний, которые хотят современное рабочее место без аренды офиса",
@@ -53,7 +54,8 @@ export const DataProjects = [
         provide_descriptoin: "Основатель верит в проект и готов отвечать лично, если что-то пойдёт не так"
       }
     ],
-    url: "https://andplaceinvest.ru/ "
+    url: "https://andplaceinvest.ru/ ",
+    stop: false
   },
   // {
   //   key: "project3",
@@ -97,14 +99,14 @@ export const DataProjects = [
     logo: "./img/projects/party_logo.svg",
     grey_logo: "./img/projects/party_grey_logo.svg",
     background: "./img/projects/party_1920.webp",
-    min: 300000,
-    mid: 500000,
+    min: 1000000,
+    mid: 1000000,
     max: 1000000,
     ultra: 1000000,
-    income_min: 26,
-    income_mid: 27,
-    income_max: 28,
-    income_ultra: 28,
+    income_min: 25,
+    income_mid: 25,
+    income_max: 25,
+    income_ultra: 25,
     description:
       "Cовременное, оборудованное мини-кинотеатрами, караоке и играми пространство для проведения частных вечеринок в Москве и Санкт-Петербурге.",
     inshure: [
@@ -117,7 +119,8 @@ export const DataProjects = [
         provide_descriptoin: "Часть товара в обороте компании. Если возникает задолженность, этот товар выходит из оборота — и продаётся с молотка"
       }
     ],
-    url: "https://partytimespb.ru/"
+    url: "https://t.me/andplace",
+    stop: false
   },
   {
     key: "project5",
@@ -125,14 +128,14 @@ export const DataProjects = [
     logo: "./img/projects/autoprom_logo.svg",
     grey_logo: "./img/projects/autoprom_logo_grey.svg",
     background: "./img/projects/autoprom_1920.webp",
-    min: 300000,
+    min: 500000,
     mid: 1000000,
     max: 3000000,
     ultra: 3000000,
-    income_min: 28,
-    income_mid: 30,
-    income_max: 35,
-    income_ultra: 35,
+    income_min: 25,
+    income_mid: 28,
+    income_max: 30,
+    income_ultra: 30,
     description:
       "Компания занимается производством и реализацией тяжеловозных прицепов и полуприцепов. Вся техника разрабатывается собственным конструкторским бюро.",
     inshure: [
@@ -145,7 +148,8 @@ export const DataProjects = [
         provide_descriptoin: "Часть товара в обороте компании. Если возникает задолженность, этот товар выходит из оборота — и продаётся с молотка"
       }
     ],
-    url: "https://avtoprom.group/faktoring/"
+    url: "https://tpkavtoprom.ru/",
+    stop: false
   },
 
   {
@@ -154,10 +158,10 @@ export const DataProjects = [
     logo: "./img/projects/cinnabon_logo.svg",
     grey_logo: "./img/projects/cinnabon_logo_grey.svg",
     background: "./img/projects/cinnabon_1920.webp",
-    min: 300000,
-    mid: 300000,
-    max: 300000,
-    ultra: 300000,
+    min: 30000000,
+    mid: 30000000,
+    max: 30000000,
+    ultra: 30000000,
     income_min: 25,
     income_mid: 25,
     income_max: 25,
@@ -174,7 +178,8 @@ export const DataProjects = [
         provide_descriptoin: "Часть товара в обороте компании. Если возникает задолженность, этот товар выходит из оборота — и продаётся с молотка"
       }
     ],
-    url: "https://cinnabonrussia.com/"
+    url: "https://cinnaboninvest.ru",
+    stop: true
   },
 
   {
@@ -183,14 +188,14 @@ export const DataProjects = [
     logo: "./img/projects/greenvill_logo.svg",
     grey_logo: "./img/projects/greenvill_logo_grey.svg",
     background: "./img/projects/greenvill_1920.webp",
-    min: 500000,
-    mid: 1000000,
-    max: 100000,
-    ultra: 100000,
-    income_min: 28,
-    income_mid: 30,
-    income_max: 30,
-    income_ultra: 30,
+    min: 400000,
+    mid: 750000,
+    max: 750000,
+    ultra: 750000,
+    income_min: 23,
+    income_mid: 25,
+    income_max: 25,
+    income_ultra: 25,
     description:
       "Компания занимается производством и переработкой сельскохозяйственной продукции собственного производства, а также ее транспортировкой, хранением и реализацией.",
     inshure: [
@@ -203,7 +208,8 @@ export const DataProjects = [
         provide_descriptoin: "Часть товара в обороте компании. Если возникает задолженность, этот товар выходит из оборота — и продаётся с молотка"
       }
     ],
-    url: "https://greenville-agro.com/"
+    url: "",
+    stop: false
   },
 
   {
@@ -212,10 +218,10 @@ export const DataProjects = [
     logo: "./img/projects/sklad_logo.svg",
     grey_logo: "./img/projects/sklad_logo_gray.svg",
     background: "./img/projects/sklad_1920.webp",
-    min: 200000,
-    mid: 200000,
-    max: 200000,
-    ultra: 200000,
+    min: 300000,
+    mid: 300000,
+    max: 300000,
+    ultra: 300000,
     income_min: 25,
     income_mid: 25,
     income_max: 25,
@@ -232,6 +238,37 @@ export const DataProjects = [
         provide_descriptoin: "Основатель верит в проект и готов отвечать лично, если что-то пойдёт не так"
       }
     ],
-    url: "https://minisklad-spb.ru/"
+    url: "https://minisklad-invest.ru/",
+    stop: false
+  },
+
+  {
+    key: "project9",
+    title: "НС Торг",
+    logo: "./img/projects/nctorg_logo.svg",
+    grey_logo: "./img/projects/nctorg_grey_logo.svg",
+    background: "./img/projects/nstorg_1920.webp",
+    min: 30000000,
+    mid: 30000000,
+    max: 30000000,
+    ultra: 30000000,
+    income_min: 25,
+    income_mid: 25,
+    income_max: 25,
+    income_ultra: 25,
+    description:
+      "Компания производит и реализует бумагу для офисной техники под маркой «Дед Мороз». Около 50% продукции идёт на внешние рынки — благодаря сотрудничеству с Центром поддержки экспорта Омской области.",
+    inshure: [
+      {
+        key: "project9_inshure1",
+        count: 0,
+        title: "НС Торг",
+        need_to_invest: 1100000000,
+        provide: "Залог товара",
+        provide_descriptoin: "Часть товара в обороте компании. Если возникает задолженность, этот товар выходит из оборота — и продаётся с молотка"
+      }
+    ],
+    url: "https://www.bumagaoffice.com/",
+    stop: true
   }
 ]

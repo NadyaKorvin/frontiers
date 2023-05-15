@@ -48,7 +48,8 @@
   margin-right: 3vh;
 }
 
-.after_click__description {
+.after_click__description,
+.after_click_stop_invest {
   margin-top: 1.38vh;
   display: block;
   box-sizing: border-box;
@@ -56,6 +57,10 @@
   font-weight: 500;
   font-size: 1.48vh;
   line-height: 130%;
+}
+
+.after_click_stop_invest {
+  font-weight: 600;
 }
 
 .after_click__handle_invest,
@@ -69,7 +74,7 @@
 .after_click____income_percent__numbers {
   font-weight: 700;
   font-size: 1.66vh;
-  line-height: 100%;
+  line-height: 130%;
 }
 
 .after_click__handle_invest__description,
@@ -78,7 +83,7 @@
   display: inline-block;
   font-weight: 500;
   font-size: 1.29vh;
-  line-height: 100%;
+  line-height: 130%;
 }
 
 .after_click__handle_invest__description {
@@ -184,7 +189,8 @@
     margin-right: 7vw;
   }
 
-  .after_click__description {
+  .after_click__description,
+  .after_click_stop_invest {
     margin-top: 2.44vw;
     font-size: 1.56vw;
     width: 35vw;
@@ -283,7 +289,8 @@
     margin-right: 7vw;
   }
 
-  .after_click__description {
+  .after_click__description,
+  .after_click_stop_invest {
     margin-top: 2.6vw;
     font-size: 1.82vw;
     width: 37vw;

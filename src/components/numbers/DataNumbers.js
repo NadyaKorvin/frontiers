@@ -1,10 +1,10 @@
 export const DataNumbers = [
   {
     key: "2022",
-    investors_profit: "246 млн ₽",
-    invested_by_investors: "913 млн ₽",
+    investors_profit: "458 млн ₽",
+    invested_by_investors: "1,7 млд ₽",
     profit: "27%",
-    transactions: "1215",
+    transactions: "2343",
     re_invest: "81%",
     investor_check: "1,22 млн ₽"
   },
