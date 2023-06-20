@@ -47,7 +47,9 @@ export function Team({ width }) {
             ))}
           </div>
         ) : (
-          <TeamPopup useData={refreshData} width={width} />
+          <div>
+            <TeamPopup useData={refreshData} width={width} />
+          </div>
         )}
       </div>
     </div>

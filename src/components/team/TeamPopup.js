@@ -17,7 +17,7 @@ export function TeamPopup({ useData, width }) {
 
   const goForward = () => {
     let tmp = currentSlider
-    if (tmp === 6) return
+    if (tmp === 10) return
     tmp++
     setCurrenrSlider(tmp)
   }

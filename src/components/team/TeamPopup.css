@@ -550,9 +550,11 @@
     min-width: 89.33vw;
     max-width: 89.33vw;
     height: 48vw;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: left 16vw top -13vw;
+    background-color: #000;
   }
 
   .popup_description {

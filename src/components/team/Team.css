@@ -20,7 +20,7 @@
 
 .team__block_description {
   align-self: flex-end;
-  width: 30.277vh;
+  width: 25vh;
   font-size: 1.48vh;
   font-weight: 500;
   line-height: 130%;
@@ -37,7 +37,7 @@
 
 .persones {
   display: flex;
-  gap: 1.85vh;
+  gap: 1vh;
 }
 
 .big_persona {
@@ -116,8 +116,12 @@
 .persona_04,
 .persona_05,
 .persona_06,
-.persona_07 {
-  width: 9.72vh;
+.persona_07,
+.persona_08,
+.persona_09,
+.persona_10,
+.persona_11 {
+  width: 7vh;
   height: 46.296vh;
   filter: grayscale(100%);
   background-size: cover;
@@ -131,10 +135,14 @@
 .persona_04:hover,
 .persona_05:hover,
 .persona_06:hover,
-.persona_07:hover {
+.persona_07:hover,
+.persona_08:hover,
+.persona_09:hover,
+.persona_10:hover,
+.persona_11:hover {
   filter: none;
   transform: scale(1.05) translateY(1.11vh);
-  width: 9.72vh;
+  width: 7vh;
   transition: 0.6s ease-out;
 }
 
