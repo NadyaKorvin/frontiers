@@ -121,7 +121,7 @@
 .persona_09,
 .persona_10,
 .persona_11 {
-  width: 7vh;
+  width: 9vh;
   height: 46.296vh;
   filter: grayscale(100%);
   background-size: cover;
@@ -142,7 +142,7 @@
 .persona_11:hover {
   filter: none;
   transform: scale(1.05) translateY(1.11vh);
-  width: 7vh;
+  width: 9vh;
   transition: 0.6s ease-out;
 }
 

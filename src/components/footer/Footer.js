@@ -6,12 +6,12 @@ export function Footer({ setActivePage }) {
       <div className="lastscreen__footer_wrapper_info">
         <div className="lastscreen__contact_group">
           <p className="lastscreen__contact_group_contact">КОНТАКТЫ</p>
-          <address className="lastscreen__footer_text">Санкт-Петербург, Невский пр-кт, 71 (5 этаж)</address>
-          <a href="tel:89633083308" className="lastscreen__footer_text">
-            +7 963 308 3308
+          <address className="lastscreen__footer_text">Город, улица Улица, 99 (9 этаж)</address>
+          <a href="tel:8900000000" className="lastscreen__footer_text">
+            +7 900 000 0000
           </a>
           <a className="lastscreen__footer_text" href="mailto:nk@frontiers.ru">
-            nk@frontiers.ru
+            abc@frontiers.ru
           </a>
         </div>
         <div className="lastscreen__frontiers_group">
@@ -22,7 +22,7 @@ export function Footer({ setActivePage }) {
             <a href="#" className="lastscreen__footer_text">
               Политика конфиденциальности
             </a>
-            <p className="lastscreen__footer_text">© 2022 Frontiers Group</p>
+            <p className="lastscreen__footer_text">© 2999 Frontiers</p>
           </div>
           <div className="lastscreen__design_dev">
             <p className="lastscreen__design_dev_text">Дизайн и разработка</p>

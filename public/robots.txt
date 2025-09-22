@@ -1,4 +1,30 @@
-User-agent: *
+Вот обновленный файл robots.txt для запрета индексации:
+txtCopyUser-agent: *
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: YandexImages
+Disallow: /
+
+User-agent: YandexMedia
+Disallow: /
+
+User-agent: YandexBlogs
+Disallow: /
+
+User-agent: YandexNews
+Disallow: /
+
+User-agent: YandexMetrika
 Allow: /
 
-Sitemap: https://frontiers.ru/sitemap.xml
+User-agent: YandexDirectDyn
+Allow: /
